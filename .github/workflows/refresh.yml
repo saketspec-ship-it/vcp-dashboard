@@ -35,8 +35,9 @@ jobs:
           git commit -m "VCP dashboard refresh (Actions) $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
 
-      - name: Trigger Pages rebuild
+            - name: Trigger Pages rebuild
         if: success()
+        continue-on-error: true
         run: |
           curl -s -X POST \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
