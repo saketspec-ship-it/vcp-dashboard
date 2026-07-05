@@ -28,6 +28,9 @@
               padding: 12px 16px; margin-bottom: 16px; font-size: 13px; }
   .changes h2 { font-size: 14px; margin: 0 0 8px; }
   .changes div { margin-bottom: 4px; }
+  .footer { margin-top: 20px; padding-top: 16px; border-top: 1px solid #2a2d34;
+             color: #9aa0a6; font-size: 12px; max-width: 1000px; }
+  .footer p { margin: 0 0 8px; }
   .top-bar { display: flex; justify-content: space-between; align-items: flex-start;
               flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
   .top-right { text-align: right; font-size: 12px; color: #9aa0a6; }
@@ -44,12 +47,12 @@
     <div class="top-right">
       <button id="refresh-btn" onclick="triggerRefresh()">&#8635; Refresh scan</button>
       <span id="refresh-status"></span>
-      <div id="visitor-counts">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span></div>
+      <div id="visitor-counts" title="Counter data can take up to 4 hours to update -- a GoatCounter free-tier caching limit, not a bug">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span> <span style="opacity:0.6">(may lag up to 4h)</span></div>
     </div>
   </div>
-  <div class="meta">54 matches &middot; generated 2026-07-05 22:10 IST &middot;
+  <div class="meta">54 matches &middot; generated 2026-07-06 03:50 IST &middot;
     scan logic: <a href="https://github.com/" target="_blank">wiki/strategies/vcp-screening-tools.md</a></div>
-  <div class="note">No changes since the last run (2026-07-05 22:00 IST) -- same list of matches.</div>
+  <div class="note">No changes since the last run (2026-07-06 03:36 IST) -- same list of matches.</div>
   <div class="note">Sorted by Flag (green &gt; amber &gt; red), then youngest-to-oldest by
     listing date within each flag group. Fundamentals (Sector, P/E, ROCE, ROE, financials, shareholding) are
     scraped from screener.in and are best-effort -- some fields may show "-" for banks/NBFCs or newer
@@ -1228,6 +1231,13 @@
         </tr></tbody>
   </table>
   </div>
+  <div class="footer">
+    <p><a href="https://github.com/saketspec-ship-it/vcp-dashboard/blob/main/BUILD.md" target="_blank">How this dashboard was built</a> -- a step-by-step writeup of the full pipeline (Chartink scan, Yahoo Finance/screener.in enrichment, GitHub Pages hosting, Telegram bot, GitHub Actions + Cloudflare Worker for the public Refresh button, GoatCounter visitor count).</p>
+    <p><strong>Disclaimer:</strong> This dashboard is for educational and informational purposes only and demonstrates a
+    rule-based stock screening methodology. The stocks displayed are not investment recommendations or buy/sell advice.
+    Please do your own research or consult a SEBI-registered professional before investing. Investing in securities is
+    subject to market risks.</p>
+  </div>
   <script>
   function triggerRefresh() {
     var btn = document.getElementById('refresh-btn');
@@ -1235,7 +1245,9 @@
     btn.disabled = true;
     status.textContent = 'Triggering a full re-scan...';
     // Routed through a small Cloudflare Worker that holds the real GitHub
-    // token server-side -- nothing secret is embedded in this page.
+    // token server-side -- nothing secret is embedded in this page, unlike
+    // the first version of this button (see wiki/strategies/vcp-screening-tools.md
+    // for why that broke).
     fetch('https://vcp-refresh-proxy.saket-spec.workers.dev/', { method: 'POST' })
       .then(function(r) { return r.text().then(function(t) { return {ok: r.ok, text: t}; }); })
       .then(function(result) {
