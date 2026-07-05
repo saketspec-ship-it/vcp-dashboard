@@ -1,0 +1,44 @@
+name: Refresh VCP scan
+
+on:
+  repository_dispatch:
+    types: [refresh]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run scan (cooldown-protected)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REFRESH_TRIGGER_TOKEN: ${{ secrets.REFRESH_TRIGGER_TOKEN }}
+        run: python cloud_scan.py
+
+      - name: Commit and push dashboard
+        run: |
+          git config user.email "vcp-dashboard-bot@users.noreply.github.com"
+          git config user.name "VCP Dashboard Bot"
+          git add index.html details previous_scan.json .nojekyll
+          git diff --staged --quiet && echo "Nothing to commit (cooldown skip or no changes)" && exit 0
+          git commit -m "VCP dashboard refresh (Actions) $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Trigger Pages rebuild
+        if: success()
+        run: |
+          curl -s -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
