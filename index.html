@@ -28,12 +28,28 @@
               padding: 12px 16px; margin-bottom: 16px; font-size: 13px; }
   .changes h2 { font-size: 14px; margin: 0 0 8px; }
   .changes div { margin-bottom: 4px; }
+  .top-bar { display: flex; justify-content: space-between; align-items: flex-start;
+              flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+  .top-right { text-align: right; font-size: 12px; color: #9aa0a6; }
+  #refresh-btn { background: #1a1d24; color: #e6e6e6; border: 1px solid #2a2d34;
+                  border-radius: 4px; padding: 6px 14px; font-size: 13px; cursor: pointer; }
+  #refresh-btn:hover:not(:disabled) { background: #22262f; }
+  #refresh-btn:disabled { opacity: 0.5; cursor: default; }
+  #refresh-status { display: block; margin-top: 4px; max-width: 260px; }
+  #visitor-counts { margin-top: 8px; }
 </style></head>
 <body>
-  <h1>VCP Scan Dashboard</h1>
-  <div class="meta">54 matches &middot; generated 2026-07-06 02:11 IST &middot;
+  <div class="top-bar">
+    <h1 style="margin:0">VCP Scan Dashboard</h1>
+    <div class="top-right">
+      <button id="refresh-btn" onclick="triggerRefresh()">&#8635; Refresh scan</button>
+      <span id="refresh-status"></span>
+      <div id="visitor-counts">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span></div>
+    </div>
+  </div>
+  <div class="meta">54 matches &middot; generated 2026-07-05 21:31 IST &middot;
     scan logic: <a href="https://github.com/" target="_blank">wiki/strategies/vcp-screening-tools.md</a></div>
-  <div class="note">No changes since the last run (2026-07-06 01:58 IST) -- same list of matches.</div>
+  <div class="note">First run -- no previous scan to compare against yet.</div>
   <div class="note">Sorted by Flag (green &gt; amber &gt; red), then youngest-to-oldest by
     listing date within each flag group. Fundamentals (Sector, P/E, ROCE, ROE, financials, shareholding) are
     scraped from screener.in and are best-effort -- some fields may show "-" for banks/NBFCs or newer
@@ -681,7 +697,7 @@
           <td class="num">486.00 | 517.00 | 541.00 | 674.00</td>
           <td class="num">154.00 | 188.00 | 199.00 | 197.00</td>
           <td class="num">17.00</td>
-          <td>P 59.35% / FII 1.31% / DII 0.02% / Pub 39.32%</td>
+          <td>P 59.35% / FII 1.31% / DII 0.03% / Pub 39.33%</td>
           <td class="num"><a href="details/JAYBARMARU.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
           <td class="num">24y 0m</td>
         </tr>
@@ -1212,4 +1228,54 @@
         </tr></tbody>
   </table>
   </div>
+  <script>
+  function triggerRefresh() {
+    var btn = document.getElementById('refresh-btn');
+    var status = document.getElementById('refresh-status');
+    btn.disabled = true;
+    status.textContent = 'Triggering a full re-scan...';
+    fetch('https://api.github.com/repos/saketspec-ship-it/vcp-dashboard/dispatches', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'token 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',
+        'Accept': 'application/vnd.github+json'
+      },
+      body: JSON.stringify({event_type: 'refresh'})
+    }).then(function(r) {
+      if (r.status === 204) {
+        status.textContent = 'Triggered. Takes ~60-90s -- reload the page shortly.';
+      } else {
+        status.textContent = 'Trigger failed (HTTP ' + r.status + '). Try again in a bit.';
+        btn.disabled = false;
+      }
+    }).catch(function() {
+      status.textContent = 'Trigger failed (network error). Try again in a bit.';
+      btn.disabled = false;
+    });
+    setTimeout(function() { btn.disabled = false; }, 90000);
+  }
+
+  // GoatCounter: records + displays today's and lifetime unique visitor
+  // counts. Two separate tracked "paths" -- a fixed one for lifetime, and
+  // one keyed by today's date -- so the daily figure naturally resets each
+  // day without needing a private API key client-side.
+  (function() {
+    var goatBase = 'https://vcpdash.goatcounter.com';
+    var today = new Date().toISOString().slice(0, 10);
+    function record(path) {
+      var img = new Image();
+      img.src = goatBase + '/count?p=' + encodeURIComponent(path) + '&t=' + encodeURIComponent(document.title);
+    }
+    function showCount(path, elId) {
+      fetch(goatBase + '/counter/' + encodeURIComponent(path) + '.json')
+        .then(function(r) { return r.json(); })
+        .then(function(d) { document.getElementById(elId).textContent = d.count || '0'; })
+        .catch(function() { document.getElementById(elId).textContent = '?'; });
+    }
+    record('/lifetime');
+    record('/daily/' + today);
+    showCount('/lifetime', 'vc-total');
+    showCount('/daily/' + today, 'vc-today');
+  })();
+  </script>
 </body></html>
