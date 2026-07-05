@@ -47,9 +47,9 @@
       <div id="visitor-counts">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span></div>
     </div>
   </div>
-  <div class="meta">54 matches &middot; generated 2026-07-05 22:00 IST &middot;
+  <div class="meta">54 matches &middot; generated 2026-07-06 03:36 IST &middot;
     scan logic: <a href="https://github.com/" target="_blank">wiki/strategies/vcp-screening-tools.md</a></div>
-  <div class="note">No changes since the last run (2026-07-05 21:31 IST) -- same list of matches.</div>
+  <div class="note">No changes since the last run (2026-07-06 02:11 IST) -- same list of matches.</div>
   <div class="note">Sorted by Flag (green &gt; amber &gt; red), then youngest-to-oldest by
     listing date within each flag group. Fundamentals (Sector, P/E, ROCE, ROE, financials, shareholding) are
     scraped from screener.in and are best-effort -- some fields may show "-" for banks/NBFCs or newer
@@ -1234,24 +1234,23 @@
     var status = document.getElementById('refresh-status');
     btn.disabled = true;
     status.textContent = 'Triggering a full re-scan...';
-    fetch('https://api.github.com/repos/saketspec-ship-it/vcp-dashboard/dispatches', {
-      method: 'POST',
-      headers: {
-        'Authorization': 'token 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',
-        'Accept': 'application/vnd.github+json'
-      },
-      body: JSON.stringify({event_type: 'refresh'})
-    }).then(function(r) {
-      if (r.status === 204) {
-        status.textContent = 'Triggered. Takes ~60-90s -- reload the page shortly.';
-      } else {
-        status.textContent = 'Trigger failed (HTTP ' + r.status + '). Try again in a bit.';
+    // Routed through a small Cloudflare Worker that holds the real GitHub
+    // token server-side -- nothing secret is embedded in this page, unlike
+    // the first version of this button (see wiki/strategies/vcp-screening-tools.md
+    // for why that broke).
+    fetch('https://vcp-refresh-proxy.saket-spec.workers.dev/', { method: 'POST' })
+      .then(function(r) { return r.text().then(function(t) { return {ok: r.ok, text: t}; }); })
+      .then(function(result) {
+        if (result.ok) {
+          status.textContent = 'Triggered. Takes ~60-90s -- reload the page shortly.';
+        } else {
+          status.textContent = 'Trigger failed: ' + result.text;
+          btn.disabled = false;
+        }
+      }).catch(function() {
+        status.textContent = 'Trigger failed (network error). Try again in a bit.';
         btn.disabled = false;
-      }
-    }).catch(function() {
-      status.textContent = 'Trigger failed (network error). Try again in a bit.';
-      btn.disabled = false;
-    });
+      });
     setTimeout(function() { btn.disabled = false; }, 90000);
   }
 
