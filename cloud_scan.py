@@ -30,8 +30,19 @@ import os
 import re
 import sys
 import time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib import request, parse, error
+
+# GitHub Actions runners run in UTC -- time.strftime(..."IST") used to just
+# label the runner's UTC wall clock as IST without converting it, so every
+# cloud-generated timestamp was off by 5:30. This does the actual conversion.
+_IST = timezone(timedelta(hours=5, minutes=30))
+
+
+def _ist_timestamp():
+    return datetime.now(timezone.utc).astimezone(_IST).strftime("%Y-%m-%d %H:%M IST")
+
 
 REPO_ROOT = Path(__file__).parent
 CHARTINK_URL = "https://chartink.com/screener/process"
@@ -748,7 +759,7 @@ def build_stock_detail_html(r):
   <h1>Trend Template Assessment &mdash; {ticker}</h1>
   <div style="color:#9aa0a6;font-size:13px;margin-bottom:16px;">
     {r.get('name','')} &middot; Score: {r.get('trend_template_score') or '-'} &middot;
-    generated {time.strftime('%Y-%m-%d %H:%M IST')}
+    generated {_ist_timestamp()}
   </div>
   <table>
     <thead><tr><th>#</th><th>Criterion</th><th>Reading</th><th>Result</th></tr></thead>
@@ -956,7 +967,7 @@ def build_dashboard_html(enriched_matches, changes=None):
       <div id="visitor-counts" title="Counter data can take up to 4 hours to update -- a GoatCounter free-tier caching limit, not a bug">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span> <span style="opacity:0.6">(may lag up to 4h)</span></div>
     </div>
   </div>
-  <div class="meta">{len(enriched_matches)} matches &middot; generated {time.strftime('%Y-%m-%d %H:%M IST')} &middot;
+  <div class="meta">{len(enriched_matches)} matches &middot; generated {_ist_timestamp()} &middot;
     scan logic: <a href="https://github.com/" target="_blank">wiki/strategies/vcp-screening-tools.md</a></div>
   {build_changes_html(changes)}
   <div class="note">Sorted by Flag (green &gt; amber &gt; red), then youngest-to-oldest by
@@ -1188,7 +1199,7 @@ def main():
     (REPO_ROOT / ".nojekyll").touch()
 
     save_data = {
-        "run_time": time.strftime("%Y-%m-%d %H:%M IST"),
+        "run_time": _ist_timestamp(),
         "run_epoch": time.time(),
         "tickers": {r["nsecode"]: _ticker_snapshot(r) for r in enriched},
     }
