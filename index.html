@@ -31,19 +31,21 @@
 </style></head>
 <body>
   <h1>VCP Scan Dashboard</h1>
-  <div class="meta">54 matches &middot; generated 2026-07-06 01:58 IST &middot;
+  <div class="meta">54 matches &middot; generated 2026-07-06 02:11 IST &middot;
     scan logic: <a href="https://github.com/" target="_blank">wiki/strategies/vcp-screening-tools.md</a></div>
-  <div class="note">No changes since the last run (2026-07-06 01:45 IST) -- same list of matches.</div>
-  <div class="note">Sorted by Buy/Sell Flag (green &gt; amber &gt; red), then youngest-to-oldest by
+  <div class="note">No changes since the last run (2026-07-06 01:58 IST) -- same list of matches.</div>
+  <div class="note">Sorted by Flag (green &gt; amber &gt; red), then youngest-to-oldest by
     listing date within each flag group. Fundamentals (Sector, P/E, ROCE, ROE, financials, shareholding) are
     scraped from screener.in and are best-effort -- some fields may show "-" for banks/NBFCs or newer
     listings whose report layout differs. Sector P/E was dropped (not just shown as "-") -- screener.in
     loads its peer/sector comparison table via JavaScript after page load, not reachable without full
     browser automation, and no working public endpoint was found for it either.
-    <strong>Buy/Sell Flag</strong>: green = price above the 10-day MA (short-term strength); amber = price
-    between the 50-day and 10-day MA (pullback within an intact trend); red = price below the 50-day MA
-    (intermediate trend broken) -- a fast, mechanical read, not a substitute for the Trend Template/VCP
-    read next to it. "Trend Template" = how many of the 8 criteria (price/50/150/200-day MA stack, 200-MA
+    <strong>Flag</strong>: Trend (green) = price above the 10-day MA (short-term strength); Watch (amber) =
+    price between the 50-day and 10-day MA (pullback within an intact trend); Away (red) = price below the
+    50-day MA (intermediate trend broken) -- a fast, mechanical read, not a substitute for the Trend
+    Template/VCP read next to it. Qtr/annual financial columns show up to the last 4 available periods,
+    oldest to newest, separated by "|" -- fewer than 4 for recently-listed stocks without that much
+    history. "Trend Template" = how many of the 8 criteria (price/50/150/200-day MA stack, 200-MA
     uptrend, 52-week high/low proximity, relative strength) the stock passes -- click a score for the full
     breakdown. Criterion 8 there is a crude proxy (beats Nifty 50's 3-month return), not a true percentile
     RS rating, and not the same thing as the RSI(14) column here.</div>
@@ -64,10 +66,10 @@
       <tr class="col-row">
         <th class="sticky-col">Symbol</th><th>Name</th><th>Sector</th>
         <th>Close</th><th>ATH | ATL</th>
-        <th>Stock P/E</th><th>Buy/Sell Flag</th>
+        <th>Stock P/E</th><th>Flag</th>
         <th>ROCE</th><th>ROE</th><th>RSI(14)</th>
-        <th>Net Profit (Qtr-1 | Qtr)</th>
-        <th>Net Profit (Yr)</th><th>OPM % (Yr)</th><th>Reserves (Yr-1 | Yr)</th><th>CFO (Yr)</th>
+        <th>Net Profit (last 4 Qtr)</th>
+        <th>Net Profit (last 4 Yr)</th><th>OPM % (last 4 Yr)</th><th>Reserves (last 4 Yr)</th><th>CFO (last 4 Yr)</th>
         <th>Debtor Days</th>
         <th>Promoter / FII / DII / Public</th>
         <th>Trend Template</th><th>Listed</th>
@@ -81,15 +83,15 @@
           <td class="num">981.10</td>
           <td class="num">1,122.00 | 240.55</td>
           <td class="num">163.00</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">11.50%</td>
           <td class="num">15.70%</td>
           <td class="num">47.70</td>
-          <td class="num">5.41 | 7.52</td>
-          <td class="num">22.00</td>
-          <td class="num">13.00%</td>
-          <td class="num">126.00 | 147.00</td>
-          <td class="num">-83.00</td>
+          <td class="num">3.30 | 5.67 | 5.41 | 7.52</td>
+          <td class="num">11.00 | 8.00 | 22.00</td>
+          <td class="num">15.00% | 14.00% | 13.00%</td>
+          <td class="num">119.00 | 126.00 | 147.00</td>
+          <td class="num">1.00 | -42.00 | -83.00</td>
           <td class="num">88.00</td>
           <td>P 74.80% / FII 1.60% / DII 3.51% / Pub 20.08%</td>
           <td class="num"><a href="details/ROSSTECH.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -102,15 +104,15 @@
           <td class="num">704.35</td>
           <td class="num">760.00 | 167.00</td>
           <td class="num">61.80</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">10.90%</td>
           <td class="num">9.33%</td>
           <td class="num">52.90</td>
-          <td class="num">19.00 | 28.00</td>
-          <td class="num">77.00</td>
-          <td class="num">17.00%</td>
-          <td class="num">732.00 | 821.00</td>
-          <td class="num">20.00</td>
+          <td class="num">13.00 | 18.00 | 19.00 | 28.00</td>
+          <td class="num">13.00 | 26.00 | 44.00 | 77.00</td>
+          <td class="num">12.00% | 14.00% | 16.00% | 17.00%</td>
+          <td class="num">413.00 | 398.00 | 732.00 | 821.00</td>
+          <td class="num">14.00 | 103.00 | -60.00 | 20.00</td>
           <td class="num">123.00</td>
           <td>P 70.18% / FII 0.99% / DII 13.91% / Pub 14.93%</td>
           <td class="num"><a href="details/DEEDEV.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -123,15 +125,15 @@
           <td class="num">461.75</td>
           <td class="num">547.00 | 197.51</td>
           <td class="num">73.90</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">19.20%</td>
           <td class="num">15.70%</td>
           <td class="num">78.90</td>
-          <td class="num">50.00 | 69.00</td>
-          <td class="num">200.00</td>
-          <td class="num">10.00%</td>
-          <td class="num">855.00 | 1,086.00</td>
-          <td class="num">141.00</td>
+          <td class="num">41.00 | 39.00 | 50.00 | 69.00</td>
+          <td class="num">-151.00 | 111.00 | 73.00 | 200.00</td>
+          <td class="num">2.00% | 7.00% | 3.00% | 10.00%</td>
+          <td class="num">-1,323.00 | 771.00 | 855.00 | 1,086.00</td>
+          <td class="num">-52.00 | 235.00 | 102.00 | 141.00</td>
           <td class="num">30.00</td>
           <td>P 35.54% / FII 13.74% / DII 19.24% / Pub 31.48%</td>
           <td class="num"><a href="details/HONASA.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -144,15 +146,15 @@
           <td class="num">1,788.30</td>
           <td class="num">1,853.00 | 348.00</td>
           <td class="num">106.00</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">19.50%</td>
           <td class="num">16.90%</td>
           <td class="num">57.70</td>
-          <td class="num">33.00 | 41.00</td>
-          <td class="num">113.00</td>
-          <td class="num">11.00%</td>
-          <td class="num">598.00 | 708.00</td>
-          <td class="num">0.00</td>
+          <td class="num">14.00 | 25.00 | 33.00 | 41.00</td>
+          <td class="num">52.00 | 28.00 | 63.00 | 113.00</td>
+          <td class="num">12.00% | 7.00% | 10.00% | 11.00%</td>
+          <td class="num">525.00 | 534.00 | 598.00 | 708.00</td>
+          <td class="num">-13.00 | 17.00 | 25.00 | 0.00</td>
           <td class="num">87.00</td>
           <td>P 44.41% / FII 6.42% / DII 26.17% / Pub 22.98%</td>
           <td class="num"><a href="details/AVALON.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -165,15 +167,15 @@
           <td class="num">560</td>
           <td class="num">590.00 | 2.06</td>
           <td class="num">31.50</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">27.00%</td>
           <td class="num">29.20%</td>
           <td class="num">60.20</td>
-          <td class="num">81.00 | 91.00</td>
-          <td class="num">282.00</td>
-          <td class="num">7.00%</td>
-          <td class="num">537.00 | 1,044.00</td>
-          <td class="num">-45.00</td>
+          <td class="num">44.00 | 67.00 | 81.00 | 91.00</td>
+          <td class="num">19.00 | 40.00 | 133.00 | 282.00</td>
+          <td class="num">3.00% | 4.00% | 6.00% | 7.00%</td>
+          <td class="num">87.00 | 231.00 | 537.00 | 1,044.00</td>
+          <td class="num">-6.00 | -158.00 | -273.00 | -45.00</td>
           <td class="num">33.00</td>
           <td>P 51.74% / FII 1.20% / DII 13.14% / Pub 33.91%</td>
           <td class="num"><a href="details/SKYGOLD.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -185,17 +187,17 @@
           <td>Textiles</td>
           <td class="num">179.34</td>
           <td class="num">198.50 | 6.38</td>
-          <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">19.00</td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
+          <td class="num">13.00%</td>
+          <td class="num">11.70%</td>
           <td class="num">45.40</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">34.00 | 28.00 | 25.00 | 33.00</td>
+          <td class="num">132.00 | 70.00 | 109.00 | 120.00</td>
+          <td class="num">13.00% | 9.00% | 11.00% | 11.00%</td>
+          <td class="num">809.00 | 812.00 | 916.00 | 1,103.00</td>
+          <td class="num">520.00 | -236.00 | 415.00 | 292.00</td>
+          <td class="num">58.00</td>
           <td>P 74.36% / FII 0.23% / DII 0.00% / Pub 25.41%</td>
           <td class="num"><a href="details/SPORTKING.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
           <td class="num">3y 10m</td>
@@ -207,15 +209,15 @@
           <td class="num">392.25</td>
           <td class="num">423.10 | 95.10</td>
           <td class="num">29.40</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">15.60%</td>
           <td class="num">11.90%</td>
           <td class="num">62.20</td>
-          <td class="num">9.00 | 15.00</td>
-          <td class="num">50.00</td>
-          <td class="num">20.00%</td>
-          <td class="num">332.00 | 383.00</td>
-          <td class="num">87.00</td>
+          <td class="num">10.00 | 16.00 | 9.00 | 15.00</td>
+          <td class="num">51.00 | 39.00 | 43.00 | 50.00</td>
+          <td class="num">28.00% | 22.00% | 26.00% | 20.00%</td>
+          <td class="num">252.00 | 290.00 | 332.00 | 383.00</td>
+          <td class="num">60.00 | 69.00 | -72.00 | 87.00</td>
           <td class="num">18.00</td>
           <td>P 30.80% / FII 0.45% / DII 2.19% / Pub 66.56%</td>
           <td class="num"><a href="details/INDOBORAX.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -228,15 +230,15 @@
           <td class="num">3,251.50</td>
           <td class="num">3,271.00 | 548.55</td>
           <td class="num">60.30</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">14.10%</td>
           <td class="num">11.50%</td>
           <td class="num">76.30</td>
-          <td class="num">69.00 | 123.00</td>
-          <td class="num">327.00</td>
-          <td class="num">18.00%</td>
-          <td class="num">2,738.00 | 3,075.00</td>
-          <td class="num">387.00</td>
+          <td class="num">63.00 | 71.00 | 69.00 | 123.00</td>
+          <td class="num">148.00 | 188.00 | 217.00 | 327.00</td>
+          <td class="num">16.00% | 17.00% | 17.00% | 18.00%</td>
+          <td class="num">1,157.00 | 1,337.00 | 2,738.00 | 3,075.00</td>
+          <td class="num">256.00 | 374.00 | 377.00 | 387.00</td>
           <td class="num">65.00</td>
           <td>P 30.10% / FII 18.79% / DII 35.38% / Pub 15.66%</td>
           <td class="num"><a href="details/SANSERA.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -249,15 +251,15 @@
           <td class="num">706.45</td>
           <td class="num">1,945.95 | 172.34</td>
           <td class="num">79.40</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">1.52%</td>
           <td class="num">-17.60%</td>
           <td class="num">64.50</td>
-          <td class="num">-8.00 | -15.00</td>
-          <td class="num">-62.00</td>
-          <td class="num">14.00%</td>
-          <td class="num">343.00 | 291.00</td>
-          <td class="num">223.00</td>
+          <td class="num">-17.00 | -22.00 | -8.00 | -15.00</td>
+          <td class="num">19.00 | -11.00 | -27.00 | -62.00</td>
+          <td class="num">19.00% | 17.00% | 17.00% | 14.00%</td>
+          <td class="num">382.00 | 373.00 | 343.00 | 291.00</td>
+          <td class="num">228.00 | 221.00 | 193.00 | 223.00</td>
           <td class="num">1.00</td>
           <td>P 34.60% / FII 9.66% / DII 16.73% / Pub 39.01%</td>
           <td class="num"><a href="details/UFBL.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -269,16 +271,16 @@
           <td>Financial Services</td>
           <td class="num">76.30</td>
           <td class="num">116.50 | 30.05</td>
-          <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">84.70</td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
+          <td class="num">6.44%</td>
+          <td class="num">1.69%</td>
           <td class="num">38.60</td>
-          <td class="num">- | -</td>
+          <td class="num">-224.00 | 24.00 | 90.00 | 213.00</td>
+          <td class="num">574.00 | 799.00 | 147.00 | 103.00</td>
           <td class="num">-</td>
-          <td class="num">-</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
+          <td class="num">4,047.00 | 4,834.00 | 4,933.00 | 4,984.00</td>
+          <td class="num">-998.00 | 3,834.00 | 1,937.00 | -3,316.00</td>
           <td class="num">-</td>
           <td>P 0.00% / FII 14.74% / DII 50.87% / Pub 34.38%</td>
           <td class="num"><a href="details/EQUITASBNK.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -291,15 +293,15 @@
           <td class="num">352.25</td>
           <td class="num">360.45 | 2.22</td>
           <td class="num">35.20</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">14.80%</td>
           <td class="num">15.60%</td>
           <td class="num">50.00</td>
-          <td class="num">269.00 | 320.00</td>
-          <td class="num">915.00</td>
-          <td class="num">35.00%</td>
-          <td class="num">5,531.00 | 6,027.00</td>
-          <td class="num">-4,142.00</td>
+          <td class="num">114.00 | 212.00 | 269.00 | 320.00</td>
+          <td class="num">890.00 | 1,126.00 | 1,172.00 | 915.00</td>
+          <td class="num">43.00% | 40.00% | 38.00% | 35.00%</td>
+          <td class="num">2,078.00 | 2,955.00 | 5,531.00 | 6,027.00</td>
+          <td class="num">804.00 | -330.00 | -1,860.00 | -4,142.00</td>
           <td class="num">31.00</td>
           <td>P 28.80% / FII 12.81% / DII 18.88% / Pub 39.52%</td>
           <td class="num"><a href="details/ANGELONE.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -312,15 +314,15 @@
           <td class="num">1,556.20</td>
           <td class="num">3,050.00 | 22.80</td>
           <td class="num">140.00</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">7.39%</td>
           <td class="num">11.40%</td>
           <td class="num">64.10</td>
-          <td class="num">5.00 | 514.00</td>
-          <td class="num">1,987.00</td>
-          <td class="num">83.00%</td>
-          <td class="num">10,553.00 | 18,318.00</td>
-          <td class="num">10,135.00</td>
+          <td class="num">824.00 | 644.00 | 5.00 | 514.00</td>
+          <td class="num">973.00 | 1,260.00 | 2,001.00 | 1,987.00</td>
+          <td class="num">64.00% | 80.00% | 79.00% | 83.00%</td>
+          <td class="num">5,720.00 | 9,058.00 | 10,553.00 | 18,318.00</td>
+          <td class="num">7,265.00 | 7,713.00 | 8,364.00 | 10,135.00</td>
           <td class="num">60.00</td>
           <td>P 62.44% / FII 11.10% / DII 4.56% / Pub 21.92%</td>
           <td class="num"><a href="details/ADANIGREEN.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -333,15 +335,15 @@
           <td class="num">699.35</td>
           <td class="num">763.20 | 124.90</td>
           <td class="num">21.00</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">14.40%</td>
           <td class="num">16.20%</td>
           <td class="num">48.10</td>
-          <td class="num">33.00 | 64.00</td>
-          <td class="num">199.00</td>
-          <td class="num">9.00%</td>
-          <td class="num">1,079.00 | 1,273.00</td>
-          <td class="num">210.00</td>
+          <td class="num">28.00 | 73.00 | 33.00 | 64.00</td>
+          <td class="num">74.00 | 110.00 | 142.00 | 199.00</td>
+          <td class="num">8.00% | 10.00% | 10.00% | 9.00%</td>
+          <td class="num">860.00 | 956.00 | 1,079.00 | 1,273.00</td>
+          <td class="num">308.00 | 275.00 | 247.00 | 210.00</td>
           <td class="num">62.00</td>
           <td>P 70.38% / FII 0.77% / DII 17.39% / Pub 11.47%</td>
           <td class="num"><a href="details/SANDHAR.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -354,15 +356,15 @@
           <td class="num">58.88</td>
           <td class="num">77.50 | 0.04</td>
           <td class="num">39.40</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">10.90%</td>
           <td class="num">9.22%</td>
           <td class="num">48.30</td>
-          <td class="num">9.00 | 10.00</td>
-          <td class="num">38.00</td>
-          <td class="num">23.00%</td>
-          <td class="num">352.00 | 394.00</td>
-          <td class="num">121.00</td>
+          <td class="num">9.00 | 10.00 | 9.00 | 10.00</td>
+          <td class="num">9.00 | 21.00 | 33.00 | 38.00</td>
+          <td class="num">24.00% | 30.00% | 24.00% | 23.00%</td>
+          <td class="num">18.00 | 97.00 | 352.00 | 394.00</td>
+          <td class="num">22.00 | 27.00 | 28.00 | 121.00</td>
           <td class="num">113.00</td>
           <td>P 52.30% / FII 6.15% / DII 1.00% / Pub 38.75%</td>
           <td class="num"><a href="details/ONEPOINT.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -375,15 +377,15 @@
           <td class="num">555.60</td>
           <td class="num">578.25 | 45.24</td>
           <td class="num">55.00</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">35.40%</td>
           <td class="num">28.40%</td>
           <td class="num">58.20</td>
-          <td class="num">28.00 | 49.00</td>
-          <td class="num">163.00</td>
-          <td class="num">32.00%</td>
-          <td class="num">494.00 | 426.00</td>
-          <td class="num">213.00</td>
+          <td class="num">38.00 | 48.00 | 28.00 | 49.00</td>
+          <td class="num">64.00 | 69.00 | 91.00 | 163.00</td>
+          <td class="num">23.00% | 24.00% | 28.00% | 32.00%</td>
+          <td class="num">481.00 | 474.00 | 494.00 | 426.00</td>
+          <td class="num">129.00 | 168.00 | 180.00 | 213.00</td>
           <td class="num">33.00</td>
           <td>P 60.92% / FII 5.37% / DII 21.00% / Pub 12.71%</td>
           <td class="num"><a href="details/THYROCARE.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -396,15 +398,15 @@
           <td class="num">882.15</td>
           <td class="num">907.00 | 21.95</td>
           <td class="num">20.00</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">24.70%</td>
           <td class="num">18.40%</td>
           <td class="num">70.60</td>
-          <td class="num">51.00 | 59.00</td>
-          <td class="num">192.00</td>
-          <td class="num">24.00%</td>
-          <td class="num">934.00 | 1,111.00</td>
-          <td class="num">133.00</td>
+          <td class="num">41.00 | 41.00 | 51.00 | 59.00</td>
+          <td class="num">104.00 | 122.00 | 149.00 | 192.00</td>
+          <td class="num">18.00% | 20.00% | 22.00% | 24.00%</td>
+          <td class="num">732.00 | 845.00 | 934.00 | 1,111.00</td>
+          <td class="num">121.00 | 113.00 | 157.00 | 133.00</td>
           <td class="num">79.00</td>
           <td>P 58.77% / FII 3.68% / DII 3.65% / Pub 33.90%</td>
           <td class="num"><a href="details/MAYURUNIQ.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -417,15 +419,15 @@
           <td class="num">703.15</td>
           <td class="num">713.65 | 0.75</td>
           <td class="num">46.50</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">12.80%</td>
           <td class="num">14.90%</td>
           <td class="num">72.50</td>
-          <td class="num">84.00 | 124.00</td>
-          <td class="num">358.00</td>
-          <td class="num">12.00%</td>
-          <td class="num">2,150.00 | 2,596.00</td>
-          <td class="num">676.00</td>
+          <td class="num">65.00 | 85.00 | 84.00 | 124.00</td>
+          <td class="num">284.00 | 227.00 | 255.00 | 358.00</td>
+          <td class="num">11.00% | 11.00% | 11.00% | 12.00%</td>
+          <td class="num">1,538.00 | 1,928.00 | 2,150.00 | 2,596.00</td>
+          <td class="num">387.00 | 287.00 | 544.00 | 676.00</td>
           <td class="num">59.00</td>
           <td>P 64.84% / FII 8.80% / DII 18.82% / Pub 5.97%</td>
           <td class="num"><a href="details/MINDACORP.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">7/8</a></td>
@@ -438,14 +440,14 @@
           <td class="num">332.78</td>
           <td class="num">342.55 | 8.91</td>
           <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">-</td>
           <td class="num">-</td>
           <td class="num">52.70</td>
-          <td class="num">- | -</td>
           <td class="num">-</td>
           <td class="num">-</td>
-          <td class="num">- | -</td>
+          <td class="num">-</td>
+          <td class="num">-</td>
           <td class="num">-</td>
           <td class="num">-</td>
           <td>-</td>
@@ -459,15 +461,15 @@
           <td class="num">505.95</td>
           <td class="num">553.00 | 18.80</td>
           <td class="num">40.70</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">16.90%</td>
           <td class="num">11.80%</td>
           <td class="num">67.20</td>
-          <td class="num">25.00 | 37.00</td>
-          <td class="num">135.00</td>
-          <td class="num">18.00%</td>
-          <td class="num">1,040.00 | 1,182.00</td>
-          <td class="num">139.00</td>
+          <td class="num">44.00 | 29.00 | 25.00 | 37.00</td>
+          <td class="num">77.00 | 82.00 | 90.00 | 135.00</td>
+          <td class="num">16.00% | 20.00% | 16.00% | 18.00%</td>
+          <td class="num">873.00 | 957.00 | 1,040.00 | 1,182.00</td>
+          <td class="num">34.00 | 103.00 | 106.00 | 139.00</td>
           <td class="num">204.00</td>
           <td>P 35.36% / FII 10.45% / DII 5.04% / Pub 49.15%</td>
           <td class="num"><a href="details/BLISSGVS.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -480,15 +482,15 @@
           <td class="num">680.65</td>
           <td class="num">718.00 | 0.68</td>
           <td class="num">45.80</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">22.10%</td>
           <td class="num">17.80%</td>
           <td class="num">52.80</td>
-          <td class="num">192.00 | 208.00</td>
-          <td class="num">755.00</td>
-          <td class="num">21.00%</td>
-          <td class="num">3,672.00 | 4,656.00</td>
-          <td class="num">382.00</td>
+          <td class="num">179.00 | 176.00 | 192.00 | 208.00</td>
+          <td class="num">216.00 | 411.00 | 555.00 | 755.00</td>
+          <td class="num">10.00% | 15.00% | 19.00% | 21.00%</td>
+          <td class="num">2,237.00 | 2,996.00 | 3,672.00 | 4,656.00</td>
+          <td class="num">54.00 | 405.00 | 447.00 | 382.00</td>
           <td class="num">55.00</td>
           <td>P 52.49% / FII 5.98% / DII 3.22% / Pub 38.32%</td>
           <td class="num"><a href="details/HSCL.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -501,15 +503,15 @@
           <td class="num">2,378.80</td>
           <td class="num">2,427.30 | 10.60</td>
           <td class="num">45.20</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">47.80%</td>
           <td class="num">43.50%</td>
           <td class="num">76.30</td>
-          <td class="num">6.00 | 68.00</td>
-          <td class="num">88.00</td>
-          <td class="num">35.00%</td>
-          <td class="num">141.00 | 231.00</td>
-          <td class="num">-100.00</td>
+          <td class="num">7.00 | 7.00 | 6.00 | 68.00</td>
+          <td class="num">-20.00 | -27.00 | 50.00 | 88.00</td>
+          <td class="num">-416.00% | -117.00% | 22.00% | 35.00%</td>
+          <td class="num">67.00 | 90.00 | 141.00 | 231.00</td>
+          <td class="num">-36.00 | -71.00 | 15.00 | -100.00</td>
           <td class="num">268.00</td>
           <td>P 28.85% / FII 0.30% / DII 0.02% / Pub 70.78%</td>
           <td class="num"><a href="details/KERNEX.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -522,15 +524,15 @@
           <td class="num">1,173</td>
           <td class="num">1,236.20 | 1.04</td>
           <td class="num">40.40</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">15.80%</td>
           <td class="num">18.00%</td>
           <td class="num">67.70</td>
-          <td class="num">100.00 | 115.00</td>
-          <td class="num">388.00</td>
-          <td class="num">16.00%</td>
-          <td class="num">1,941.00 | 2,318.00</td>
-          <td class="num">858.00</td>
+          <td class="num">72.00 | 101.00 | 100.00 | 115.00</td>
+          <td class="num">284.00 | 250.00 | 310.00 | 388.00</td>
+          <td class="num">19.00% | 17.00% | 18.00% | 16.00%</td>
+          <td class="num">1,471.00 | 1,647.00 | 1,941.00 | 2,318.00</td>
+          <td class="num">173.00 | 55.00 | 290.00 | 858.00</td>
           <td class="num">67.00</td>
           <td>P 46.11% / FII 11.24% / DII 21.43% / Pub 20.97%</td>
           <td class="num"><a href="details/CCL.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">7/8</a></td>
@@ -543,15 +545,15 @@
           <td class="num">239.37</td>
           <td class="num">875.00 | 35.17</td>
           <td class="num">4.96</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">164.00%</td>
           <td class="num">279.00%</td>
           <td class="num">61.40</td>
-          <td class="num">-80.00 | 1,761.00</td>
-          <td class="num">1,553.00</td>
-          <td class="num">85.00%</td>
-          <td class="num">-249.00 | 1,306.00</td>
-          <td class="num">-239.00</td>
+          <td class="num">-52.00 | -76.00 | -80.00 | 1,761.00</td>
+          <td class="num">-223.00 | -387.00 | -343.00 | 1,553.00</td>
+          <td class="num">-90.00% | -532.00% | -450.00% | 85.00%</td>
+          <td class="num">480.00 | 93.00 | -249.00 | 1,306.00</td>
+          <td class="num">-69.00 | -429.00 | -360.00 | -239.00</td>
           <td class="num">2.00</td>
           <td>P 65.68% / FII 2.48% / DII 0.10% / Pub 31.77%</td>
           <td class="num"><a href="details/SPARC.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -564,15 +566,15 @@
           <td class="num">214.48</td>
           <td class="num">220.09 | 5.95</td>
           <td class="num">105.00</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">10.90%</td>
           <td class="num">6.95%</td>
           <td class="num">73.20</td>
-          <td class="num">102.00 | 184.00</td>
-          <td class="num">329.00</td>
-          <td class="num">15.00%</td>
-          <td class="num">3,935.00 | 4,738.00</td>
-          <td class="num">-378.00</td>
+          <td class="num">-29.00 | 72.00 | 102.00 | 184.00</td>
+          <td class="num">318.00 | 338.00 | 173.00 | 329.00</td>
+          <td class="num">13.00% | 13.00% | 11.00% | 15.00%</td>
+          <td class="num">2,970.00 | 3,812.00 | 3,935.00 | 4,738.00</td>
+          <td class="num">235.00 | -45.00 | 396.00 | -378.00</td>
           <td class="num">163.00</td>
           <td>P 28.29% / FII 7.08% / DII 8.57% / Pub 56.02%</td>
           <td class="num"><a href="details/HFCL.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -585,15 +587,15 @@
           <td class="num">187.74</td>
           <td class="num">475.00 | 0.28</td>
           <td class="num">20.90</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">8.26%</td>
           <td class="num">0.60%</td>
           <td class="num">34.40</td>
-          <td class="num">38.00 | 158.00</td>
-          <td class="num">409.00</td>
-          <td class="num">14.00%</td>
-          <td class="num">6,570.00 | 7,382.00</td>
-          <td class="num">897.00</td>
+          <td class="num">83.00 | 130.00 | 38.00 | 158.00</td>
+          <td class="num">-796.00 | -450.00 | 136.00 | 409.00</td>
+          <td class="num">5.00% | 8.00% | 13.00% | 14.00%</td>
+          <td class="num">8,360.00 | 7,275.00 | 6,570.00 | 7,382.00</td>
+          <td class="num">1,036.00 | 3,063.00 | 1,943.00 | 897.00</td>
           <td class="num">44.00</td>
           <td>P 41.35% / FII 8.06% / DII 2.15% / Pub 48.10%</td>
           <td class="num"><a href="details/RAIN.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -606,15 +608,15 @@
           <td class="num">264.45</td>
           <td class="num">358.70 | 0.09</td>
           <td class="num">28.70</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">18.80%</td>
           <td class="num">15.20%</td>
           <td class="num">60.90</td>
-          <td class="num">114.00 | 149.00</td>
-          <td class="num">420.00</td>
-          <td class="num">20.00%</td>
-          <td class="num">2,422.00 | 2,978.00</td>
-          <td class="num">458.00</td>
+          <td class="num">58.00 | 99.00 | 114.00 | 149.00</td>
+          <td class="num">265.00 | 315.00 | 383.00 | 420.00</td>
+          <td class="num">18.00% | 21.00% | 20.00% | 20.00%</td>
+          <td class="num">1,700.00 | 2,020.00 | 2,422.00 | 2,978.00</td>
+          <td class="num">237.00 | 230.00 | 207.00 | 458.00</td>
           <td class="num">80.00</td>
           <td>P 43.87% / FII 16.76% / DII 6.57% / Pub 32.78%</td>
           <td class="num"><a href="details/MARKSANS.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -627,15 +629,15 @@
           <td class="num">994.95</td>
           <td class="num">1,103.00 | 0.62</td>
           <td class="num">64.40</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">22.20%</td>
           <td class="num">26.80%</td>
           <td class="num">46.70</td>
-          <td class="num">50.00 | 65.00</td>
-          <td class="num">218.00</td>
-          <td class="num">9.00%</td>
-          <td class="num">725.00 | 1,251.00</td>
-          <td class="num">84.00</td>
+          <td class="num">47.00 | 56.00 | 50.00 | 65.00</td>
+          <td class="num">24.00 | 138.00 | 205.00 | 218.00</td>
+          <td class="num">4.00% | 7.00% | 9.00% | 9.00%</td>
+          <td class="num">262.00 | 447.00 | 725.00 | 1,251.00</td>
+          <td class="num">13.00 | 129.00 | -88.00 | 84.00</td>
           <td class="num">67.00</td>
           <td>P 69.99% / FII 3.26% / DII 2.99% / Pub 23.62%</td>
           <td class="num"><a href="details/BBOX.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -647,17 +649,17 @@
           <td>Construction Materials</td>
           <td class="num">926.40</td>
           <td class="num">1,093.70 | 5.60</td>
-          <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">17.40</td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
+          <td class="num">10.80%</td>
+          <td class="num">16.00%</td>
           <td class="num">74.90</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">32.00 | 20.00 | 11.00 | 65.00</td>
+          <td class="num">17.00 | 60.00 | 45.00 | 129.00</td>
+          <td class="num">8.00% | 12.00% | 10.00% | 12.00%</td>
+          <td class="num">729.00 | 784.00 | 824.00 | 950.00</td>
+          <td class="num">139.00 | 182.00 | 188.00 | 94.00</td>
+          <td class="num">8.00</td>
           <td>P 40.01% / FII 5.59% / DII 6.17% / Pub 48.25%</td>
           <td class="num"><a href="details/MANGLMCEM.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
           <td class="num">24y 0m</td>
@@ -669,15 +671,15 @@
           <td class="num">171.55</td>
           <td class="num">178.89 | 0.03</td>
           <td class="num">13.30</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">16.60%</td>
           <td class="num">22.20%</td>
           <td class="num">62.20</td>
-          <td class="num">18.00 | 80.00</td>
-          <td class="num">140.00</td>
-          <td class="num">11.00%</td>
-          <td class="num">541.00 | 674.00</td>
-          <td class="num">197.00</td>
+          <td class="num">23.00 | 18.00 | 18.00 | 80.00</td>
+          <td class="num">38.00 | 32.00 | 33.00 | 140.00</td>
+          <td class="num">7.00% | 7.00% | 7.00% | 11.00%</td>
+          <td class="num">486.00 | 517.00 | 541.00 | 674.00</td>
+          <td class="num">154.00 | 188.00 | 199.00 | 197.00</td>
           <td class="num">17.00</td>
           <td>P 59.35% / FII 1.31% / DII 0.02% / Pub 39.32%</td>
           <td class="num"><a href="details/JAYBARMARU.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -690,15 +692,15 @@
           <td class="num">46.10</td>
           <td class="num">49.79 | 0.07</td>
           <td class="num">8.29</td>
-          <td class="flag-cell"><span class="flag flag-green">Buy</span></td>
+          <td class="flag-cell"><span class="flag flag-green">Trend</span></td>
           <td class="num">6.42%</td>
           <td class="num">13.50%</td>
           <td class="num">43.30</td>
-          <td class="num">374.00 | 407.00</td>
-          <td class="num">1,456.00</td>
+          <td class="num">322.00 | 352.00 | 374.00 | 407.00</td>
+          <td class="num">775.00 | 1,070.00 | 1,303.00 | 1,456.00</td>
           <td class="num">-</td>
-          <td class="num">9,846.00 | 11,143.00</td>
-          <td class="num">3,907.00</td>
+          <td class="num">6,465.00 | 8,565.00 | 9,846.00 | 11,143.00</td>
+          <td class="num">-7,261.00 | 7,075.00 | -2,353.00 | 3,907.00</td>
           <td class="num">-</td>
           <td>FII 24.21% / DII 12.75% / Pub 63.03%</td>
           <td class="num"><a href="details/SOUTHBANK.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -711,15 +713,15 @@
           <td class="num">364.10</td>
           <td class="num">424.80 | 222.61</td>
           <td class="num">20.30</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">17.30%</td>
           <td class="num">15.70%</td>
           <td class="num">42.10</td>
-          <td class="num">72.00 | 129.00</td>
-          <td class="num">309.00</td>
-          <td class="num">15.00%</td>
-          <td class="num">1,745.00 | 2,051.00</td>
-          <td class="num">-91.00</td>
+          <td class="num">51.00 | 56.00 | 72.00 | 129.00</td>
+          <td class="num">167.00 | 304.00 | 287.00 | 309.00</td>
+          <td class="num">14.00% | 17.00% | 15.00% | 15.00%</td>
+          <td class="num">554.00 | 809.00 | 1,745.00 | 2,051.00</td>
+          <td class="num">-73.00 | -190.00 | -520.00 | -91.00</td>
           <td class="num">58.00</td>
           <td>P 82.05% / FII 3.14% / DII 5.37% / Pub 9.44%</td>
           <td class="num"><a href="details/CEIGALL.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -732,15 +734,15 @@
           <td class="num">118.70</td>
           <td class="num">158.80 | 74.30</td>
           <td class="num">34.80</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">29.20%</td>
           <td class="num">29.90%</td>
           <td class="num">51.60</td>
           <td class="num">14.00 | 17.00</td>
-          <td class="num">67.00</td>
-          <td class="num">9.00%</td>
-          <td class="num">159.00 | 226.00</td>
-          <td class="num">29.00</td>
+          <td class="num">16.00 | 42.00 | 67.00</td>
+          <td class="num">8.00% | 6.00% | 9.00%</td>
+          <td class="num">56.00 | 159.00 | 226.00</td>
+          <td class="num">30.00 | -6.00 | 29.00</td>
           <td class="num">40.00</td>
           <td>P 64.18% / FII 0.41% / DII 0.27% / Pub 35.13%</td>
           <td class="num"><a href="details/SANSTAR.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -753,15 +755,15 @@
           <td class="num">483.75</td>
           <td class="num">897.25 | 200.92</td>
           <td class="num">41.70</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">17.40%</td>
           <td class="num">12.10%</td>
           <td class="num">45.80</td>
-          <td class="num">18.00 | 33.00</td>
-          <td class="num">65.00</td>
-          <td class="num">11.00%</td>
-          <td class="num">493.00 | 556.00</td>
-          <td class="num">-2.00</td>
+          <td class="num">1.00 | 13.00 | 18.00 | 33.00</td>
+          <td class="num">46.00 | 63.00 | 30.00 | 65.00</td>
+          <td class="num">17.00% | 21.00% | 10.00% | 11.00%</td>
+          <td class="num">113.00 | 186.00 | 493.00 | 556.00</td>
+          <td class="num">20.00 | -10.00 | -65.00 | -2.00</td>
           <td class="num">154.00</td>
           <td>P 67.80% / FII 1.18% / DII 12.57% / Pub 18.48%</td>
           <td class="num"><a href="details/JNKINDIA.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -773,17 +775,17 @@
           <td>Information Technology</td>
           <td class="num">4,427.40</td>
           <td class="num">5,244.00 | 738.60</td>
-          <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">122.00</td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
+          <td class="num">37.50%</td>
+          <td class="num">32.80%</td>
           <td class="num">44.50</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">30.00 | 31.00 | 73.00 | 71.00</td>
+          <td class="num">47.00 | 76.00 | 114.00 | 206.00</td>
+          <td class="num">16.00% | 14.00% | 14.00% | 13.00%</td>
+          <td class="num">83.00 | 411.00 | 519.00 | 712.00</td>
+          <td class="num">27.00 | 18.00 | -13.00 | 171.00</td>
+          <td class="num">112.00</td>
           <td>P 66.98% / FII 9.29% / DII 4.68% / Pub 19.03%</td>
           <td class="num"><a href="details/NETWEB.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
           <td class="num">2y 11m</td>
@@ -795,15 +797,15 @@
           <td class="num">652.45</td>
           <td class="num">722.65 | 296.65</td>
           <td class="num">18.30</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">21.60%</td>
           <td class="num">18.30%</td>
           <td class="num">45.50</td>
-          <td class="num">33.00 | 51.00</td>
-          <td class="num">158.00</td>
-          <td class="num">21.00%</td>
-          <td class="num">842.00 | 825.00</td>
-          <td class="num">174.00</td>
+          <td class="num">34.00 | 39.00 | 33.00 | 51.00</td>
+          <td class="num">205.00 | 125.00 | 88.00 | 158.00</td>
+          <td class="num">22.00% | 18.00% | 15.00% | 21.00%</td>
+          <td class="num">786.00 | 823.00 | 842.00 | 825.00</td>
+          <td class="num">253.00 | 200.00 | 182.00 | 174.00</td>
           <td class="num">44.00</td>
           <td>P 65.87% / FII 2.82% / DII 5.34% / Pub 25.87%</td>
           <td class="num"><a href="details/UNIPARTS.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -816,15 +818,15 @@
           <td class="num">299.85</td>
           <td class="num">362.70 | 49.55</td>
           <td class="num">12.40</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">31.00%</td>
           <td class="num">32.00%</td>
           <td class="num">50.00</td>
-          <td class="num">20.00 | 36.00</td>
-          <td class="num">73.00</td>
-          <td class="num">17.00%</td>
-          <td class="num">213.00 | 271.00</td>
-          <td class="num">-64.00</td>
+          <td class="num">5.00 | 12.00 | 20.00 | 36.00</td>
+          <td class="num">11.00 | 21.00 | 25.00 | 73.00</td>
+          <td class="num">7.00% | 8.00% | 9.00% | 17.00%</td>
+          <td class="num">184.00 | 200.00 | 213.00 | 271.00</td>
+          <td class="num">22.00 | -4.00 | -16.00 | -64.00</td>
           <td class="num">82.00</td>
           <td>P 52.16% / FII 0.48% / DII 0.00% / Pub 47.35%</td>
           <td class="num"><a href="details/MODISONLTD.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -837,15 +839,15 @@
           <td class="num">340.15</td>
           <td class="num">448.95 | 19.05</td>
           <td class="num">19.00</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">23.20%</td>
           <td class="num">20.20%</td>
           <td class="num">49.10</td>
-          <td class="num">188.00 | 115.00</td>
-          <td class="num">564.00</td>
-          <td class="num">35.00%</td>
-          <td class="num">2,445.00 | 3,003.00</td>
-          <td class="num">-1,070.00</td>
+          <td class="num">176.00 | 85.00 | 188.00 | 115.00</td>
+          <td class="num">250.00 | 513.00 | 713.00 | 564.00</td>
+          <td class="num">35.00% | 42.00% | 44.00% | 35.00%</td>
+          <td class="num">1,289.00 | 1,725.00 | 2,445.00 | 3,003.00</td>
+          <td class="num">-793.00 | -118.00 | 871.00 | -1,070.00</td>
           <td class="num">9.00</td>
           <td>P 30.87% / FII 16.33% / DII 5.56% / Pub 47.24%</td>
           <td class="num"><a href="details/IIFLCAPS.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -858,15 +860,15 @@
           <td class="num">182.15</td>
           <td class="num">558.72 | 15.52</td>
           <td class="num">64.60</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">28.90%</td>
           <td class="num">23.60%</td>
           <td class="num">30.60</td>
-          <td class="num">11.00 | 13.00</td>
-          <td class="num">36.00</td>
-          <td class="num">18.00%</td>
-          <td class="num">121.00 | 144.00</td>
-          <td class="num">17.00</td>
+          <td class="num">4.00 | 7.00 | 11.00 | 13.00</td>
+          <td class="num">10.00 | 16.00 | 22.00 | 36.00</td>
+          <td class="num">10.00% | 11.00% | 13.00% | 18.00%</td>
+          <td class="num">82.00 | 100.00 | 121.00 | 144.00</td>
+          <td class="num">16.00 | 3.00 | -3.00 | 17.00</td>
           <td class="num">121.00</td>
           <td>P 74.62% / FII 1.14% / DII 0.00% / Pub 24.23%</td>
           <td class="num"><a href="details/SILVERTUC.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">3/8</a></td>
@@ -879,15 +881,15 @@
           <td class="num">39.12</td>
           <td class="num">47.18 | 0.19</td>
           <td class="num">41.90</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">18.30%</td>
           <td class="num">13.50%</td>
           <td class="num">43.30</td>
-          <td class="num">30.00 | 44.00</td>
-          <td class="num">125.00</td>
-          <td class="num">17.00%</td>
-          <td class="num">708.00 | 766.00</td>
-          <td class="num">-24.00</td>
+          <td class="num">25.00 | 26.00 | 30.00 | 44.00</td>
+          <td class="num">90.00 | 121.00 | 109.00 | 125.00</td>
+          <td class="num">22.00% | 26.00% | 24.00% | 17.00%</td>
+          <td class="num">327.00 | 425.00 | 708.00 | 766.00</td>
+          <td class="num">107.00 | 97.00 | 69.00 | -24.00</td>
           <td class="num">137.00</td>
           <td>P 62.30% / FII 2.92% / DII 1.27% / Pub 33.50%</td>
           <td class="num"><a href="details/FCL.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -900,15 +902,15 @@
           <td class="num">657.90</td>
           <td class="num">885.00 | 30.00</td>
           <td class="num">57.90</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">35.90%</td>
           <td class="num">27.10%</td>
           <td class="num">48.70</td>
-          <td class="num">92.00 | 102.00</td>
-          <td class="num">349.00</td>
-          <td class="num">21.00%</td>
-          <td class="num">1,185.00 | 1,414.00</td>
-          <td class="num">111.00</td>
+          <td class="num">64.00 | 91.00 | 92.00 | 102.00</td>
+          <td class="num">193.00 | 269.00 | 359.00 | 349.00</td>
+          <td class="num">19.00% | 19.00% | 22.00% | 21.00%</td>
+          <td class="num">729.00 | 928.00 | 1,185.00 | 1,414.00</td>
+          <td class="num">196.00 | 271.00 | 187.00 | 111.00</td>
           <td class="num">107.00</td>
           <td>P 55.84% / FII 20.81% / DII 16.52% / Pub 6.83%</td>
           <td class="num"><a href="details/TRITURBINE.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -921,15 +923,15 @@
           <td class="num">198.89</td>
           <td class="num">14,878.16 | 0.22</td>
           <td class="num">66.30</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">26.50%</td>
           <td class="num">1.00%</td>
           <td class="num">32.80</td>
-          <td class="num">50.00 | 61.00</td>
-          <td class="num">158.00</td>
-          <td class="num">12.00%</td>
-          <td class="num">-931.00 | -657.00</td>
-          <td class="num">-80.00</td>
+          <td class="num">20.00 | 28.00 | 50.00 | 61.00</td>
+          <td class="num">-805.00 | 17.00 | 34.00 | 158.00</td>
+          <td class="num">-57.00% | 12.00% | 6.00% | 12.00%</td>
+          <td class="num">385.00 | -1,026.00 | -931.00 | -657.00</td>
+          <td class="num">-258.00 | 16.00 | 77.00 | -80.00</td>
           <td class="num">89.00</td>
           <td>P 84.02% / FII 0.36% / DII 0.07% / Pub 15.55%</td>
           <td class="num"><a href="details/DIACABS.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -941,17 +943,17 @@
           <td>Oil, Gas &amp; Consumable Fuels</td>
           <td class="num">802.35</td>
           <td class="num">1,078.25 | 51.74</td>
-          <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">31.50</td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
+          <td class="num">21.20%</td>
+          <td class="num">15.90%</td>
           <td class="num">52.10</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">11.00 | 12.00 | 28.00 | 38.00</td>
+          <td class="num">31.00 | 33.00 | 74.00 | 90.00</td>
+          <td class="num">43.00% | 44.00% | 53.00% | 57.00%</td>
+          <td class="num">345.00 | 379.00 | 455.00 | 620.00</td>
+          <td class="num">43.00 | 72.00 | 126.00 | 121.00</td>
+          <td class="num">88.00</td>
           <td>P 69.94% / FII 0.26% / DII 0.03% / Pub 29.78%</td>
           <td class="num"><a href="details/ANTELOPUS.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
           <td class="num">19y 9m</td>
@@ -963,15 +965,15 @@
           <td class="num">4,754.50</td>
           <td class="num">5,180.00 | 15.06</td>
           <td class="num">34.90</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">21.10%</td>
           <td class="num">17.00%</td>
           <td class="num">63.60</td>
-          <td class="num">293.00 | 393.00</td>
-          <td class="num">1,269.00</td>
-          <td class="num">28.00%</td>
-          <td class="num">6,908.00 | 8,007.00</td>
-          <td class="num">592.00</td>
+          <td class="num">305.00 | 277.00 | 293.00 | 393.00</td>
+          <td class="num">1,056.00 | 1,137.00 | 1,060.00 | 1,269.00</td>
+          <td class="num">25.00% | 28.00% | 27.00% | 28.00%</td>
+          <td class="num">5,672.00 | 6,639.00 | 6,908.00 | 8,007.00</td>
+          <td class="num">868.00 | 903.00 | 1,162.00 | 592.00</td>
           <td class="num">97.00</td>
           <td>P 58.50% / FII 16.79% / DII 22.03% / Pub 2.69%</td>
           <td class="num"><a href="details/AIAENG.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -983,17 +985,17 @@
           <td>Services</td>
           <td class="num">1,077.50</td>
           <td class="num">1,457.95 | 121.00</td>
-          <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">635.00</td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
+          <td class="num">4.28%</td>
+          <td class="num">0.39%</td>
           <td class="num">47.10</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">-23.00 | -34.00 | -25.00 | 87.00</td>
+          <td class="num">-196.00 | 33.00 | -27.00 | 5.00</td>
+          <td class="num">-2.00% | 21.00% | 12.00% | 20.00%</td>
+          <td class="num">1,201.00 | 1,227.00 | 1,193.00 | 1,202.00</td>
+          <td class="num">148.00 | 191.00 | 112.00 | 142.00</td>
+          <td class="num">71.00</td>
           <td>P 73.47% / FII 0.37% / DII 8.31% / Pub 17.81%</td>
           <td class="num"><a href="details/DREDGECORP.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
           <td class="num">22y 5m</td>
@@ -1005,15 +1007,15 @@
           <td class="num">137.15</td>
           <td class="num">157.00 | 0.89</td>
           <td class="num">32.80</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">9.01%</td>
           <td class="num">7.49%</td>
           <td class="num">55.30</td>
-          <td class="num">11.11 | 6.87</td>
-          <td class="num">52.00</td>
-          <td class="num">9.00%</td>
-          <td class="num">716.00 | 766.00</td>
-          <td class="num">326.00</td>
+          <td class="num">16.72 | 17.72 | 11.11 | 6.87</td>
+          <td class="num">51.00 | 39.00 | 21.00 | 52.00</td>
+          <td class="num">10.00% | 10.00% | 9.00% | 9.00%</td>
+          <td class="num">676.00 | 707.00 | 716.00 | 766.00</td>
+          <td class="num">160.00 | 247.00 | 193.00 | 326.00</td>
           <td class="num">52.00</td>
           <td>P 50.33% / FII 2.14% / DII 0.09% / Pub 47.43%</td>
           <td class="num"><a href="details/RICOAUTO.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1026,15 +1028,15 @@
           <td class="num">1,938.50</td>
           <td class="num">2,422.30 | 61.30</td>
           <td class="num">111.00</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">7.55%</td>
           <td class="num">6.11%</td>
           <td class="num">55.30</td>
-          <td class="num">61.00 | 164.00</td>
-          <td class="num">199.00</td>
-          <td class="num">19.00%</td>
-          <td class="num">4,272.00 | 4,859.00</td>
-          <td class="num">390.00</td>
+          <td class="num">-108.00 | 82.00 | 61.00 | 164.00</td>
+          <td class="num">-621.00 | -472.00 | -57.00 | 199.00</td>
+          <td class="num">4.00% | 3.00% | 13.00% | 19.00%</td>
+          <td class="num">3,282.00 | 3,282.00 | 4,272.00 | 4,859.00</td>
+          <td class="num">153.00 | 219.00 | -22.00 | 390.00</td>
           <td class="num">64.00</td>
           <td>P 49.09% / FII 7.09% / DII 10.96% / Pub 32.84%</td>
           <td class="num"><a href="details/WOCKPHARMA.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1047,15 +1049,15 @@
           <td class="num">1,170.90</td>
           <td class="num">1,391.00 | 4.20</td>
           <td class="num">24.90</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">11.70%</td>
           <td class="num">8.91%</td>
           <td class="num">46.80</td>
-          <td class="num">27.00 | 55.00</td>
-          <td class="num">163.00</td>
-          <td class="num">9.00%</td>
-          <td class="num">1,737.00 | 1,856.00</td>
-          <td class="num">63.00</td>
+          <td class="num">33.00 | 48.00 | 27.00 | 55.00</td>
+          <td class="num">118.00 | 108.00 | 89.00 | 163.00</td>
+          <td class="num">8.00% | 8.00% | 7.00% | 9.00%</td>
+          <td class="num">1,462.00 | 1,740.00 | 1,737.00 | 1,856.00</td>
+          <td class="num">143.00 | 33.00 | 176.00 | 63.00</td>
           <td class="num">138.00</td>
           <td>P 61.89% / FII 0.68% / DII 4.54% / Pub 32.89%</td>
           <td class="num"><a href="details/UNIVCABLES.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1068,15 +1070,15 @@
           <td class="num">1,125.80</td>
           <td class="num">1,275.00 | 24.70</td>
           <td class="num">5.40</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">35.10%</td>
           <td class="num">32.10%</td>
           <td class="num">33.60</td>
-          <td class="num">1,002.00 | 1,422.00</td>
-          <td class="num">3,103.00</td>
-          <td class="num">7.00%</td>
-          <td class="num">8,058.00 | 10,960.00</td>
-          <td class="num">2,945.00</td>
+          <td class="num">-40.00 | 719.00 | 1,002.00 | 1,422.00</td>
+          <td class="num">3,532.00 | 2,745.00 | 214.00 | 3,103.00</td>
+          <td class="num">7.00% | 7.00% | 2.00% | 7.00%</td>
+          <td class="num">6,326.00 | 8,672.00 | 8,058.00 | 10,960.00</td>
+          <td class="num">5,749.00 | 2,694.00 | 1,352.00 | 2,945.00</td>
           <td class="num">1.00</td>
           <td>P 67.29% / FII 14.98% / DII 1.01% / Pub 16.71%</td>
           <td class="num"><a href="details/CHENNPETRO.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1089,15 +1091,15 @@
           <td class="num">873.75</td>
           <td class="num">1,109.40 | 34.05</td>
           <td class="num">16.80</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">80.00%</td>
           <td class="num">77.70%</td>
           <td class="num">37.30</td>
-          <td class="num">72.00 | 113.00</td>
-          <td class="num">253.00</td>
-          <td class="num">20.00%</td>
-          <td class="num">249.00 | 515.00</td>
-          <td class="num">469.00</td>
+          <td class="num">35.00 | 32.00 | 72.00 | 113.00</td>
+          <td class="num">-441.00 | -171.00 | 203.00 | 253.00</td>
+          <td class="num">-17.00% | -14.00% | -5.00% | 20.00%</td>
+          <td class="num">165.00 | 2.00 | 249.00 | 515.00</td>
+          <td class="num">90.00 | 182.00 | 320.00 | 469.00</td>
           <td class="num">219.00</td>
           <td>P 68.58% / FII 1.26% / DII 1.13% / Pub 28.65%</td>
           <td class="num"><a href="details/GVPIL.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1110,15 +1112,15 @@
           <td class="num">578.55</td>
           <td class="num">798.95 | 0.91</td>
           <td class="num">41.60</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">23.70%</td>
           <td class="num">21.50%</td>
           <td class="num">33.90</td>
-          <td class="num">95.00 | 128.00</td>
-          <td class="num">430.00</td>
-          <td class="num">15.00%</td>
-          <td class="num">1,834.00 | 2,200.00</td>
-          <td class="num">454.00</td>
+          <td class="num">86.00 | 121.00 | 95.00 | 128.00</td>
+          <td class="num">371.00 | 312.00 | 350.00 | 430.00</td>
+          <td class="num">14.00% | 15.00% | 15.00% | 15.00%</td>
+          <td class="num">1,339.00 | 1,580.00 | 1,834.00 | 2,200.00</td>
+          <td class="num">166.00 | 285.00 | 391.00 | 454.00</td>
           <td class="num">67.00</td>
           <td>P 31.19% / FII 22.20% / DII 9.08% / Pub 37.00%</td>
           <td class="num"><a href="details/ELGIEQUIP.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1131,15 +1133,15 @@
           <td class="num">423.15</td>
           <td class="num">467.60 | 2.50</td>
           <td class="num">27.80</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">18.60%</td>
           <td class="num">15.70%</td>
           <td class="num">46.30</td>
-          <td class="num">29.00 | 42.00</td>
-          <td class="num">146.00</td>
-          <td class="num">17.00%</td>
-          <td class="num">899.00 | 943.00</td>
-          <td class="num">241.00</td>
+          <td class="num">33.00 | 41.00 | 29.00 | 42.00</td>
+          <td class="num">96.00 | 242.00 | 82.00 | 146.00</td>
+          <td class="num">17.00% | 16.00% | 17.00% | 17.00%</td>
+          <td class="num">648.00 | 841.00 | 899.00 | 943.00</td>
+          <td class="num">61.00 | 115.00 | 84.00 | 241.00</td>
           <td class="num">67.00</td>
           <td>P 51.20% / FII 14.69% / DII 10.06% / Pub 24.06%</td>
           <td class="num"><a href="details/NRBBEARING.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1152,15 +1154,15 @@
           <td class="num">75.91</td>
           <td class="num">121.20 | 3.10</td>
           <td class="num">111.00</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">5.03%</td>
           <td class="num">2.09%</td>
           <td class="num">24.90</td>
-          <td class="num">21.00 | 34.00</td>
-          <td class="num">435.00</td>
+          <td class="num">62.00 | 317.00 | 21.00 | 34.00</td>
+          <td class="num">-120.00 | 241.00 | 349.00 | 435.00</td>
           <td class="num">-</td>
-          <td class="num">5,996.00 | 6,250.00</td>
-          <td class="num">280.00</td>
+          <td class="num">1,571.00 | 2,045.00 | 5,996.00 | 6,250.00</td>
+          <td class="num">-336.00 | 12.00 | -984.00 | 280.00</td>
           <td class="num">-</td>
           <td>P 72.57% / FII 2.65% / DII 1.64% / Pub 20.90%</td>
           <td class="num"><a href="details/IFCI.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1173,15 +1175,15 @@
           <td class="num">576.80</td>
           <td class="num">679.90 | 1.96</td>
           <td class="num">622.00</td>
-          <td class="flag-cell"><span class="flag flag-amber">Cautious</span></td>
+          <td class="flag-cell"><span class="flag flag-amber">Watch</span></td>
           <td class="num">7.75%</td>
           <td class="num">2.24%</td>
           <td class="num">43.60</td>
-          <td class="num">-17.00 | 59.00</td>
-          <td class="num">56.00</td>
-          <td class="num">12.00%</td>
-          <td class="num">1,892.00 | 2,170.00</td>
-          <td class="num">522.00</td>
+          <td class="num">10.00 | 4.00 | -17.00 | 59.00</td>
+          <td class="num">127.00 | -57.00 | -123.00 | 56.00</td>
+          <td class="num">13.00% | 12.00% | 10.00% | 12.00%</td>
+          <td class="num">2,011.00 | 1,943.00 | 1,892.00 | 2,170.00</td>
+          <td class="num">228.00 | 791.00 | 348.00 | 522.00</td>
           <td class="num">82.00</td>
           <td>P 44.44% / FII 11.47% / DII 10.84% / Pub 33.24%</td>
           <td class="num"><a href="details/STLTECH.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">8/8</a></td>
@@ -1193,16 +1195,16 @@
           <td>Financial Services</td>
           <td class="num">200.60</td>
           <td class="num">741.80 | 128.16</td>
-          <td class="num">-</td>
-          <td class="flag-cell"><span class="flag flag-red">Sell</span></td>
-          <td class="num">-</td>
-          <td class="num">-</td>
+          <td class="num">26.40</td>
+          <td class="flag-cell"><span class="flag flag-red">Away</span></td>
+          <td class="num">6.41%</td>
+          <td class="num">4.91%</td>
           <td class="num">37.00</td>
-          <td class="num">- | -</td>
+          <td class="num">372.00 | 112.00 | 206.00 | 534.00</td>
+          <td class="num">2,195.00 | 2,230.00 | 2,745.00 | 1,224.00</td>
           <td class="num">-</td>
-          <td class="num">-</td>
-          <td class="num">- | -</td>
-          <td class="num">-</td>
+          <td class="num">17,973.00 | 19,999.00 | 22,994.00 | 23,645.00</td>
+          <td class="num">-4,245.00 | 14,808.00 | 2,752.00 | 1,143.00</td>
           <td class="num">-</td>
           <td>P 38.98% / FII 22.07% / DII 22.33% / Pub 16.55%</td>
           <td class="num"><a href="details/BANDHANBNK.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">7/8</a></td>
