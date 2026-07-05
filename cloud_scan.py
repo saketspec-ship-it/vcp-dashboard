@@ -43,6 +43,11 @@ GITHUB_REPO_OWNER = "saketspec-ship-it"
 GITHUB_REPO_NAME = "vcp-dashboard"
 GOATCOUNTER_SITE = "vcpdash"
 
+# See tools/vcp_scanner_telegram.py's PUBLIC_BASE_URL for why exported
+# files (CSV/Excel) need an absolute link here rather than the relative
+# "details/<TICKER>.html" used on-page.
+PUBLIC_BASE_URL = f"https://{GITHUB_REPO_OWNER}.github.io/{GITHUB_REPO_NAME}/"
+
 # The Refresh button used to embed a GitHub PAT directly and call GitHub's
 # dispatches API from the browser -- that token got auto-revoked by GitHub's
 # secret-scanning within minutes of going public (see
@@ -754,6 +759,21 @@ def build_stock_detail_html(r):
 </body></html>"""
 
 
+def _ticker_snapshot(r):
+    """Slim per-ticker record persisted to previous_scan.json -- enough for
+    both the changes-since-last-run section and the on-demand watchlist
+    generator (tools/vcp_watchlist.py) without either needing a fresh scan."""
+    s = r.get("screener") or {}
+    flag = r.get("buy_sell_flag") or {}
+    return {
+        "name": r.get("name", ""),
+        "sector": s.get("sector"),
+        "close": r.get("close"),
+        "flag": flag.get("flag"),
+        "trend_template_score": r.get("trend_template_score"),
+    }
+
+
 def compute_scan_changes(enriched_matches, previous):
     """None on the very first run (nothing to compare against). Otherwise a
     dict with the previous run's timestamp plus which tickers were newly
@@ -761,14 +781,14 @@ def compute_scan_changes(enriched_matches, previous):
     match list naturally shifts as price action changes day to day."""
     if previous is None:
         return None
-    current = {r["nsecode"]: r.get("name", "") for r in enriched_matches}
+    current = {r["nsecode"]: _ticker_snapshot(r) for r in enriched_matches}
     prev = previous.get("tickers", {})
     added = sorted(current.keys() - prev.keys())
     removed = sorted(prev.keys() - current.keys())
     return {
         "previous_run_time": previous.get("run_time", "unknown"),
-        "added": [(t, current[t]) for t in added],
-        "removed": [(t, prev[t]) for t in removed],
+        "added": [(t, current[t]["name"]) for t in added],
+        "removed": [(t, prev[t]["name"] if isinstance(prev[t], dict) else prev[t]) for t in removed],
     }
 
 
@@ -795,6 +815,57 @@ def build_changes_html(changes):
       <div><strong class="pos">Added ({len(added)}):</strong> {item_list(added, 'pos')}</div>
       <div><strong class="neg">Removed ({len(removed)}):</strong> {item_list(removed, 'neg')}</div>
     </div>"""
+
+
+def _link_cell(value, url):
+    """A cell that carries a hyperlink -- rendered as plain text in the CSV
+    export (no hyperlink support in that format) but a real clickable link
+    in the Excel export."""
+    return {"v": value, "url": url}
+
+
+def _export_row(r):
+    """One flat row shared by both the client-side CSV and Excel exports --
+    raw numeric values (not the comma-formatted/combined display strings
+    used in the HTML table) so a spreadsheet can actually sort/filter on
+    them, plus real hyperlinks on Symbol/Name/Trend Template (Excel only)."""
+    s = r.get("screener") or {}
+    flag = r.get("buy_sell_flag") or {}
+    ticker = r["nsecode"]
+    chartink_url = f"https://chartink.com/stocks/{ticker.lower()}.html"
+    screener_url = f"https://www.screener.in/company/{ticker}/consolidated/"
+    detail_url = f"{PUBLIC_BASE_URL}details/{ticker}.html"
+
+    def series(values):
+        if not values:
+            return ""
+        return " | ".join(str(v) for v in values)
+
+    return {
+        "Symbol": _link_cell(ticker, chartink_url),
+        "Name": _link_cell(r.get("name", ""), screener_url),
+        "Sector": s.get("sector") or "",
+        "Close": r.get("close"),
+        "ATH": r.get("all_time_high"),
+        "ATL": r.get("all_time_low"),
+        "Stock P/E": s.get("stock_pe"),
+        "Flag": flag.get("flag", ""),
+        "ROCE %": s.get("roce"),
+        "ROE %": s.get("roe"),
+        "RSI(14)": r.get("rsi14"),
+        "Net Profit Qtr last 4 (Cr)": series(s.get("net_profit_qtr")),
+        "Net Profit Year last 4 (Cr)": series(s.get("net_profit_year")),
+        "OPM % Year last 4": series(s.get("opm_pct_year")),
+        "Reserves Year last 4 (Cr)": series(s.get("reserves_year")),
+        "CFO Year last 4 (Cr)": series(s.get("cash_from_ops_year")),
+        "Debtor Days": s.get("debtor_days"),
+        "Promoter %": s.get("shareholding_promoter"),
+        "FII %": s.get("shareholding_fii"),
+        "DII %": s.get("shareholding_dii"),
+        "Public %": s.get("shareholding_public"),
+        "Trend Template": _link_cell(r.get("trend_template_score") or "", detail_url),
+        "Listing Age (days)": r.get("listing_age_days"),
+    }
 
 
 def build_dashboard_html(enriched_matches, changes=None):
@@ -861,12 +932,15 @@ def build_dashboard_html(enriched_matches, changes=None):
               padding: 12px 16px; margin-bottom: 16px; font-size: 13px; }}
   .changes h2 {{ font-size: 14px; margin: 0 0 8px; }}
   .changes div {{ margin-bottom: 4px; }}
+  .footer {{ margin-top: 20px; padding-top: 16px; border-top: 1px solid #2a2d34;
+             color: #9aa0a6; font-size: 12px; max-width: 1000px; }}
+  .footer p {{ margin: 0 0 8px; }}
   .top-bar {{ display: flex; justify-content: space-between; align-items: flex-start;
               flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }}
   .top-right {{ text-align: right; font-size: 12px; color: #9aa0a6; }}
-  #refresh-btn {{ background: #1a1d24; color: #e6e6e6; border: 1px solid #2a2d34;
+  #refresh-btn, #csv-btn, #excel-btn {{ background: #1a1d24; color: #e6e6e6; border: 1px solid #2a2d34;
                   border-radius: 4px; padding: 6px 14px; font-size: 13px; cursor: pointer; }}
-  #refresh-btn:hover:not(:disabled) {{ background: #22262f; }}
+  #refresh-btn:hover:not(:disabled), #csv-btn:hover, #excel-btn:hover {{ background: #22262f; }}
   #refresh-btn:disabled {{ opacity: 0.5; cursor: default; }}
   #refresh-status {{ display: block; margin-top: 4px; max-width: 260px; }}
   #visitor-counts {{ margin-top: 8px; }}
@@ -876,8 +950,10 @@ def build_dashboard_html(enriched_matches, changes=None):
     <h1 style="margin:0">VCP Scan Dashboard</h1>
     <div class="top-right">
       <button id="refresh-btn" onclick="triggerRefresh()">&#8635; Refresh scan</button>
+      <button id="csv-btn" onclick="downloadCsv()">&#8681; CSV</button>
+      <button id="excel-btn" onclick="downloadExcel()">&#8681; Excel</button>
       <span id="refresh-status"></span>
-      <div id="visitor-counts">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span></div>
+      <div id="visitor-counts" title="Counter data can take up to 4 hours to update -- a GoatCounter free-tier caching limit, not a bug">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span> <span style="opacity:0.6">(may lag up to 4h)</span></div>
     </div>
   </div>
   <div class="meta">{len(enriched_matches)} matches &middot; generated {time.strftime('%Y-%m-%d %H:%M IST')} &middot;
@@ -927,7 +1003,90 @@ def build_dashboard_html(enriched_matches, changes=None):
     <tbody>{"".join(rows)}</tbody>
   </table>
   </div>
+  <div class="footer">
+    <p><a href="https://github.com/saketspec-ship-it/vcp-dashboard/blob/main/BUILD.md" target="_blank">How this dashboard was built</a> -- a step-by-step writeup of the full pipeline (Chartink scan, Yahoo Finance/screener.in enrichment, GitHub Pages hosting, Telegram bot, GitHub Actions + Cloudflare Worker for the public Refresh button, GoatCounter visitor count).</p>
+    <p><strong>Disclaimer:</strong> This dashboard is for educational and informational purposes only and demonstrates a
+    rule-based stock screening methodology. The stocks displayed are not investment recommendations or buy/sell advice.
+    Please do your own research or consult a SEBI-registered professional before investing. Investing in securities is
+    subject to market risks.</p>
+  </div>
+  <script type="application/json" id="scan-data">{json.dumps([_export_row(r) for r in enriched_matches])}</script>
   <script>
+  // Cells that carry a hyperlink are objects {{v, url}} (see _link_cell in
+  // the Python build script) -- the CSV export only ever shows the plain
+  // value (no hyperlink support in that format); the Excel export below
+  // turns the url into a real clickable link.
+  function cellValue(v) {{
+    return (v && typeof v === 'object') ? v.v : v;
+  }}
+
+  function triggerDownload(blob, filename) {{
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }}
+
+  function downloadCsv() {{
+    var data = JSON.parse(document.getElementById('scan-data').textContent);
+    if (!data.length) return;
+    var headers = Object.keys(data[0]);
+    function escapeCell(v) {{
+      v = cellValue(v);
+      if (v === null || v === undefined) v = '';
+      return '"' + String(v).replace(/"/g, '""') + '"';
+    }}
+    var lines = [headers.map(escapeCell).join(',')];
+    data.forEach(function(row) {{
+      lines.push(headers.map(function(h) {{ return escapeCell(row[h]); }}).join(','));
+    }});
+    var blob = new Blob([lines.join('\\r\\n')], {{type: 'text/csv;charset=utf-8;'}});
+    triggerDownload(blob, 'vcp_scan_' + new Date().toISOString().slice(0, 10) + '.csv');
+  }}
+
+  // Genuine Excel "SpreadsheetML" 2003 XML format -- no external library
+  // needed (unlike a real .xlsx, which is a zip archive), opens cleanly in
+  // Excel/Google Sheets with no format-mismatch warning, and (unlike CSV)
+  // supports real per-cell hyperlinks via ss:HRef.
+  function downloadExcel() {{
+    var data = JSON.parse(document.getElementById('scan-data').textContent);
+    if (!data.length) return;
+    var headers = Object.keys(data[0]);
+    function escapeXml(s) {{
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+    }}
+    function cellXml(raw) {{
+      var url = (raw && typeof raw === 'object') ? raw.url : null;
+      var v = cellValue(raw);
+      var isNum = typeof v === 'number';
+      var type = isNum ? 'Number' : 'String';
+      var text = (v === null || v === undefined) ? '' : v;
+      var hrefAttr = url ? ' ss:HRef="' + escapeXml(url) + '"' : '';
+      return '<Cell' + hrefAttr + '><Data ss:Type="' + type + '">' + escapeXml(text) + '</Data></Cell>';
+    }}
+    var headerRow = '<Row>' + headers.map(function(h) {{
+      return '<Cell><Data ss:Type="String">' + escapeXml(h) + '</Data></Cell>';
+    }}).join('') + '</Row>';
+    var dataRows = data.map(function(row) {{
+      return '<Row>' + headers.map(function(h) {{ return cellXml(row[h]); }}).join('') + '</Row>';
+    }}).join('');
+    var xml = '<?xml version="1.0"?>' +
+      '<?mso-application progid="Excel.Sheet"?>' +
+      '<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" ' +
+      'xmlns:o="urn:schemas-microsoft-com:office:office" ' +
+      'xmlns:x="urn:schemas-microsoft-com:office:excel" ' +
+      'xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">' +
+      '<Worksheet ss:Name="VCP Scan"><Table>' + headerRow + dataRows + '</Table></Worksheet>' +
+      '</Workbook>';
+    var blob = new Blob([xml], {{type: 'application/vnd.ms-excel;charset=utf-8;'}});
+    triggerDownload(blob, 'vcp_scan_' + new Date().toISOString().slice(0, 10) + '.xls');
+  }}
+
   function triggerRefresh() {{
     var btn = document.getElementById('refresh-btn');
     var status = document.getElementById('refresh-status');
@@ -1031,7 +1190,7 @@ def main():
     save_data = {
         "run_time": time.strftime("%Y-%m-%d %H:%M IST"),
         "run_epoch": time.time(),
-        "tickers": {r["nsecode"]: r.get("name", "") for r in enriched},
+        "tickers": {r["nsecode"]: _ticker_snapshot(r) for r in enriched},
     }
     PREVIOUS_SCAN_PATH.write_text(json.dumps(save_data, indent=2), encoding="utf-8")
 
@@ -1042,8 +1201,22 @@ def main():
     print(f"Dashboard + {len(enriched)} detail pages written.")
 
     pages_url = f"https://{GITHUB_REPO_OWNER}.github.io/{GITHUB_REPO_NAME}/"
-    send_telegram_text(f"VCP scan (triggered via Refresh button) - {len(enriched)} matches.\n{pages_url}")
-    print(f"Notified Telegram: {pages_url}")
+    # Cache-busting query param -- see tools/vcp_scanner_telegram.py's
+    # run_scan_and_notify for why: GitHub Pages sets Cache-Control:
+    # max-age=600 on the same URL every scan, so without this a fresh
+    # Telegram link can still show a browser-cached, stale page.
+    fresh_url = f"{pages_url}?t={int(time.time())}"
+    # GitHub Actions sets GITHUB_EVENT_NAME automatically -- label the
+    # notification by what actually triggered this run (cron schedule,
+    # someone clicking the public Refresh button, or a manual
+    # workflow_dispatch) instead of always claiming it was the button.
+    trigger_label = {
+        "schedule": "scheduled run",
+        "repository_dispatch": "triggered via Refresh button",
+        "workflow_dispatch": "manual trigger",
+    }.get(os.environ.get("GITHUB_EVENT_NAME"), "cloud run")
+    send_telegram_text(f"VCP scan ({trigger_label}) - {len(enriched)} matches.\n{fresh_url}")
+    print(f"Notified Telegram: {fresh_url}")
 
 
 if __name__ == "__main__":
