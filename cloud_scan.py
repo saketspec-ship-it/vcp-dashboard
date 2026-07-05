@@ -43,11 +43,13 @@ GITHUB_REPO_OWNER = "saketspec-ship-it"
 GITHUB_REPO_NAME = "vcp-dashboard"
 GOATCOUNTER_SITE = "vcpdash"
 
-# Not actually secret (it ends up embedded in the public dashboard's own JS
-# either way) -- sourced from a repo secret anyway so it isn't sitting in
-# git history in plaintext, which is what GitHub's push protection rejected
-# when it was hardcoded here.
-REFRESH_TRIGGER_TOKEN = os.environ.get("REFRESH_TRIGGER_TOKEN", "")
+# The Refresh button used to embed a GitHub PAT directly and call GitHub's
+# dispatches API from the browser -- that token got auto-revoked by GitHub's
+# secret-scanning within minutes of going public (see
+# wiki/strategies/vcp-screening-tools.md). Now routed through a Cloudflare
+# Worker that holds the real token server-side; nothing secret ends up here.
+REFRESH_WORKER_URL = "https://vcp-refresh-proxy.saket-spec.workers.dev/"
+
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
@@ -931,24 +933,21 @@ def build_dashboard_html(enriched_matches, changes=None):
     var status = document.getElementById('refresh-status');
     btn.disabled = true;
     status.textContent = 'Triggering a full re-scan...';
-    fetch('https://api.github.com/repos/{GITHUB_REPO_OWNER}/{GITHUB_REPO_NAME}/dispatches', {{
-      method: 'POST',
-      headers: {{
-        'Authorization': 'token {REFRESH_TRIGGER_TOKEN}',
-        'Accept': 'application/vnd.github+json'
-      }},
-      body: JSON.stringify({{event_type: 'refresh'}})
-    }}).then(function(r) {{
-      if (r.status === 204) {{
-        status.textContent = 'Triggered. Takes ~60-90s -- reload the page shortly.';
-      }} else {{
-        status.textContent = 'Trigger failed (HTTP ' + r.status + '). Try again in a bit.';
+    // Routed through a small Cloudflare Worker that holds the real GitHub
+    // token server-side -- nothing secret is embedded in this page.
+    fetch('{REFRESH_WORKER_URL}', {{ method: 'POST' }})
+      .then(function(r) {{ return r.text().then(function(t) {{ return {{ok: r.ok, text: t}}; }}); }})
+      .then(function(result) {{
+        if (result.ok) {{
+          status.textContent = 'Triggered. Takes ~60-90s -- reload the page shortly.';
+        }} else {{
+          status.textContent = 'Trigger failed: ' + result.text;
+          btn.disabled = false;
+        }}
+      }}).catch(function() {{
+        status.textContent = 'Trigger failed (network error). Try again in a bit.';
         btn.disabled = false;
-      }}
-    }}).catch(function() {{
-      status.textContent = 'Trigger failed (network error). Try again in a bit.';
-      btn.disabled = false;
-    }});
+      }});
     setTimeout(function() {{ btn.disabled = false; }}, 90000);
   }}
 
