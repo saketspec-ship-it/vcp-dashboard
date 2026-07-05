@@ -47,9 +47,9 @@
       <div id="visitor-counts">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span></div>
     </div>
   </div>
-  <div class="meta">54 matches &middot; generated 2026-07-06 03:36 IST &middot;
+  <div class="meta">54 matches &middot; generated 2026-07-05 22:10 IST &middot;
     scan logic: <a href="https://github.com/" target="_blank">wiki/strategies/vcp-screening-tools.md</a></div>
-  <div class="note">No changes since the last run (2026-07-06 02:11 IST) -- same list of matches.</div>
+  <div class="note">No changes since the last run (2026-07-05 22:00 IST) -- same list of matches.</div>
   <div class="note">Sorted by Flag (green &gt; amber &gt; red), then youngest-to-oldest by
     listing date within each flag group. Fundamentals (Sector, P/E, ROCE, ROE, financials, shareholding) are
     scraped from screener.in and are best-effort -- some fields may show "-" for banks/NBFCs or newer
@@ -1235,9 +1235,7 @@
     btn.disabled = true;
     status.textContent = 'Triggering a full re-scan...';
     // Routed through a small Cloudflare Worker that holds the real GitHub
-    // token server-side -- nothing secret is embedded in this page, unlike
-    // the first version of this button (see wiki/strategies/vcp-screening-tools.md
-    // for why that broke).
+    // token server-side -- nothing secret is embedded in this page.
     fetch('https://vcp-refresh-proxy.saket-spec.workers.dev/', { method: 'POST' })
       .then(function(r) { return r.text().then(function(t) { return {ok: r.ok, text: t}; }); })
       .then(function(result) {
