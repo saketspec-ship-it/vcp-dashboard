@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-06 05:33 IST",
-  "run_epoch": 1783296205.4624221,
+  "run_time": "2026-07-06 09:11 IST",
+  "run_epoch": 1783309312.8468804,
   "tickers": {
     "ROSSTECH": {
       "name": "Rossell Techsys Ltd",
@@ -100,6 +100,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "SILVERTUC": {
+      "name": "Silver Touch Technologies Ltd",
+      "sector": "Information Technology",
+      "close": 182.15,
+      "flag": "Trend",
+      "trend_template_score": "3/8"
+    },
     "THYROCARE": {
       "name": "Thyrocare Technologies Limited",
       "sector": "Healthcare",
@@ -125,6 +132,13 @@
       "name": "Motilal Oswal NASDAQ 100 ETF",
       "sector": null,
       "close": 332.78,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "DIACABS": {
+      "name": "Diamond Power Infrastructure Ltd",
+      "sector": "Capital Goods",
+      "close": 198.89,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -177,10 +191,10 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "MARKSANS": {
-      "name": "Marksans Pharma Limited",
-      "sector": "Healthcare",
-      "close": 264.45,
+    "RICOAUTO": {
+      "name": "Rico Auto Industries Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 137.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -254,20 +268,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "IIFLCAPS": {
-      "name": "IIFL Capital Services Ltd",
-      "sector": "Financial Services",
-      "close": 340.15,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "SILVERTUC": {
-      "name": "Silver Touch Technologies Ltd",
-      "sector": "Information Technology",
-      "close": 182.15,
-      "flag": "Watch",
-      "trend_template_score": "3/8"
-    },
     "FCL": {
       "name": "Fineotex Chemical Limited",
       "sector": "Chemicals",
@@ -279,13 +279,6 @@
       "name": "Triveni Turbine Limited",
       "sector": "Capital Goods",
       "close": 657.9,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "DIACABS": {
-      "name": "Diamond Power Infrastructure Ltd",
-      "sector": "Capital Goods",
-      "close": 198.89,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -310,10 +303,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "RICOAUTO": {
-      "name": "Rico Auto Industries Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 137.15,
+    "MARKSANS": {
+      "name": "Marksans Pharma Limited",
+      "sector": "Healthcare",
+      "close": 264.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -345,13 +338,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "ELGIEQUIP": {
-      "name": "Elgi Equipments Limited",
-      "sector": "Capital Goods",
-      "close": 578.55,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "NRBBEARING": {
       "name": "Nrb Bearing Limited",
       "sector": "Automobile and Auto Components",
@@ -373,10 +359,24 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "IIFLCAPS": {
+      "name": "IIFL Capital Services Ltd",
+      "sector": "Financial Services",
+      "close": 340.15,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
     "BANDHANBNK": {
       "name": "Bandhan Bank Ltd",
       "sector": "Financial Services",
       "close": 200.6,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "ELGIEQUIP": {
+      "name": "Elgi Equipments Limited",
+      "sector": "Capital Goods",
+      "close": 578.55,
       "flag": "Away",
       "trend_template_score": "7/8"
     }
