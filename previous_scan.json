@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-06 16:56 IST",
-  "run_epoch": 1783337164.4804595,
+  "run_time": "2026-07-06 20:20 IST",
+  "run_epoch": 1783349414.730075,
   "tickers": {
     "SAILIFE": {
       "name": "Sai Life Sciences Ltd",
@@ -19,7 +19,7 @@
     "RPEL": {
       "name": "Raghav Productivity Enhancers Ltd",
       "sector": "Capital Goods",
-      "close": 1292.7,
+      "close": 1295.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -54,7 +54,7 @@
     "SPORTKING": {
       "name": "Sportking India Ltd",
       "sector": "Textiles",
-      "close": 184.44,
+      "close": 184.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -229,14 +229,14 @@
     "SANSTAR": {
       "name": "Sanstar Ltd",
       "sector": "Fast Moving Consumer Goods",
-      "close": 118,
+      "close": 116.67,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "DEEDEV": {
       "name": "DEE Development Engineers Ltd",
       "sector": "Capital Goods",
-      "close": 672,
+      "close": 675.75,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -369,7 +369,7 @@
     "NRBBEARING": {
       "name": "Nrb Bearing Limited",
       "sector": "Automobile and Auto Components",
-      "close": 419.5,
+      "close": 419.35,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -411,7 +411,14 @@
     "IIFLCAPS": {
       "name": "IIFL Capital Services Ltd",
       "sector": "Financial Services",
-      "close": 339.75,
+      "close": 338.95,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "ONEPOINT": {
+      "name": "One Point One Solutions Ltd",
+      "sector": "Services",
+      "close": 58.48,
       "flag": "Away",
       "trend_template_score": "7/8"
     },
