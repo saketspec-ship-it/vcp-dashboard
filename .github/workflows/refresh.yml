@@ -8,6 +8,18 @@ on:
     - cron: "40 3 * * *"   # 09:10 IST
     - cron: "30 10 * * *"  # 16:00 IST
 
+# Repeated Refresh-button clicks (each page load resets the button's
+# disabled state, so a visitor re-clicking within a minute or two fires a
+# genuinely new repository_dispatch) were causing overlapping runs that
+# raced each other on `git push` -- the loser failed outright with a
+# non-fast-forward rejection and the whole run aborted, including the
+# private-repo watchlist sync. This serializes runs instead of letting them
+# race: a second trigger while one is in flight queues behind it rather
+# than running in parallel.
+concurrency:
+  group: vcp-refresh
+  cancel-in-progress: false
+
 permissions:
   contents: write
   pages: write
@@ -36,6 +48,7 @@ jobs:
           git add index.html details previous_scan.json .nojekyll
           git diff --staged --quiet && echo "Nothing to commit (cooldown skip or no changes)" && exit 0
           git commit -m "VCP dashboard refresh (Actions) $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
           git push
 
       - name: Trigger Pages rebuild
@@ -68,4 +81,5 @@ jobs:
           git add watchlist.md
           git diff --staged --quiet && echo "No watchlist changes" && exit 0
           git commit -m "Watchlist sync $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
           git push
