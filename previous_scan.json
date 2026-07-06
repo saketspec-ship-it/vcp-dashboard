@@ -1,60 +1,67 @@
 {
-  "run_time": "2026-07-06 09:42 IST",
-  "run_epoch": 1783311121.816171,
+  "run_time": "2026-07-06 09:50 IST",
+  "run_epoch": 1783311619.3314683,
   "tickers": {
     "JNKINDIA": {
       "name": "JNK India Ltd",
       "sector": "Capital Goods",
-      "close": 490.25,
+      "close": 494.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AZAD": {
       "name": "Azad Engineering Ltd",
       "sector": "Capital Goods",
-      "close": 2205,
+      "close": 2196.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "HONASA": {
       "name": "Honasa Consumer Ltd",
       "sector": "Fast Moving Consumer Goods",
-      "close": 471.25,
+      "close": 469.3,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SKYGOLD": {
+      "name": "Sky Gold Ltd",
+      "sector": "Consumer Durables",
+      "close": 570.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "EQUITASBNK": {
       "name": "Equitas Small Finance Bank Ltd",
       "sector": "Financial Services",
-      "close": 76.27,
+      "close": 76.38,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ANGELONE": {
       "name": "Angel One Ltd",
       "sector": "Financial Services",
-      "close": 349.05,
+      "close": 348.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ADANIGREEN": {
       "name": "Adani Green Energy Ltd",
       "sector": "Power",
-      "close": 1566.2,
+      "close": 1563.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "BANDHANBNK": {
       "name": "Bandhan Bank Ltd",
       "sector": "Financial Services",
-      "close": 204.18,
+      "close": 205.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ADANIENSOL": {
       "name": "Adani Energy Solutions Ltd",
       "sector": "Power",
-      "close": 1588.8,
+      "close": 1594.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -68,119 +75,140 @@
     "HSCL": {
       "name": "Himadri Speciality Chemical Limited",
       "sector": "Chemicals",
-      "close": 690.9,
+      "close": 691.35,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PARACABLES": {
       "name": "Paramount Communications Limited",
       "sector": "Capital Goods",
-      "close": 74,
+      "close": 73.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SPARC": {
       "name": "Sun Pharma Advanced Research Company Limited",
       "sector": "Healthcare",
-      "close": 247.28,
+      "close": 251.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "HFCL": {
       "name": "HFCL Ltd",
       "sector": "Telecommunication",
-      "close": 212.99,
+      "close": 213.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RAIN": {
       "name": "Rain Industries Limited",
       "sector": "Chemicals",
-      "close": 191.67,
+      "close": 192.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MARKSANS": {
       "name": "Marksans Pharma Limited",
       "sector": "Healthcare",
-      "close": 269,
+      "close": 267.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RICOAUTO": {
       "name": "Rico Auto Industries Limited",
       "sector": "Automobile and Auto Components",
-      "close": 137.7,
+      "close": 137.28,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SOTL": {
       "name": "Savita Oil Technologies Limited",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 611.65,
+      "close": 605.45,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "JAYBARMARU": {
+      "name": "Jay Bharat Maruti Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 174.89,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SOUTHBANK": {
       "name": "The South Indian Bank Limited",
       "sector": "Financial Services",
-      "close": 46.66,
+      "close": 46.52,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "CEIGALL": {
-      "name": "Ceigall India Ltd",
-      "sector": "Construction",
-      "close": 362.2,
+    "SYRMA": {
+      "name": "Syrma SGS Technology Ltd",
+      "sector": "Capital Goods",
+      "close": 1394.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RBLBANK": {
       "name": "Rbl Bank Limited",
       "sector": "Financial Services",
-      "close": 359.85,
+      "close": 360.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "FCL": {
       "name": "Fineotex Chemical Limited",
       "sector": "Chemicals",
-      "close": 38.39,
+      "close": 38.33,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "WOCKPHARMA": {
+      "name": "Wockhardt Limited",
+      "sector": "Healthcare",
+      "close": 1918,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "GVPIL": {
       "name": "GE Power India Ltd",
       "sector": "Capital Goods",
-      "close": 882,
+      "close": 877.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MOTHERSON": {
       "name": "Samvardhana Motherson International Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 147.07,
+      "close": 146.82,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "IFCI": {
       "name": "Ifci Limited",
       "sector": "Financial Services",
-      "close": 75,
+      "close": 74.97,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "STLTECH": {
       "name": "Sterlite Technologies Limited",
       "sector": "Telecommunication",
-      "close": 567,
+      "close": 558.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "CEIGALL": {
+      "name": "Ceigall India Ltd",
+      "sector": "Construction",
+      "close": 360.05,
+      "flag": "Away",
+      "trend_template_score": "7/8"
     },
     "NETWEB": {
       "name": "Netweb Technologies India Ltd",
       "sector": "Information Technology",
-      "close": 4354.9,
+      "close": 4364.1,
       "flag": "Away",
       "trend_template_score": "7/8"
     }
