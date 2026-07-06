@@ -46,3 +46,26 @@ jobs:
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/pages/builds"
+
+      - name: Checkout private wiki-sync repo
+        uses: actions/checkout@v4
+        with:
+          repository: saketspec-ship-it/trading-wiki-cloud
+          token: ${{ secrets.WIKI_SYNC_TOKEN }}
+          path: wiki-sync
+
+      - name: Sync watchlist.md to private repo
+        continue-on-error: true
+        run: |
+          if [ ! -f watchlist_export.md ]; then
+            echo "No watchlist_export.md this run (cooldown skip) -- nothing to sync."
+            exit 0
+          fi
+          cp watchlist_export.md wiki-sync/watchlist.md
+          cd wiki-sync
+          git config user.email "vcp-dashboard-bot@users.noreply.github.com"
+          git config user.name "VCP Dashboard Bot"
+          git add watchlist.md
+          git diff --staged --quiet && echo "No watchlist changes" && exit 0
+          git commit -m "Watchlist sync $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
