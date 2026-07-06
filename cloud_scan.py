@@ -220,8 +220,8 @@ def fetch_screener_data(nsecode):
         "sector": None, "stock_pe": None, "roce": None, "roe": None,
         "net_profit_qtr": [], "net_profit_year": [], "opm_pct_year": [],
         "reserves_year": [], "cash_from_ops_year": [], "debtor_days": None,
-        "shareholding_promoter": None, "shareholding_fii": None,
-        "shareholding_dii": None, "shareholding_public": None,
+        "shareholding_promoter": [], "shareholding_fii": [],
+        "shareholding_dii": [], "shareholding_public": [],
     }
 
     html = _screener_get(f"https://www.screener.in/company/{nsecode}/consolidated/")
@@ -311,8 +311,7 @@ def fetch_screener_data(nsecode):
             row = _screener_row_values(sh, label)
             if row:
                 vals = [v for v in (_screener_num(x) for x in row[1:]) if v is not None]
-                if vals:
-                    data[key] = vals[-1]
+                data[key] = vals[-4:]
     except Exception:
         pass
 
@@ -395,7 +394,7 @@ def enrich_symbol(nsecode, nifty_return_pct):
     result = {
         "prev_close": None, "rsi14": None, "all_time_high": None, "all_time_low": None,
         "trend_template_score": None, "trend_template_criteria": None, "listing_age_days": None,
-        "buy_sell_flag": None,
+        "buy_sell_flag": None, "listing_price": None,
     }
 
     try:
@@ -432,9 +431,13 @@ def enrich_symbol(nsecode, nifty_return_pct):
             "?interval=1mo&range=max&events=split"
         )
         r = json.loads(body)["chart"]["result"][0]
-        _, highs, lows = _extract_ohlc(r)
+        closes, highs, lows = _extract_ohlc(r)
         result["all_time_high"] = max(highs) if highs else None
         result["all_time_low"] = min(lows) if lows else None
+        # Earliest available monthly close as a listing-price proxy -- Yahoo's
+        # history for a stock only starts around its listing date, so the
+        # first bar's close is a reasonable stand-in for the actual IPO price.
+        result["listing_price"] = closes[0] if closes else None
     except Exception:
         pass
 
@@ -623,6 +626,30 @@ def _fmt_age(days):
     if years == 0:
         return f"{months}m"
     return f"{years}y {months}m"
+
+
+def _last(series):
+    """Most recent value of a last-4-periods series -- what column sorting
+    keys off of, since sorting a pipe-joined multi-value cell only makes
+    sense against its latest figure."""
+    return series[-1] if series else None
+
+
+def _sort_attr(value):
+    """HTML attribute value for a data-sort cell -- empty string (not "None")
+    so the client-side sort JS can detect and always push missing values to
+    the end regardless of sort direction."""
+    return "" if value is None else value
+
+
+def _tt_score_num(r):
+    score = r.get("trend_template_score")
+    if not score:
+        return None
+    try:
+        return int(score.split("/")[0])
+    except (ValueError, IndexError):
+        return None
 
 
 def _trend_template_commentary(r):
@@ -907,12 +934,13 @@ def _export_row(r):
         "Reserves Year last 4 (Cr)": series(s.get("reserves_year")),
         "CFO Year last 4 (Cr)": series(s.get("cash_from_ops_year")),
         "Debtor Days": s.get("debtor_days"),
-        "Promoter %": s.get("shareholding_promoter"),
-        "FII %": s.get("shareholding_fii"),
-        "DII %": s.get("shareholding_dii"),
-        "Public %": s.get("shareholding_public"),
+        "Promoter % last 4 Qtr": series(s.get("shareholding_promoter")),
+        "FII % last 4 Qtr": series(s.get("shareholding_fii")),
+        "DII % last 4 Qtr": series(s.get("shareholding_dii")),
+        "Public % last 4 Qtr": series(s.get("shareholding_public")),
         "Trend Template": _link_cell(r.get("trend_template_score") or "", detail_url),
         "Listing Age (days)": r.get("listing_age_days"),
+        "Listing Price": r.get("listing_price"),
     }
 
 
@@ -920,34 +948,33 @@ def build_dashboard_html(enriched_matches, changes=None):
     rows = []
     for r in enriched_matches:
         s = r.get("screener") or {}
-        shareholding = " / ".join(
-            f"{label} {_fmt(val, '%')}" for label, val in [
-                ("P", s.get("shareholding_promoter")), ("FII", s.get("shareholding_fii")),
-                ("DII", s.get("shareholding_dii")), ("Pub", s.get("shareholding_public")),
-            ] if val is not None
-        ) or "-"
+        flag = r.get("buy_sell_flag")
 
         rows.append(f"""
         <tr>
-          <td class="sticky-col"><a href="https://chartink.com/stocks/{r['nsecode'].lower()}.html" target="_blank">{r['nsecode']}</a></td>
-          <td><a href="https://www.screener.in/company/{r['nsecode']}/consolidated/" target="_blank">{r.get('name', '')}</a></td>
-          <td>{s.get('sector') or '-'}</td>
-          <td class="num">{_fmt(r.get('close'))}</td>
-          <td class="num">{_fmt_pair(r.get('all_time_high'), r.get('all_time_low'))}</td>
-          <td class="num">{_fmt(s.get('stock_pe'))}</td>
-          <td class="flag-cell">{f'<span class="flag {r["buy_sell_flag"]["css"]}">{r["buy_sell_flag"]["flag"]}</span>' if r.get('buy_sell_flag') else '-'}</td>
-          <td class="num">{_fmt(s.get('roce'), '%')}</td>
-          <td class="num">{_fmt(s.get('roe'), '%')}</td>
-          <td class="num">{_fmt(r.get('rsi14'))}</td>
-          <td class="num">{_fmt_series(s.get('net_profit_qtr'))}</td>
-          <td class="num">{_fmt_series(s.get('net_profit_year'))}</td>
-          <td class="num">{_fmt_series(s.get('opm_pct_year'), '%')}</td>
-          <td class="num">{_fmt_series(s.get('reserves_year'))}</td>
-          <td class="num">{_fmt_series(s.get('cash_from_ops_year'))}</td>
-          <td class="num">{_fmt(s.get('debtor_days'))}</td>
-          <td>{shareholding}</td>
-          <td class="num"><a href="details/{r['nsecode']}.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">{r.get('trend_template_score') or '-'}</a></td>
-          <td class="num">{_fmt_age(r.get('listing_age_days'))}</td>
+          <td class="sticky-col" data-sort="{r['nsecode']}"><a href="https://chartink.com/stocks/{r['nsecode'].lower()}.html" target="_blank">{r['nsecode']}</a></td>
+          <td data-sort="{r.get('name', '')}"><a href="https://www.screener.in/company/{r['nsecode']}/consolidated/" target="_blank">{r.get('name', '')}</a></td>
+          <td data-sort="{s.get('sector') or ''}">{s.get('sector') or '-'}</td>
+          <td class="num" data-sort="{_sort_attr(r.get('close'))}">{_fmt(r.get('close'))}</td>
+          <td class="num" data-sort="{_sort_attr(r.get('all_time_high'))}">{_fmt_pair(r.get('all_time_high'), r.get('all_time_low'))}</td>
+          <td class="num" data-sort="{_sort_attr(s.get('stock_pe'))}">{_fmt(s.get('stock_pe'))}</td>
+          <td class="flag-cell" data-sort="{_sort_attr(flag['priority'] if flag else None)}">{f'<span class="flag {flag["css"]}">{flag["flag"]}</span>' if flag else '-'}</td>
+          <td class="num" data-sort="{_sort_attr(s.get('roce'))}">{_fmt(s.get('roce'), '%')}</td>
+          <td class="num" data-sort="{_sort_attr(s.get('roe'))}">{_fmt(s.get('roe'), '%')}</td>
+          <td class="num" data-sort="{_sort_attr(r.get('rsi14'))}">{_fmt(r.get('rsi14'))}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('net_profit_qtr')))}">{_fmt_series(s.get('net_profit_qtr'))}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('net_profit_year')))}">{_fmt_series(s.get('net_profit_year'))}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('opm_pct_year')))}">{_fmt_series(s.get('opm_pct_year'), '%')}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('reserves_year')))}">{_fmt_series(s.get('reserves_year'))}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('cash_from_ops_year')))}">{_fmt_series(s.get('cash_from_ops_year'))}</td>
+          <td class="num" data-sort="{_sort_attr(s.get('debtor_days'))}">{_fmt(s.get('debtor_days'))}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('shareholding_promoter')))}">{_fmt_series(s.get('shareholding_promoter'), '%')}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('shareholding_fii')))}">{_fmt_series(s.get('shareholding_fii'), '%')}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('shareholding_dii')))}">{_fmt_series(s.get('shareholding_dii'), '%')}</td>
+          <td class="num" data-sort="{_sort_attr(_last(s.get('shareholding_public')))}">{_fmt_series(s.get('shareholding_public'), '%')}</td>
+          <td class="num" data-sort="{_sort_attr(_tt_score_num(r))}"><a href="details/{r['nsecode']}.html" target="_blank" title="Full criterion-by-criterion breakdown + commentary">{r.get('trend_template_score') or '-'}</a></td>
+          <td class="num" data-sort="{_sort_attr(r.get('listing_age_days'))}">{_fmt_age(r.get('listing_age_days'))}</td>
+          <td class="num" data-sort="{_sort_attr(r.get('listing_price'))}">{_fmt(r.get('listing_price'))}</td>
         </tr>""")
 
     return f"""<!DOCTYPE html>
@@ -963,7 +990,8 @@ def build_dashboard_html(enriched_matches, changes=None):
   th {{ background: #1a1d24; position: sticky; top: 0; cursor: default; font-weight: 600; }}
   thead tr.group-row th {{ text-align: center; font-size: 11px; color: #9aa0a6; background: #12141a;
                             border-bottom: 1px solid #2a2d34; top: 0; }}
-  thead tr.col-row th {{ top: 21px; }}
+  thead tr.col-row th {{ top: 21px; cursor: pointer; user-select: none; }}
+  thead tr.col-row th:hover {{ background: #22262f; }}
   .sticky-col {{ position: sticky; left: 0; background: #0f1117; z-index: 1; }}
   th.sticky-col {{ z-index: 3; }}
   .num {{ text-align: right; font-variant-numeric: tabular-nums; }}
@@ -1001,7 +1029,7 @@ def build_dashboard_html(enriched_matches, changes=None):
       <button id="csv-btn" onclick="downloadCsv()">&#8681; CSV</button>
       <button id="excel-btn" onclick="downloadExcel()">&#8681; Excel</button>
       <span id="refresh-status"></span>
-      <div id="visitor-counts" title="Counter data can take up to 4 hours to update -- a GoatCounter free-tier caching limit, not a bug">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span> <span style="opacity:0.6">(may lag up to 4h)</span></div>
+      <div id="visitor-counts" title="Counter data can take up to 4 hours to update -- a GoatCounter free-tier caching limit, not a bug">Visitors today: <span id="vc-today">-</span> &middot; All-time: <span id="vc-total">-</span> &middot; Downloads: <span id="vc-downloads">-</span> <span style="opacity:0.6">(may lag up to 4h)</span></div>
     </div>
   </div>
   <div class="meta">{len(enriched_matches)} matches &middot; generated {_ist_timestamp()} &middot;
@@ -1016,12 +1044,14 @@ def build_dashboard_html(enriched_matches, changes=None):
     <strong>Flag</strong>: Trend (green) = price above the 10-day MA (short-term strength); Watch (amber) =
     price between the 50-day and 10-day MA (pullback within an intact trend); Away (red) = price below the
     50-day MA (intermediate trend broken) -- a fast, mechanical read, not a substitute for the Trend
-    Template/VCP read next to it. Qtr/annual financial columns show up to the last 4 available periods,
-    oldest to newest, separated by "|" -- fewer than 4 for recently-listed stocks without that much
-    history. "Trend Template" = how many of the 8 criteria (price/50/150/200-day MA stack, 200-MA
-    uptrend, 52-week high/low proximity, relative strength) the stock passes -- click a score for the full
-    breakdown. Criterion 8 there is a crude proxy (beats Nifty 50's 3-month return), not a true percentile
-    RS rating, and not the same thing as the RSI(14) column here.</div>
+    Template/VCP read next to it. Qtr/annual financial and shareholding columns show up to the last 4
+    available periods, oldest to newest, separated by "|" -- fewer than 4 for recently-listed stocks
+    without that much history. "Trend Template" = how many of the 8 criteria (price/50/150/200-day MA
+    stack, 200-MA uptrend, 52-week high/low proximity, relative strength) the stock passes -- click a
+    score for the full breakdown. Criterion 8 there is a crude proxy (beats Nifty 50's 3-month return),
+    not a true percentile RS rating, and not the same thing as the RSI(14) column here. "Listing Price" is
+    the earliest available monthly close from Yahoo Finance -- a proxy for the IPO price, not the exact
+    day-1 figure. Click any column heading to sort (click again to reverse).</div>
   <div class="table-wrap">
   <table>
     <thead>
@@ -1033,19 +1063,33 @@ def build_dashboard_html(enriched_matches, changes=None):
         <th colspan="1">Profit, Qtr (&#8377;Cr)</th>
         <th colspan="4">Profit &amp; Financials, Annual (&#8377;Cr)</th>
         <th colspan="1">Efficiency</th>
-        <th colspan="1">Shareholding %</th>
-        <th colspan="2">VCP</th>
+        <th colspan="4">Shareholding % (last 4 Qtr)</th>
+        <th colspan="3">VCP</th>
       </tr>
       <tr class="col-row">
-        <th class="sticky-col">Symbol</th><th>Name</th><th>Sector</th>
-        <th>Close</th><th>ATH | ATL</th>
-        <th>Stock P/E</th><th>Flag</th>
-        <th>ROCE</th><th>ROE</th><th>RSI(14)</th>
-        <th>Net Profit (last 4 Qtr)</th>
-        <th>Net Profit (last 4 Yr)</th><th>OPM % (last 4 Yr)</th><th>Reserves (last 4 Yr)</th><th>CFO (last 4 Yr)</th>
-        <th>Debtor Days</th>
-        <th>Promoter / FII / DII / Public</th>
-        <th>Trend Template</th><th>Listed</th>
+        <th class="sticky-col" data-label="Symbol" onclick="sortTable(0,false)">Symbol</th>
+        <th data-label="Name" onclick="sortTable(1,false)">Name</th>
+        <th data-label="Sector" onclick="sortTable(2,false)">Sector</th>
+        <th data-label="Close" onclick="sortTable(3,true)">Close</th>
+        <th data-label="ATH | ATL" onclick="sortTable(4,true)">ATH | ATL</th>
+        <th data-label="Stock P/E" onclick="sortTable(5,true)">Stock P/E</th>
+        <th data-label="Flag" onclick="sortTable(6,true)">Flag</th>
+        <th data-label="ROCE" onclick="sortTable(7,true)">ROCE</th>
+        <th data-label="ROE" onclick="sortTable(8,true)">ROE</th>
+        <th data-label="RSI(14)" onclick="sortTable(9,true)">RSI(14)</th>
+        <th data-label="Net Profit (last 4 Qtr)" onclick="sortTable(10,true)">Net Profit (last 4 Qtr)</th>
+        <th data-label="Net Profit (last 4 Yr)" onclick="sortTable(11,true)">Net Profit (last 4 Yr)</th>
+        <th data-label="OPM % (last 4 Yr)" onclick="sortTable(12,true)">OPM % (last 4 Yr)</th>
+        <th data-label="Reserves (last 4 Yr)" onclick="sortTable(13,true)">Reserves (last 4 Yr)</th>
+        <th data-label="CFO (last 4 Yr)" onclick="sortTable(14,true)">CFO (last 4 Yr)</th>
+        <th data-label="Debtor Days" onclick="sortTable(15,true)">Debtor Days</th>
+        <th data-label="Promoter %" onclick="sortTable(16,true)">Promoter %</th>
+        <th data-label="FII %" onclick="sortTable(17,true)">FII %</th>
+        <th data-label="DII %" onclick="sortTable(18,true)">DII %</th>
+        <th data-label="Public %" onclick="sortTable(19,true)">Public %</th>
+        <th data-label="Trend Template" onclick="sortTable(20,true)">Trend Template</th>
+        <th data-label="Listed" onclick="sortTable(21,true)">Listed</th>
+        <th data-label="Listing Price" onclick="sortTable(22,true)">Listing Price</th>
       </tr>
     </thead>
     <tbody>{"".join(rows)}</tbody>
@@ -1079,7 +1123,17 @@ def build_dashboard_html(enriched_matches, changes=None):
     URL.revokeObjectURL(url);
   }}
 
+  // Same GoatCounter account as the visitor counter below, just a distinct
+  // tracked path -- lets the "Downloads" figure count CSV and Excel clicks
+  // together without a second analytics account.
+  function recordDownload() {{
+    var img = new Image();
+    img.src = 'https://{GOATCOUNTER_SITE}.goatcounter.com/count?p=' + encodeURIComponent('/download') +
+      '&t=' + encodeURIComponent(document.title + ' download');
+  }}
+
   function downloadCsv() {{
+    recordDownload();
     var data = JSON.parse(document.getElementById('scan-data').textContent);
     if (!data.length) return;
     var headers = Object.keys(data[0]);
@@ -1101,6 +1155,7 @@ def build_dashboard_html(enriched_matches, changes=None):
   // Excel/Google Sheets with no format-mismatch warning, and (unlike CSV)
   // supports real per-cell hyperlinks via ss:HRef.
   function downloadExcel() {{
+    recordDownload();
     var data = JSON.parse(document.getElementById('scan-data').textContent);
     if (!data.length) return;
     var headers = Object.keys(data[0]);
@@ -1133,6 +1188,35 @@ def build_dashboard_html(enriched_matches, changes=None):
       '</Workbook>';
     var blob = new Blob([xml], {{type: 'application/vnd.ms-excel;charset=utf-8;'}});
     triggerDownload(blob, 'vcp_scan_' + new Date().toISOString().slice(0, 10) + '.xls');
+  }}
+
+  // Click a column heading to sort the table by it (client-side only, reads
+  // the data-sort attribute set on each td at build time rather than
+  // parsing the displayed/formatted text -- see _sort_attr in the Python
+  // build script). Click the same heading again to reverse direction.
+  // Missing values (empty data-sort) always sort last regardless of
+  // direction, not just whichever end the comparator would otherwise put
+  // them at.
+  var _sortState = {{ col: -1, dir: 1 }};
+  function sortTable(colIndex, isNumeric) {{
+    var tbody = document.querySelector('.table-wrap table tbody');
+    var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+    _sortState.dir = (_sortState.col === colIndex) ? -_sortState.dir : 1;
+    _sortState.col = colIndex;
+    rows.sort(function(a, b) {{
+      var av = a.children[colIndex].getAttribute('data-sort') || '';
+      var bv = b.children[colIndex].getAttribute('data-sort') || '';
+      if (av === '' && bv === '') return 0;
+      if (av === '') return 1;
+      if (bv === '') return -1;
+      if (isNumeric) {{ return (parseFloat(av) - parseFloat(bv)) * _sortState.dir; }}
+      return av.localeCompare(bv) * _sortState.dir;
+    }});
+    rows.forEach(function(row) {{ tbody.appendChild(row); }});
+    document.querySelectorAll('.col-row th').forEach(function(th, i) {{
+      var label = th.getAttribute('data-label');
+      th.textContent = label + (i === colIndex ? (_sortState.dir === 1 ? ' ▲' : ' ▼') : '');
+    }});
   }}
 
   function triggerRefresh() {{
@@ -1179,6 +1263,7 @@ def build_dashboard_html(enriched_matches, changes=None):
     record('/daily/' + today);
     showCount('/lifetime', 'vc-total');
     showCount('/daily/' + today, 'vc-today');
+    showCount('/download', 'vc-downloads');
   }})();
   </script>
 </body></html>"""
