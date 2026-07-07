@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-07 18:11 IST",
-  "run_epoch": 1783428116.0465147,
+  "run_time": "2026-07-07 23:08 IST",
+  "run_epoch": 1783445910.1662025,
   "tickers": {
     "HONASA": {
       "name": "Honasa Consumer Ltd",
@@ -152,7 +152,7 @@
     "SANSTAR": {
       "name": "Sanstar Ltd",
       "sector": "Fast Moving Consumer Goods",
-      "close": 120.3,
+      "close": 121.27,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -187,7 +187,7 @@
     "PASUPTAC": {
       "name": "Pasupati Acrylon Ltd",
       "sector": "Chemicals",
-      "close": 61.87,
+      "close": 61.71,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -201,7 +201,7 @@
     "CARYSIL": {
       "name": "Carysil Ltd",
       "sector": "Consumer Durables",
-      "close": 1118.5,
+      "close": 1118.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -285,7 +285,7 @@
     "MANINDS": {
       "name": "Man Industries (india) Limited",
       "sector": "Capital Goods",
-      "close": 560,
+      "close": 562.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -313,7 +313,7 @@
     "THERMAX": {
       "name": "Thermax Limited",
       "sector": "Capital Goods",
-      "close": 4720.5,
+      "close": 4709,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -327,7 +327,7 @@
     "BBOX": {
       "name": "Black Box Ltd",
       "sector": "Information Technology",
-      "close": 949.9,
+      "close": 955.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -348,7 +348,7 @@
     "GAEL": {
       "name": "Gujarat Ambuja Exports Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 161.9,
+      "close": 161.32,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
