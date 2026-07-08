@@ -1,11 +1,11 @@
 {
-  "run_time": "2026-07-08 16:51 IST",
-  "run_epoch": 1783509691.7136605,
+  "run_time": "2026-07-08 21:55 IST",
+  "run_epoch": 1783527908.8091843,
   "tickers": {
     "RPEL": {
       "name": "Raghav Productivity Enhancers Ltd",
       "sector": "Capital Goods",
-      "close": 1300,
+      "close": 1289.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -40,7 +40,7 @@
     "SJS": {
       "name": "S J S Enterprises Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 2218,
+      "close": 2216.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -89,14 +89,14 @@
     "ANTELOPUS": {
       "name": "Antelopus Selan Energy Ltd",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 815.95,
+      "close": 823.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SALSTEEL": {
       "name": "SAL Steel",
       "sector": "Metals &amp; Mining",
-      "close": 59.4,
+      "close": 59.28,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -180,7 +180,7 @@
     "UNIPARTS": {
       "name": "Uniparts India Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 640.1,
+      "close": 641.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -208,7 +208,7 @@
     "SANSERA": {
       "name": "Sansera Engineering Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 3102,
+      "close": 3096.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -292,7 +292,7 @@
     "WANBURY": {
       "name": "Wanbury Limited",
       "sector": "Healthcare",
-      "close": 271.55,
+      "close": 270.85,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
@@ -306,7 +306,7 @@
     "NITINSPIN": {
       "name": "Nitin Spinners Limited",
       "sector": "Textiles",
-      "close": 542.5,
+      "close": 541.55,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -398,13 +398,6 @@
       "name": "Black Box Ltd",
       "sector": "Information Technology",
       "close": 931.7,
-      "flag": "Away",
-      "trend_template_score": "7/8"
-    },
-    "GAEL": {
-      "name": "Gujarat Ambuja Exports Limited",
-      "sector": "Fast Moving Consumer Goods",
-      "close": 160,
       "flag": "Away",
       "trend_template_score": "7/8"
     }
