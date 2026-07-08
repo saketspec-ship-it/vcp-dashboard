@@ -1,7 +1,14 @@
 {
-  "run_time": "2026-07-07 23:08 IST",
-  "run_epoch": 1783445910.1662025,
+  "run_time": "2026-07-08 08:43 IST",
+  "run_epoch": 1783480437.8742769,
   "tickers": {
+    "JNKINDIA": {
+      "name": "JNK India Ltd",
+      "sector": "Capital Goods",
+      "close": 488.45,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "HONASA": {
       "name": "Honasa Consumer Ltd",
       "sector": "Fast Moving Consumer Goods",
@@ -37,6 +44,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "SANSERA": {
+      "name": "Sansera Engineering Ltd",
+      "sector": "Automobile and Auto Components",
+      "close": 3151.5,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "EQUITASBNK": {
       "name": "Equitas Small Finance Bank Ltd",
       "sector": "Financial Services",
@@ -58,10 +72,10 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "BLISSGVS": {
-      "name": "Bliss Gvs Pharma Limited",
+    "THYROCARE": {
+      "name": "Thyrocare Technologies Limited",
       "sector": "Healthcare",
-      "close": 511.8,
+      "close": 532,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -76,6 +90,13 @@
       "name": "Solar Industries India Limited",
       "sector": "Chemicals",
       "close": 18268,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "KERNEX": {
+      "name": "Kernex Microsystems (india) Limited",
+      "sector": "Services",
+      "close": 2190.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -107,6 +128,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "BBOX": {
+      "name": "Black Box Ltd",
+      "sector": "Information Technology",
+      "close": 955.2,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "SOTL": {
       "name": "Savita Oil Technologies Limited",
       "sector": "Oil, Gas &amp; Consumable Fuels",
@@ -128,6 +156,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "GAEL": {
+      "name": "Gujarat Ambuja Exports Limited",
+      "sector": "Fast Moving Consumer Goods",
+      "close": 161.32,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "FEDERALBNK": {
       "name": "The Federal Bank  Limited",
       "sector": "Financial Services",
@@ -142,13 +177,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "CEIGALL": {
-      "name": "Ceigall India Ltd",
-      "sector": "Construction",
-      "close": 379.05,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "SANSTAR": {
       "name": "Sanstar Ltd",
       "sector": "Fast Moving Consumer Goods",
@@ -160,13 +188,6 @@
       "name": "DEE Development Engineers Ltd",
       "sector": "Capital Goods",
       "close": 647.1,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "JNKINDIA": {
-      "name": "JNK India Ltd",
-      "sector": "Capital Goods",
-      "close": 488.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -188,13 +209,6 @@
       "name": "Pasupati Acrylon Ltd",
       "sector": "Chemicals",
       "close": 61.71,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "SANSERA": {
-      "name": "Sansera Engineering Ltd",
-      "sector": "Automobile and Auto Components",
-      "close": 3151.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -240,13 +254,6 @@
       "flag": "Watch",
       "trend_template_score": "3/8"
     },
-    "THYROCARE": {
-      "name": "Thyrocare Technologies Limited",
-      "sector": "Healthcare",
-      "close": 532,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "FCL": {
       "name": "Fineotex Chemical Limited",
       "sector": "Chemicals",
@@ -261,6 +268,13 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "BLISSGVS": {
+      "name": "Bliss Gvs Pharma Limited",
+      "sector": "Healthcare",
+      "close": 511.8,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": "Capital Goods",
@@ -272,13 +286,6 @@
       "name": "Paramount Communications Limited",
       "sector": "Capital Goods",
       "close": 68.41,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "KERNEX": {
-      "name": "Kernex Microsystems (india) Limited",
-      "sector": "Services",
-      "close": 2190.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -324,13 +331,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "BBOX": {
-      "name": "Black Box Ltd",
-      "sector": "Information Technology",
-      "close": 955.2,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "GVPIL": {
       "name": "GE Power India Ltd",
       "sector": "Capital Goods",
@@ -342,13 +342,6 @@
       "name": "Elgi Equipments Limited",
       "sector": "Capital Goods",
       "close": 589,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "GAEL": {
-      "name": "Gujarat Ambuja Exports Limited",
-      "sector": "Fast Moving Consumer Goods",
-      "close": 161.32,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -373,12 +366,19 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "CEIGALL": {
+      "name": "Ceigall India Ltd",
+      "sector": "Construction",
+      "close": 379.05,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
     "KTKBANK": {
       "name": "The Karnataka Bank Limited",
       "sector": "Financial Services",
       "close": 265.75,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
+      "flag": "Away",
+      "trend_template_score": "7/8"
     }
   }
 }
