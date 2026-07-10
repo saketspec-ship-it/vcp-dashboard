@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-10 18:10 IST",
-  "run_epoch": 1783687213.465254,
+  "run_time": "2026-07-10 22:53 IST",
+  "run_epoch": 1783704213.4558353,
   "tickers": {
     "SENORES": {
       "name": "Senores Pharmaceuticals Ltd",
@@ -19,7 +19,7 @@
     "ROSSTECH": {
       "name": "Rossell Techsys Ltd",
       "sector": "Capital Goods",
-      "close": 1003.25,
+      "close": 1011.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -75,7 +75,7 @@
     "TMB": {
       "name": "Tamilnad Mercantile Bank Ltd",
       "sector": "Financial Services",
-      "close": 807,
+      "close": 801.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -166,7 +166,7 @@
     "WANBURY": {
       "name": "Wanbury Limited",
       "sector": "Healthcare",
-      "close": 302,
+      "close": 297.85,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -285,7 +285,7 @@
     "CEIGALL": {
       "name": "Ceigall India Ltd",
       "sector": "Construction",
-      "close": 365.6,
+      "close": 365.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -418,7 +418,7 @@
     "MOCAPITAL": {
       "name": "Motilal Oswal Nifty Capital Market ETF",
       "sector": null,
-      "close": 55.37,
+      "close": 55.7,
       "flag": null,
       "trend_template_score": "0/0"
     }
