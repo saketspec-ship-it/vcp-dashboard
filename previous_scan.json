@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-13 18:16 IST",
-  "run_epoch": 1783946760.3389661,
+  "run_time": "2026-07-13 23:08 IST",
+  "run_epoch": 1783964334.2437916,
   "tickers": {
     "SENORES": {
       "name": "Senores Pharmaceuticals Ltd",
@@ -33,7 +33,7 @@
     "JNKINDIA": {
       "name": "JNK India Ltd",
       "sector": "Capital Goods",
-      "close": 508,
+      "close": 504.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -138,7 +138,7 @@
     "AUBANK": {
       "name": "AU Small Finance Bank Ltd",
       "sector": "Financial Services",
-      "close": 1061,
+      "close": 1060.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -229,21 +229,21 @@
     "CCL": {
       "name": "Ccl Products (india) Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 1229.2,
+      "close": 1229.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "UNIVCABLES": {
       "name": "Universal Cables Limited",
       "sector": "Capital Goods",
-      "close": 1166,
+      "close": 1164.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "VTL": {
       "name": "Vardhman Textiles Limited",
       "sector": "Textiles",
-      "close": 650,
+      "close": 650.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -265,13 +265,6 @@
       "name": "Jindal Saw Limited",
       "sector": "Capital Goods",
       "close": 268.6,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "CUB": {
-      "name": "City Union Bank Limited",
-      "sector": "Financial Services",
-      "close": 225.13,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -369,7 +362,7 @@
     "SMSPHARMA": {
       "name": "Sms Pharmaceuticals Limited",
       "sector": "Healthcare",
-      "close": 398.1,
+      "close": 399.8,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
@@ -481,7 +474,7 @@
     "MOCAPITAL": {
       "name": "Motilal Oswal Nifty Capital Market ETF",
       "sector": null,
-      "close": 55.62,
+      "close": 55.59,
       "flag": null,
       "trend_template_score": "0/0"
     }
