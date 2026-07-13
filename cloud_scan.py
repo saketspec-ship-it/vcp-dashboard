@@ -217,7 +217,7 @@ def fetch_screener_data(nsecode):
     screener.in's own layout differs a bit for banks/NBFCs, so missing
     fields for some stocks is expected, not a bug to chase."""
     data = {
-        "sector": None, "stock_pe": None, "roce": None, "roe": None,
+        "sector": None, "stock_pe": None, "market_cap": None, "roce": None, "roe": None,
         "net_profit_qtr": [], "net_profit_year": [], "opm_pct_year": [],
         "reserves_year": [], "cash_from_ops_year": [], "debtor_days": None,
         "shareholding_promoter": [], "shareholding_fii": [],
@@ -246,7 +246,8 @@ def fetch_screener_data(nsecode):
     except Exception:
         pass
 
-    for key, label in [("stock_pe", "Stock P/E"), ("roce", "ROCE"), ("roe", "ROE")]:
+    for key, label in [("stock_pe", "Stock P/E"), ("market_cap", "Market Cap"),
+                       ("roce", "ROCE"), ("roe", "ROE")]:
         try:
             data[key] = _screener_ratio(html, label)
         except Exception:
@@ -652,6 +653,58 @@ def _tt_score_num(r):
         return None
 
 
+# Single source of truth for the column list, in display order. Drives both
+# the sortable/filterable header cells (_build_col_headers) and keeps the
+# header aligned with the <td> order in build_dashboard_html's row loop --
+# if you add/reorder a column, change it here AND in that row loop.
+#   sort_numeric  -- sort by parseFloat(data-sort) vs. string localeCompare
+#   filter_numeric -- filter box accepts >N/<N/N-M numeric operators vs. a
+#                     plain substring match (Flag/Listed sort numerically but
+#                     read more naturally as a text filter: "Trend", "2y").
+COLUMNS = [
+    ("Symbol", False, False),
+    ("Name", False, False),
+    ("Sector", False, False),
+    ("Close", True, True),
+    ("ATH | ATL", True, True),
+    ("Stock P/E", True, True),
+    ("Market Cap (&#8377;Cr)", True, True),
+    ("Flag", True, False),
+    ("ROCE", True, True),
+    ("ROE", True, True),
+    ("RSI(14)", True, True),
+    ("Net Profit (last 4 Qtr)", True, True),
+    ("Net Profit (last 4 Yr)", True, True),
+    ("OPM % (last 4 Yr)", True, True),
+    ("Reserves (last 4 Yr)", True, True),
+    ("CFO (last 4 Yr)", True, True),
+    ("Debtor Days", True, True),
+    ("Promoter %", True, True),
+    ("FII %", True, True),
+    ("DII %", True, True),
+    ("Public %", True, True),
+    ("Trend Template", True, True),
+    ("Listed", True, False),
+    ("Listing Price", True, True),
+]
+
+
+def _build_col_headers():
+    """Renders the col-row header cells: each is a clickable sort label
+    stacked over a per-column filter input. Generated (not hand-written) so
+    the 24 columns stay consistent and the sort indices can't drift."""
+    cells = []
+    for i, (label, sort_num, filt_num) in enumerate(COLUMNS):
+        cls = ' class="sticky-col"' if i == 0 else ""
+        cells.append(
+            f'<th{cls}><div class="th-inner">'
+            f'<span class="th-label" data-label="{label}" onclick="sortTable({i},{str(sort_num).lower()})">{label}</span>'
+            f'<input class="col-filter" data-col="{i}" data-num="{1 if filt_num else 0}" '
+            f'oninput="applyFilters()" placeholder="filter"></div></th>'
+        )
+    return "\n        ".join(cells)
+
+
 def _trend_template_commentary(r):
     """Templated Minervini-VCP-flavored commentary, driven by which criteria
     actually passed/failed plus RSI and all-time-high context. Not a
@@ -924,6 +977,7 @@ def _export_row(r):
         "ATH": r.get("all_time_high"),
         "ATL": r.get("all_time_low"),
         "Stock P/E": s.get("stock_pe"),
+        "Market Cap (Cr)": s.get("market_cap"),
         "Flag": flag.get("flag", ""),
         "ROCE %": s.get("roce"),
         "ROE %": s.get("roe"),
@@ -958,6 +1012,7 @@ def build_dashboard_html(enriched_matches, changes=None):
           <td class="num" data-sort="{_sort_attr(r.get('close'))}">{_fmt(r.get('close'))}</td>
           <td class="num" data-sort="{_sort_attr(r.get('all_time_high'))}">{_fmt_pair(r.get('all_time_high'), r.get('all_time_low'))}</td>
           <td class="num" data-sort="{_sort_attr(s.get('stock_pe'))}">{_fmt(s.get('stock_pe'))}</td>
+          <td class="num" data-sort="{_sort_attr(s.get('market_cap'))}">{_fmt(s.get('market_cap'))}</td>
           <td class="flag-cell" data-sort="{_sort_attr(flag['priority'] if flag else None)}">{f'<span class="flag {flag["css"]}">{flag["flag"]}</span>' if flag else '-'}</td>
           <td class="num" data-sort="{_sort_attr(s.get('roce'))}">{_fmt(s.get('roce'), '%')}</td>
           <td class="num" data-sort="{_sort_attr(s.get('roe'))}">{_fmt(s.get('roe'), '%')}</td>
@@ -990,8 +1045,18 @@ def build_dashboard_html(enriched_matches, changes=None):
   th {{ background: #1a1d24; position: sticky; top: 0; cursor: default; font-weight: 600; }}
   thead tr.group-row th {{ text-align: center; font-size: 11px; color: #9aa0a6; background: #12141a;
                             border-bottom: 1px solid #2a2d34; top: 0; }}
-  thead tr.col-row th {{ top: 21px; cursor: pointer; user-select: none; }}
-  thead tr.col-row th:hover {{ background: #22262f; }}
+  thead tr.col-row th {{ top: 21px; vertical-align: top; }}
+  .th-inner {{ display: flex; flex-direction: column; gap: 4px; }}
+  .th-label {{ cursor: pointer; user-select: none; }}
+  .th-label:hover {{ color: #fff; }}
+  .col-filter {{ background: #0f1117; color: #e6e6e6; border: 1px solid #2a2d34;
+                 border-radius: 3px; padding: 2px 5px; font-size: 11px; width: 100%;
+                 min-width: 62px; box-sizing: border-box; font-weight: 400; }}
+  .col-filter:focus {{ outline: none; border-color: #8ab4f8; }}
+  #filter-status {{ display: none; font-size: 12px; color: #9aa0a6; margin-bottom: 8px; }}
+  #filter-status button {{ background: #1a1d24; color: #e6e6e6; border: 1px solid #2a2d34;
+                           border-radius: 4px; padding: 2px 10px; font-size: 12px; cursor: pointer; margin-left: 8px; }}
+  #filter-status button:hover {{ background: #22262f; }}
   .sticky-col {{ position: sticky; left: 0; background: #0f1117; z-index: 1; }}
   th.sticky-col {{ z-index: 3; }}
   .num {{ text-align: right; font-variant-numeric: tabular-nums; }}
@@ -1051,14 +1116,19 @@ def build_dashboard_html(enriched_matches, changes=None):
     score for the full breakdown. Criterion 8 there is a crude proxy (beats Nifty 50's 3-month return),
     not a true percentile RS rating, and not the same thing as the RSI(14) column here. "Listing Price" is
     the earliest available monthly close from Yahoo Finance -- a proxy for the IPO price, not the exact
-    day-1 figure. Click any column heading to sort (click again to reverse).</div>
+    day-1 figure. "Market Cap" is in &#8377; Crore, from screener.in. Click any column heading's label to
+    sort (click again to reverse); type in the box under any heading to filter -- text is a substring
+    match, and on numeric columns you can also use operators like <code>&gt;100</code>, <code>&lt;50</code>,
+    <code>&gt;=20</code>, or a range like <code>50-200</code>. Filters combine (a row must match all of
+    them).</div>
+  <div id="filter-status"><span id="filter-count"></span><button onclick="clearFilters()">clear filters</button></div>
   <div class="table-wrap">
   <table>
     <thead>
       <tr class="group-row">
         <th colspan="3">Identity</th>
         <th colspan="2">Price (&#8377;)</th>
-        <th colspan="2">Valuation / Signal</th>
+        <th colspan="3">Valuation / Signal</th>
         <th colspan="3">Quality</th>
         <th colspan="1">Profit, Qtr (&#8377;Cr)</th>
         <th colspan="4">Profit &amp; Financials, Annual (&#8377;Cr)</th>
@@ -1067,29 +1137,7 @@ def build_dashboard_html(enriched_matches, changes=None):
         <th colspan="3">VCP</th>
       </tr>
       <tr class="col-row">
-        <th class="sticky-col" data-label="Symbol" onclick="sortTable(0,false)">Symbol</th>
-        <th data-label="Name" onclick="sortTable(1,false)">Name</th>
-        <th data-label="Sector" onclick="sortTable(2,false)">Sector</th>
-        <th data-label="Close" onclick="sortTable(3,true)">Close</th>
-        <th data-label="ATH | ATL" onclick="sortTable(4,true)">ATH | ATL</th>
-        <th data-label="Stock P/E" onclick="sortTable(5,true)">Stock P/E</th>
-        <th data-label="Flag" onclick="sortTable(6,true)">Flag</th>
-        <th data-label="ROCE" onclick="sortTable(7,true)">ROCE</th>
-        <th data-label="ROE" onclick="sortTable(8,true)">ROE</th>
-        <th data-label="RSI(14)" onclick="sortTable(9,true)">RSI(14)</th>
-        <th data-label="Net Profit (last 4 Qtr)" onclick="sortTable(10,true)">Net Profit (last 4 Qtr)</th>
-        <th data-label="Net Profit (last 4 Yr)" onclick="sortTable(11,true)">Net Profit (last 4 Yr)</th>
-        <th data-label="OPM % (last 4 Yr)" onclick="sortTable(12,true)">OPM % (last 4 Yr)</th>
-        <th data-label="Reserves (last 4 Yr)" onclick="sortTable(13,true)">Reserves (last 4 Yr)</th>
-        <th data-label="CFO (last 4 Yr)" onclick="sortTable(14,true)">CFO (last 4 Yr)</th>
-        <th data-label="Debtor Days" onclick="sortTable(15,true)">Debtor Days</th>
-        <th data-label="Promoter %" onclick="sortTable(16,true)">Promoter %</th>
-        <th data-label="FII %" onclick="sortTable(17,true)">FII %</th>
-        <th data-label="DII %" onclick="sortTable(18,true)">DII %</th>
-        <th data-label="Public %" onclick="sortTable(19,true)">Public %</th>
-        <th data-label="Trend Template" onclick="sortTable(20,true)">Trend Template</th>
-        <th data-label="Listed" onclick="sortTable(21,true)">Listed</th>
-        <th data-label="Listing Price" onclick="sortTable(22,true)">Listing Price</th>
+        {_build_col_headers()}
       </tr>
     </thead>
     <tbody>{"".join(rows)}</tbody>
@@ -1212,11 +1260,75 @@ def build_dashboard_html(enriched_matches, changes=None):
       if (isNumeric) {{ return (parseFloat(av) - parseFloat(bv)) * _sortState.dir; }}
       return av.localeCompare(bv) * _sortState.dir;
     }});
+    // Reorder the rows, but only update the arrow on the label span -- the
+    // filter <input> lives in the same header cell and must not be wiped.
     rows.forEach(function(row) {{ tbody.appendChild(row); }});
-    document.querySelectorAll('.col-row th').forEach(function(th, i) {{
-      var label = th.getAttribute('data-label');
-      th.textContent = label + (i === colIndex ? (_sortState.dir === 1 ? ' ▲' : ' ▼') : '');
+    document.querySelectorAll('.col-row .th-label').forEach(function(lbl, i) {{
+      var label = lbl.getAttribute('data-label');
+      lbl.textContent = label + (i === colIndex ? (_sortState.dir === 1 ? ' ▲' : ' ▼') : '');
     }});
+  }}
+
+  // Per-column filtering: each header has a filter box. A row shows only if
+  // it matches every active filter (AND). Text is a case-insensitive
+  // substring match on the displayed cell; numeric columns (data-num=1)
+  // additionally accept >N / >=N / <N / <=N / =N and N-M range operators,
+  // compared against the cell's raw data-sort value (missing values never
+  // satisfy a numeric operator). Sorting and filtering are independent --
+  // sorting reorders, filtering only hides.
+  function matchFilter(query, numeric, raw, text) {{
+    if (numeric) {{
+      var range = query.match(/^(-?\\d+\\.?\\d*)\\s*-\\s*(-?\\d+\\.?\\d*)$/);
+      if (range) {{
+        if (raw === '') return false;
+        var x = parseFloat(raw);
+        return x >= parseFloat(range[1]) && x <= parseFloat(range[2]);
+      }}
+      var cmp = query.match(/^(>=|<=|>|<|=)\\s*(-?\\d+\\.?\\d*)$/);
+      if (cmp) {{
+        if (raw === '') return false;
+        var v = parseFloat(raw), n = parseFloat(cmp[2]);
+        if (cmp[1] === '>') return v > n;
+        if (cmp[1] === '<') return v < n;
+        if (cmp[1] === '>=') return v >= n;
+        if (cmp[1] === '<=') return v <= n;
+        return v === n;
+      }}
+    }}
+    return text.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+  }}
+
+  function applyFilters() {{
+    var inputs = document.querySelectorAll('.col-filter');
+    var active = [];
+    inputs.forEach(function(inp) {{
+      var q = inp.value.trim();
+      if (q) active.push({{ col: parseInt(inp.getAttribute('data-col'), 10),
+                            num: inp.getAttribute('data-num') === '1', q: q }});
+    }});
+    var rows = document.querySelectorAll('.table-wrap table tbody tr');
+    var shown = 0;
+    rows.forEach(function(row) {{
+      var visible = active.every(function(f) {{
+        var cell = row.children[f.col];
+        var raw = cell.getAttribute('data-sort') || '';
+        return matchFilter(f.q, f.num, raw, cell.textContent.trim());
+      }});
+      row.style.display = visible ? '' : 'none';
+      if (visible) shown++;
+    }});
+    var status = document.getElementById('filter-status');
+    if (active.length) {{
+      status.style.display = 'block';
+      document.getElementById('filter-count').textContent = 'Showing ' + shown + ' of ' + rows.length + ' -- ';
+    }} else {{
+      status.style.display = 'none';
+    }}
+  }}
+
+  function clearFilters() {{
+    document.querySelectorAll('.col-filter').forEach(function(inp) {{ inp.value = ''; }});
+    applyFilters();
   }}
 
   function triggerRefresh() {{
