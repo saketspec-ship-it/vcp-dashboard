@@ -690,17 +690,18 @@ COLUMNS = [
 
 
 def _build_col_headers():
-    """Renders the col-row header cells: each is a clickable sort label
-    stacked over a per-column filter input. Generated (not hand-written) so
-    the 24 columns stay consistent and the sort indices can't drift."""
+    """Renders the col-row header cells: each is a clickable sort label plus
+    an Excel-style filter button (opens a searchable checklist dropdown of
+    the column's distinct values). Generated (not hand-written) so the 24
+    columns stay consistent and the sort indices can't drift."""
     cells = []
     for i, (label, sort_num, filt_num) in enumerate(COLUMNS):
         cls = ' class="sticky-col"' if i == 0 else ""
         cells.append(
             f'<th{cls}><div class="th-inner">'
             f'<span class="th-label" data-label="{label}" onclick="sortTable({i},{str(sort_num).lower()})">{label}</span>'
-            f'<input class="col-filter" data-col="{i}" data-num="{1 if filt_num else 0}" '
-            f'oninput="applyFilters()" placeholder="filter"></div></th>'
+            f'<button class="filter-btn" data-col="{i}" data-num="{1 if filt_num else 0}" '
+            f'onclick="openFilter(event,this)" title="Filter">&#9662;</button></div></th>'
         )
     return "\n        ".join(cells)
 
@@ -1046,13 +1047,29 @@ def build_dashboard_html(enriched_matches, changes=None):
   thead tr.group-row th {{ text-align: center; font-size: 11px; color: #9aa0a6; background: #12141a;
                             border-bottom: 1px solid #2a2d34; top: 0; }}
   thead tr.col-row th {{ top: 21px; vertical-align: top; }}
-  .th-inner {{ display: flex; flex-direction: column; gap: 4px; }}
+  .th-inner {{ display: flex; align-items: center; gap: 6px; justify-content: space-between; }}
   .th-label {{ cursor: pointer; user-select: none; }}
   .th-label:hover {{ color: #fff; }}
-  .col-filter {{ background: #0f1117; color: #e6e6e6; border: 1px solid #2a2d34;
-                 border-radius: 3px; padding: 2px 5px; font-size: 11px; width: 100%;
-                 min-width: 62px; box-sizing: border-box; font-weight: 400; }}
-  .col-filter:focus {{ outline: none; border-color: #8ab4f8; }}
+  .filter-btn {{ background: none; border: 1px solid #2a2d34; color: #9aa0a6; border-radius: 3px;
+                 cursor: pointer; font-size: 9px; padding: 0 4px; line-height: 16px; font-weight: 400; flex: 0 0 auto; }}
+  .filter-btn:hover {{ background: #22262f; color: #e6e6e6; }}
+  .filter-btn.active {{ background: #1b3a24; color: #4caf50; border-color: #2e5a3a; }}
+  #filter-pop {{ display: none; position: fixed; z-index: 50; background: #1a1d24; border: 1px solid #2a2d34;
+                 border-radius: 6px; padding: 8px; width: 230px; box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+                 font-weight: 400; font-size: 12px; }}
+  #filter-pop input[type=text] {{ width: 100%; box-sizing: border-box; background: #0f1117; color: #e6e6e6;
+                 border: 1px solid #2a2d34; border-radius: 3px; padding: 3px 6px; font-size: 12px; margin-bottom: 6px; }}
+  #filter-pop input[type=text]:focus {{ outline: none; border-color: #8ab4f8; }}
+  .fp-hint {{ font-size: 10px; color: #9aa0a6; margin: -2px 0 8px; }}
+  #fp-list {{ max-height: 200px; overflow-y: auto; margin: 4px 0; border-top: 1px solid #2a2d34;
+              border-bottom: 1px solid #2a2d34; padding: 4px 0; }}
+  .fp-item, .fp-all {{ display: flex; align-items: center; gap: 6px; padding: 2px; cursor: pointer; white-space: nowrap; }}
+  .fp-item:hover {{ background: #22262f; }}
+  .fp-all {{ font-weight: 600; }}
+  .fp-actions {{ display: flex; gap: 6px; margin-top: 6px; }}
+  .fp-actions button {{ flex: 1; background: #0f1117; color: #e6e6e6; border: 1px solid #2a2d34;
+                        border-radius: 3px; padding: 4px; font-size: 12px; cursor: pointer; }}
+  .fp-actions button:hover {{ background: #22262f; }}
   #filter-status {{ display: none; font-size: 12px; color: #9aa0a6; margin-bottom: 8px; }}
   #filter-status button {{ background: #1a1d24; color: #e6e6e6; border: 1px solid #2a2d34;
                            border-radius: 4px; padding: 2px 10px; font-size: 12px; cursor: pointer; margin-left: 8px; }}
@@ -1116,12 +1133,12 @@ def build_dashboard_html(enriched_matches, changes=None):
     score for the full breakdown. Criterion 8 there is a crude proxy (beats Nifty 50's 3-month return),
     not a true percentile RS rating, and not the same thing as the RSI(14) column here. "Listing Price" is
     the earliest available monthly close from Yahoo Finance -- a proxy for the IPO price, not the exact
-    day-1 figure. "Market Cap" is in &#8377; Crore, from screener.in. Click any column heading's label to
-    sort (click again to reverse); type in the box under any heading to filter -- text is a substring
-    match, and on numeric columns you can also use operators like <code>&gt;100</code>, <code>&lt;50</code>,
-    <code>&gt;=20</code>, or a range like <code>50-200</code>. Filters combine (a row must match all of
-    them).</div>
-  <div id="filter-status"><span id="filter-count"></span><button onclick="clearFilters()">clear filters</button></div>
+    day-1 figure. "Market Cap" is in &#8377; Crore, from screener.in. Click a column heading's label to
+    sort (click again to reverse). Click the <strong>&#9662;</strong> button on any heading for an
+    Excel-style filter: a searchable checklist of that column's values (tick only the ones you want);
+    numeric columns also offer a "Number filter" box for conditions like <code>&gt;100</code> or a range
+    <code>50-200</code>. Filters on different columns combine (a row must pass all of them).</div>
+  <div id="filter-status"><span id="filter-count"></span><button onclick="clearFilters()">clear all filters</button></div>
   <div class="table-wrap">
   <table>
     <thead>
@@ -1142,6 +1159,20 @@ def build_dashboard_html(enriched_matches, changes=None):
     </thead>
     <tbody>{"".join(rows)}</tbody>
   </table>
+  </div>
+  <div id="filter-pop">
+    <div id="fp-num" style="display:none">
+      <input type="text" id="fp-expr" placeholder="Number filter, e.g. &gt;100 or 50-200">
+      <div class="fp-hint">Leave blank to use the checklist below.</div>
+    </div>
+    <input type="text" id="fp-search" placeholder="Search values&hellip;" oninput="fpRenderList()">
+    <label class="fp-all"><input type="checkbox" id="fp-all" onchange="fpToggleAll()"> (Select all)</label>
+    <div id="fp-list"></div>
+    <div class="fp-actions">
+      <button onclick="fpApply()">OK</button>
+      <button onclick="fpClearColumn()">Clear</button>
+      <button onclick="fpClose()">Cancel</button>
+    </div>
   </div>
   <div class="footer">
     <p><a href="https://github.com/saketspec-ship-it/vcp-dashboard/blob/main/BUILD.md" target="_blank">How this dashboard was built</a> -- a step-by-step writeup of the full pipeline (Chartink scan, Yahoo Finance/screener.in enrichment, GitHub Pages hosting, Telegram bot, GitHub Actions + Cloudflare Worker for the public Refresh button, GoatCounter visitor count).</p>
@@ -1269,56 +1300,155 @@ def build_dashboard_html(enriched_matches, changes=None):
     }});
   }}
 
-  // Per-column filtering: each header has a filter box. A row shows only if
-  // it matches every active filter (AND). Text is a case-insensitive
-  // substring match on the displayed cell; numeric columns (data-num=1)
-  // additionally accept >N / >=N / <N / <=N / =N and N-M range operators,
-  // compared against the cell's raw data-sort value (missing values never
-  // satisfy a numeric operator). Sorting and filtering are independent --
-  // sorting reorders, filtering only hides.
-  function matchFilter(query, numeric, raw, text) {{
-    if (numeric) {{
-      var range = query.match(/^(-?\\d+\\.?\\d*)\\s*-\\s*(-?\\d+\\.?\\d*)$/);
-      if (range) {{
-        if (raw === '') return false;
-        var x = parseFloat(raw);
-        return x >= parseFloat(range[1]) && x <= parseFloat(range[2]);
-      }}
-      var cmp = query.match(/^(>=|<=|>|<|=)\\s*(-?\\d+\\.?\\d*)$/);
-      if (cmp) {{
-        if (raw === '') return false;
-        var v = parseFloat(raw), n = parseFloat(cmp[2]);
-        if (cmp[1] === '>') return v > n;
-        if (cmp[1] === '<') return v < n;
-        if (cmp[1] === '>=') return v >= n;
-        if (cmp[1] === '<=') return v <= n;
-        return v === n;
-      }}
+  // Excel-style per-column filtering. Each column heading has a ▾ button
+  // that opens a dropdown: a searchable checklist of the column's distinct
+  // displayed values (tick the ones to keep), plus -- for numeric columns --
+  // a "Number filter" box that accepts >N / >=N / <N / <=N / =N or an N-M
+  // range and, when filled, overrides the checklist for that column. Active
+  // column filters combine with AND. Everything is client-side; sorting and
+  // filtering are independent (sorting reorders, filtering only hides rows).
+  var columnFilters = {{}};  // colIndex(int) -> {{type:'set', values:[...]}} | {{type:'expr', q}}
+  var fpCol = -1, fpNum = false, fpValues = [], fpChecked = {{}};
+
+  function matchExpr(query, raw) {{
+    if (raw === '') return false;
+    var range = query.match(/^(-?\\d+\\.?\\d*)\\s*-\\s*(-?\\d+\\.?\\d*)$/);
+    if (range) {{ var x = parseFloat(raw); return x >= parseFloat(range[1]) && x <= parseFloat(range[2]); }}
+    var cmp = query.match(/^(>=|<=|>|<|=)\\s*(-?\\d+\\.?\\d*)$/);
+    if (cmp) {{
+      var v = parseFloat(raw), n = parseFloat(cmp[2]);
+      if (cmp[1] === '>') return v > n;
+      if (cmp[1] === '<') return v < n;
+      if (cmp[1] === '>=') return v >= n;
+      if (cmp[1] === '<=') return v <= n;
+      return v === n;
     }}
-    return text.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+    return false;  // unparseable expr -> matches nothing, so the box visibly does something
   }}
 
-  function applyFilters() {{
-    var inputs = document.querySelectorAll('.col-filter');
-    var active = [];
-    inputs.forEach(function(inp) {{
-      var q = inp.value.trim();
-      if (q) active.push({{ col: parseInt(inp.getAttribute('data-col'), 10),
-                            num: inp.getAttribute('data-num') === '1', q: q }});
+  function distinctValues(col) {{
+    var seen = {{}}, out = [];
+    document.querySelectorAll('.table-wrap table tbody tr').forEach(function(r) {{
+      var t = r.children[col].textContent.trim();
+      if (!(t in seen)) {{ seen[t] = 1; out.push(t); }}
     }});
+    return out;
+  }}
+
+  function fpLabel(v) {{ return (v === '-' || v === '') ? '(Blanks)' : v; }}
+
+  function openFilter(ev, btn) {{
+    ev.stopPropagation();
+    fpCol = parseInt(btn.getAttribute('data-col'), 10);
+    fpNum = btn.getAttribute('data-num') === '1';
+    fpValues = distinctValues(fpCol);
+    if (fpNum) {{
+      fpValues.sort(function(a, b) {{
+        var na = parseFloat(a.replace(/,/g, '').replace(/[^0-9.\\-].*$/, ''));
+        var nb = parseFloat(b.replace(/,/g, '').replace(/[^0-9.\\-].*$/, ''));
+        if (isNaN(na)) return 1; if (isNaN(nb)) return -1;
+        return na - nb;
+      }});
+    }} else {{
+      fpValues.sort(function(a, b) {{ return a.localeCompare(b); }});
+    }}
+    var existing = columnFilters[fpCol];
+    fpChecked = {{}};
+    if (existing && existing.type === 'set') {{
+      existing.values.forEach(function(v) {{ fpChecked[v] = 1; }});
+    }} else {{
+      fpValues.forEach(function(v) {{ fpChecked[v] = 1; }});
+    }}
+    document.getElementById('fp-num').style.display = fpNum ? 'block' : 'none';
+    document.getElementById('fp-expr').value = (existing && existing.type === 'expr') ? existing.q : '';
+    document.getElementById('fp-search').value = '';
+    fpRenderList();
+    var pop = document.getElementById('filter-pop');
+    pop.style.display = 'block';
+    var rect = btn.getBoundingClientRect();
+    var left = Math.min(rect.left, window.innerWidth - pop.offsetWidth - 12);
+    pop.style.left = Math.max(8, left) + 'px';
+    pop.style.top = Math.min(rect.bottom + 2, window.innerHeight - pop.offsetHeight - 12) + 'px';
+  }}
+
+  function fpVisibleValues() {{
+    var q = document.getElementById('fp-search').value.toLowerCase();
+    return fpValues.filter(function(v) {{ return fpLabel(v).toLowerCase().indexOf(q) !== -1; }});
+  }}
+
+  function fpRenderList() {{
+    var list = document.getElementById('fp-list');
+    list.innerHTML = '';
+    fpVisibleValues().forEach(function(v) {{
+      var lab = document.createElement('label');
+      lab.className = 'fp-item';
+      var cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.checked = !!fpChecked[v];
+      cb.onchange = function() {{ if (cb.checked) fpChecked[v] = 1; else delete fpChecked[v]; fpSyncAll(); }};
+      var span = document.createElement('span');
+      span.textContent = fpLabel(v);
+      lab.appendChild(cb); lab.appendChild(span);
+      list.appendChild(lab);
+    }});
+    fpSyncAll();
+  }}
+
+  function fpSyncAll() {{
+    var visible = fpVisibleValues();
+    var checkedCount = visible.filter(function(v) {{ return fpChecked[v]; }}).length;
+    var all = document.getElementById('fp-all');
+    all.checked = visible.length > 0 && checkedCount === visible.length;
+    all.indeterminate = checkedCount > 0 && checkedCount < visible.length;
+  }}
+
+  function fpToggleAll() {{
+    var check = document.getElementById('fp-all').checked;
+    fpVisibleValues().forEach(function(v) {{ if (check) fpChecked[v] = 1; else delete fpChecked[v]; }});
+    fpRenderList();
+  }}
+
+  function fpApply() {{
+    var expr = document.getElementById('fp-expr').value.trim();
+    if (fpNum && expr) {{
+      columnFilters[fpCol] = {{ type: 'expr', q: expr }};
+    }} else {{
+      var checked = fpValues.filter(function(v) {{ return fpChecked[v]; }});
+      if (checked.length >= fpValues.length) {{ delete columnFilters[fpCol]; }}
+      else {{ columnFilters[fpCol] = {{ type: 'set', values: checked }}; }}
+    }}
+    applyAllFilters();
+    fpClose();
+  }}
+
+  function fpClearColumn() {{
+    delete columnFilters[fpCol];
+    applyAllFilters();
+    fpClose();
+  }}
+
+  function fpClose() {{ document.getElementById('filter-pop').style.display = 'none'; fpCol = -1; }}
+
+  function applyAllFilters() {{
     var rows = document.querySelectorAll('.table-wrap table tbody tr');
+    var cols = Object.keys(columnFilters);
     var shown = 0;
     rows.forEach(function(row) {{
-      var visible = active.every(function(f) {{
-        var cell = row.children[f.col];
-        var raw = cell.getAttribute('data-sort') || '';
-        return matchFilter(f.q, f.num, raw, cell.textContent.trim());
+      var visible = cols.every(function(c) {{
+        var f = columnFilters[c];
+        var cell = row.children[parseInt(c, 10)];
+        if (f.type === 'expr') return matchExpr(f.q, cell.getAttribute('data-sort') || '');
+        return f.values.indexOf(cell.textContent.trim()) !== -1;
       }});
       row.style.display = visible ? '' : 'none';
       if (visible) shown++;
     }});
+    document.querySelectorAll('.filter-btn').forEach(function(b) {{
+      if (columnFilters[b.getAttribute('data-col')]) b.classList.add('active');
+      else b.classList.remove('active');
+    }});
     var status = document.getElementById('filter-status');
-    if (active.length) {{
+    if (cols.length) {{
       status.style.display = 'block';
       document.getElementById('filter-count').textContent = 'Showing ' + shown + ' of ' + rows.length + ' -- ';
     }} else {{
@@ -1326,10 +1456,18 @@ def build_dashboard_html(enriched_matches, changes=None):
     }}
   }}
 
-  function clearFilters() {{
-    document.querySelectorAll('.col-filter').forEach(function(inp) {{ inp.value = ''; }});
-    applyFilters();
-  }}
+  function clearFilters() {{ columnFilters = {{}}; applyAllFilters(); }}
+
+  // Close the dropdown when clicking elsewhere, scrolling the table, or resizing.
+  document.addEventListener('click', function(e) {{
+    var pop = document.getElementById('filter-pop');
+    if (pop.style.display === 'block' && !pop.contains(e.target)) fpClose();
+  }});
+  window.addEventListener('resize', fpClose);
+  document.addEventListener('DOMContentLoaded', function() {{
+    var wrap = document.querySelector('.table-wrap');
+    if (wrap) wrap.addEventListener('scroll', fpClose);
+  }});
 
   function triggerRefresh() {{
     var btn = document.getElementById('refresh-btn');
