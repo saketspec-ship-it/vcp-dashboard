@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-14 15:52 IST",
-  "run_epoch": 1784024569.3080125,
+  "run_time": "2026-07-14 21:28 IST",
+  "run_epoch": 1784044736.5657806,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -33,7 +33,7 @@
     "DEEDEV": {
       "name": "DEE Development Engineers Ltd",
       "sector": "Capital Goods",
-      "close": 687,
+      "close": 691.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -54,7 +54,7 @@
     "LLOYDSME": {
       "name": "Lloyds Metals & Energy Ltd",
       "sector": "Metals &amp; Mining",
-      "close": 1830,
+      "close": 1825.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -75,14 +75,14 @@
     "SANSERA": {
       "name": "Sansera Engineering Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 3249.9,
+      "close": 3238.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "VIJAYA": {
       "name": "Vijaya Diagnostic Centre Ltd",
       "sector": "Healthcare",
-      "close": 1375.2,
+      "close": 1382.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -103,7 +103,7 @@
     "NEOGEN": {
       "name": "Neogen Chemicals Ltd",
       "sector": "Chemicals",
-      "close": 2125,
+      "close": 2147.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -152,7 +152,7 @@
     "BLISSGVS": {
       "name": "Bliss Gvs Pharma Limited",
       "sector": "Healthcare",
-      "close": 521,
+      "close": 521.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -201,14 +201,14 @@
     "AARTIIND": {
       "name": "Aarti Industries Limited",
       "sector": "Chemicals",
-      "close": 482,
+      "close": 483.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RSWM": {
       "name": "Rswm Limited",
       "sector": "Textiles",
-      "close": 206,
+      "close": 206.68,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -236,7 +236,7 @@
     "ABSLAMC": {
       "name": "Aditya Birla Sun Life AMC Ltd",
       "sector": "Financial Services",
-      "close": 1144.9,
+      "close": 1143.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -257,14 +257,14 @@
     "CONFIPET": {
       "name": "Confidence Petroleum India Ltd",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 74.2,
+      "close": 73.62,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "AUBANK": {
       "name": "AU Small Finance Bank Ltd",
       "sector": "Financial Services",
-      "close": 1039,
+      "close": 1038.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -285,7 +285,7 @@
     "ADFFOODS": {
       "name": "Adf Foods Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 310.9,
+      "close": 312.55,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -299,28 +299,28 @@
     "SMSPHARMA": {
       "name": "Sms Pharmaceuticals Limited",
       "sector": "Healthcare",
-      "close": 398.15,
+      "close": 399.25,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "PARACABLES": {
       "name": "Paramount Communications Limited",
       "sector": "Capital Goods",
-      "close": 65.65,
+      "close": 65.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KERNEX": {
       "name": "Kernex Microsystems (india) Limited",
       "sector": "Services",
-      "close": 2183,
+      "close": 2192.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MANINDS": {
       "name": "Man Industries (india) Limited",
       "sector": "Capital Goods",
-      "close": 555.5,
+      "close": 556.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -355,14 +355,14 @@
     "VTL": {
       "name": "Vardhman Textiles Limited",
       "sector": "Textiles",
-      "close": 646,
+      "close": 643.55,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "NRBBEARING": {
       "name": "Nrb Bearing Limited",
       "sector": "Automobile and Auto Components",
-      "close": 420,
+      "close": 421.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -415,17 +415,10 @@
       "flag": "Away",
       "trend_template_score": "7/8"
     },
-    "ABB": {
-      "name": "Abb India Limited",
-      "sector": "Capital Goods",
-      "close": 6920,
-      "flag": "Away",
-      "trend_template_score": "7/8"
-    },
     "MOCAPITAL": {
       "name": "Motilal Oswal Nifty Capital Market ETF",
       "sector": null,
-      "close": 55.34,
+      "close": 55.13,
       "flag": null,
       "trend_template_score": "0/0"
     }
