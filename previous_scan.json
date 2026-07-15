@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-15 15:59 IST",
-  "run_epoch": 1784111357.0061855,
+  "run_time": "2026-07-15 16:43 IST",
+  "run_epoch": 1784113998.03617,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -26,7 +26,7 @@
     "ROSSTECH": {
       "name": "Rossell Techsys Ltd",
       "sector": "Capital Goods",
-      "close": 1005,
+      "close": 1000.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -159,7 +159,7 @@
     "SIS": {
       "name": "Security & Intelligence Services India",
       "sector": "Consumer Services",
-      "close": 439.4,
+      "close": 438.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -201,7 +201,7 @@
     "VISHNU": {
       "name": "Vishnu Chemicals Limited",
       "sector": "Chemicals",
-      "close": 625.8,
+      "close": 625.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -348,7 +348,7 @@
     "GROWWDEFNC": {
       "name": "Groww Nifty India Defence ETF",
       "sector": null,
-      "close": 93.99,
+      "close": 93.56,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -390,7 +390,7 @@
     "NAM-INDIA": {
       "name": "Nippon Life India Asset Management Ltd",
       "sector": "Financial Services",
-      "close": 1190.2,
+      "close": 1196.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
