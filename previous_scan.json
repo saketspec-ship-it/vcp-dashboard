@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-16 16:19 IST",
-  "run_epoch": 1784198966.024206,
+  "run_time": "2026-07-16 21:25 IST",
+  "run_epoch": 1784217319.2472863,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -40,7 +40,7 @@
     "RPEL": {
       "name": "Raghav Productivity Enhancers Ltd",
       "sector": "Capital Goods",
-      "close": 1310,
+      "close": 1303.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -89,7 +89,7 @@
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": "Textiles",
-      "close": 42.41,
+      "close": 42.23,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -229,7 +229,7 @@
     "SOTL": {
       "name": "Savita Oil Technologies Limited",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 580.6,
+      "close": 580.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -243,7 +243,7 @@
     "RSWM": {
       "name": "Rswm Limited",
       "sector": "Textiles",
-      "close": 214,
+      "close": 214.66,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -299,7 +299,7 @@
     "JTLIND": {
       "name": "JTL Industries Ltd",
       "sector": "Capital Goods",
-      "close": 77.49,
+      "close": 76.51,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -327,7 +327,7 @@
     "NAM-INDIA": {
       "name": "Nippon Life India Asset Management Ltd",
       "sector": "Financial Services",
-      "close": 1155,
+      "close": 1151.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -418,7 +418,7 @@
     "CCL": {
       "name": "Ccl Products (india) Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 1196,
+      "close": 1195.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
