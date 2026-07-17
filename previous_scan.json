@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-17 15:54 IST",
-  "run_epoch": 1784283847.7716448,
+  "run_time": "2026-07-17 20:35 IST",
+  "run_epoch": 1784300730.6064,
   "tickers": {
     "CARRARO": {
       "name": "CARRARO",
@@ -12,14 +12,14 @@
     "SAILIFE": {
       "name": "Sai Life Sciences Ltd",
       "sector": "Healthcare",
-      "close": 1270,
+      "close": 1272,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "INOXINDIA": {
       "name": "Inox India Ltd",
       "sector": "Capital Goods",
-      "close": 1985,
+      "close": 1980.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -89,7 +89,7 @@
     "APOLLOPIPE": {
       "name": "Apollo Pipes Ltd",
       "sector": "Capital Goods",
-      "close": 497,
+      "close": 499.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -103,14 +103,14 @@
     "AARVI": {
       "name": "Aarvi Encon Ltd",
       "sector": "Services",
-      "close": 147,
+      "close": 148.87,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PNBHOUSING": {
       "name": "Pnb Housing Finance Limited",
       "sector": "Financial Services",
-      "close": 1099.9,
+      "close": 1099.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -194,7 +194,7 @@
     "KTKBANK": {
       "name": "The Karnataka Bank Limited",
       "sector": "Financial Services",
-      "close": 273.4,
+      "close": 273.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -236,7 +236,7 @@
     "MODEFENCE": {
       "name": "Motilal Oswal Nifty India Defence ETF",
       "sector": null,
-      "close": 102.39,
+      "close": 102.41,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -271,7 +271,7 @@
     "UNIPARTS": {
       "name": "Uniparts India Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 678.55,
+      "close": 676,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -279,6 +279,13 @@
       "name": "Syrma SGS Technology Ltd",
       "sector": "Capital Goods",
       "close": 1359.1,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "JTLIND": {
+      "name": "JTL Industries Ltd",
+      "sector": "Capital Goods",
+      "close": 74.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -327,7 +334,7 @@
     "SIS": {
       "name": "Security & Intelligence Services India",
       "sector": "Consumer Services",
-      "close": 431.1,
+      "close": 433.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -362,7 +369,7 @@
     "ADFFOODS": {
       "name": "Adf Foods Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 299,
+      "close": 299.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -418,7 +425,7 @@
     "CCL": {
       "name": "Ccl Products (india) Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 1185,
+      "close": 1191.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -453,7 +460,7 @@
     "SOTL": {
       "name": "Savita Oil Technologies Limited",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 583,
+      "close": 580.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -485,17 +492,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "QPOWER": {
-      "name": "Quality Power Electrical Equipments Ltd",
-      "sector": "Capital Goods",
-      "close": 1169,
-      "flag": "Away",
-      "trend_template_score": "6/8"
-    },
     "ELGIEQUIP": {
       "name": "Elgi Equipments Limited",
       "sector": "Capital Goods",
-      "close": 581.8,
+      "close": 581.7,
       "flag": "Away",
       "trend_template_score": "7/8"
     }
