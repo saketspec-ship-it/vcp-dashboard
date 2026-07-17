@@ -1,501 +1,501 @@
 {
-  "run_time": "2026-07-16 21:25 IST",
-  "run_epoch": 1784217319.2472863,
+  "run_time": "2026-07-17 15:54 IST",
+  "run_epoch": 1784283847.7716448,
   "tickers": {
-    "BELRISE": {
-      "name": "Belrise Industries Ltd",
-      "sector": "Automobile and Auto Components",
-      "close": 230.91,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SENORES": {
-      "name": "Senores Pharmaceuticals Ltd",
-      "sector": "Healthcare",
-      "close": 1452.9,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "CARRARO": {
       "name": "CARRARO",
       "sector": "Automobile and Auto Components",
-      "close": 569.7,
+      "close": 567.55,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "ACMESOLAR": {
-      "name": "ACME Solar Holdings Ltd",
-      "sector": "Power",
-      "close": 394,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "KRN": {
-      "name": "KRN Heat Exchanger and Refrigeration Ltd",
-      "sector": "Capital Goods",
-      "close": 1290.6,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "RPEL": {
-      "name": "Raghav Productivity Enhancers Ltd",
-      "sector": "Capital Goods",
-      "close": 1303.4,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "AKUMS": {
-      "name": "Akums Drugs & Pharmaceuticals Ltd",
+    "SAILIFE": {
+      "name": "Sai Life Sciences Ltd",
       "sector": "Healthcare",
-      "close": 682.95,
+      "close": 1270,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "INOXINDIA": {
       "name": "Inox India Ltd",
       "sector": "Capital Goods",
-      "close": 1994.4,
+      "close": 1985,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RRKABEL": {
       "name": "R R Kabel Ltd",
       "sector": "Capital Goods",
-      "close": 2403.9,
+      "close": 2293.3,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "RATNAVEER": {
+      "name": "Ratnaveer Precision Engineering Ltd",
+      "sector": "Capital Goods",
+      "close": 180.66,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AVALON": {
       "name": "Avalon Technologies Ltd",
       "sector": "Capital Goods",
-      "close": 1767.6,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "TMB": {
-      "name": "Tamilnad Mercantile Bank Ltd",
-      "sector": "Financial Services",
-      "close": 797.5,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SYRMA": {
-      "name": "Syrma SGS Technology Ltd",
-      "sector": "Capital Goods",
-      "close": 1423.9,
+      "close": 1724,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": "Textiles",
-      "close": 42.23,
+      "close": 42.27,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ABSLAMC": {
+      "name": "Aditya Birla Sun Life AMC Ltd",
+      "sector": "Financial Services",
+      "close": 1150.6,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "MASPTOP50": {
+      "name": "Mirae Asset S&P 500 Top 50 ETF",
+      "sector": null,
+      "close": 80.54,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "GANESHBE": {
       "name": "Ganesh Benzoplast Ltd",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 107.44,
+      "close": 104.41,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "VIJAYA": {
-      "name": "Vijaya Diagnostic Centre Ltd",
-      "sector": "Healthcare",
-      "close": 1412.5,
+    "SBCL": {
+      "name": "Shivalik Bimetal Controls Ltd",
+      "sector": "Capital Goods",
+      "close": 737.35,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "CONFIPET": {
-      "name": "Confidence Petroleum India Ltd",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 75.53,
+    "ATALREAL": {
+      "name": "Atal Realtech Ltd",
+      "sector": "Realty",
+      "close": 30.36,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ADANIGREEN": {
-      "name": "Adani Green Energy Ltd",
-      "sector": "Power",
-      "close": 1543.7,
+    "APOLLOPIPE": {
+      "name": "Apollo Pipes Ltd",
+      "sector": "Capital Goods",
+      "close": 497,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ASTERDM": {
       "name": "Aster DM Healthcare Ltd",
       "sector": "Healthcare",
-      "close": 812.1,
+      "close": 819.9,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "AARVI": {
+      "name": "Aarvi Encon Ltd",
+      "sector": "Services",
+      "close": 147,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PNBHOUSING": {
       "name": "Pnb Housing Finance Limited",
       "sector": "Financial Services",
-      "close": 1098.9,
+      "close": 1099.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "LLOYDSENGG": {
       "name": "Lloyds Engineering Works Ltd",
       "sector": "Capital Goods",
-      "close": 88.59,
+      "close": 88.56,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MENONBE": {
       "name": "Menon Bearings Limited",
       "sector": "Automobile and Auto Components",
-      "close": 190.17,
+      "close": 199.67,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "FCL": {
       "name": "Fineotex Chemical Limited",
       "sector": "Chemicals",
-      "close": 38.35,
+      "close": 38.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MON100": {
       "name": "Motilal Oswal NASDAQ 100 ETF",
       "sector": null,
-      "close": 333.61,
+      "close": 332.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "BALAMINES": {
       "name": "Balaji Amines Limited",
       "sector": "Chemicals",
-      "close": 2371.8,
+      "close": 2289.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "HSCL": {
       "name": "Himadri Speciality Chemical Limited",
       "sector": "Chemicals",
-      "close": 722.35,
+      "close": 741.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "SOLARINDS": {
-      "name": "Solar Industries India Limited",
-      "sector": "Chemicals",
-      "close": 18400,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "APCOTEXIND": {
-      "name": "Apcotex Industries Limited",
-      "sector": "Capital Goods",
-      "close": 541.7,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "HFCL": {
-      "name": "HFCL Ltd",
-      "sector": "Telecommunication",
-      "close": 224.38,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "RAIN": {
-      "name": "Rain Industries Limited",
-      "sector": "Chemicals",
-      "close": 213.64,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "MARKSANS": {
-      "name": "Marksans Pharma Limited",
-      "sector": "Healthcare",
-      "close": 275.35,
+    "BHAGYANGR": {
+      "name": "Bhagyanagar India",
+      "sector": "Metals &amp; Mining",
+      "close": 401.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "WOCKPHARMA": {
       "name": "Wockhardt Limited",
       "sector": "Healthcare",
-      "close": 1876.4,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "CGPOWER": {
-      "name": "CG Power and Industrial Solutions Ltd",
-      "sector": "Capital Goods",
-      "close": 921.95,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SOTL": {
-      "name": "Savita Oil Technologies Limited",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 580.25,
+      "close": 1900.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AARTIIND": {
       "name": "Aarti Industries Limited",
       "sector": "Chemicals",
-      "close": 504.75,
+      "close": 493.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "RSWM": {
-      "name": "Rswm Limited",
-      "sector": "Textiles",
-      "close": 214.66,
+    "EPL": {
+      "name": "EPL Ltd",
+      "sector": "Capital Goods",
+      "close": 239.52,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MOTHERSON": {
       "name": "Samvardhana Motherson International Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 143.65,
+      "close": 144.17,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "KTKBANK": {
       "name": "The Karnataka Bank Limited",
       "sector": "Financial Services",
-      "close": 273.55,
+      "close": 273.4,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "EICHERMOT": {
+      "name": "Eicher Motors Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 7563.5,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "BHARATFORG": {
+      "name": "Bharat Forge Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 2190.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "KARURVYSYA": {
       "name": "Karur Vysya Bank Limited",
       "sector": "Financial Services",
-      "close": 304.15,
+      "close": 309.8,
       "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "BELRISE": {
+      "name": "Belrise Industries Ltd",
+      "sector": "Automobile and Auto Components",
+      "close": 226.91,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "SENORES": {
+      "name": "Senores Pharmaceuticals Ltd",
+      "sector": "Healthcare",
+      "close": 1405.1,
+      "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MODEFENCE": {
       "name": "Motilal Oswal Nifty India Defence ETF",
       "sector": null,
-      "close": 101.91,
+      "close": 102.39,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "AKUMS": {
+      "name": "Akums Drugs & Pharmaceuticals Ltd",
+      "sector": "Healthcare",
+      "close": 664.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "JNKINDIA": {
       "name": "JNK India Ltd",
       "sector": "Capital Goods",
-      "close": 496.85,
+      "close": 477.15,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RPTECH": {
       "name": "Rashi Peripherals Ltd",
       "sector": "Information Technology",
-      "close": 760.5,
+      "close": 734.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "IDEAFORGE": {
-      "name": "Ideaforge Technology Ltd",
-      "sector": "Capital Goods",
-      "close": 853.05,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "JTLIND": {
-      "name": "JTL Industries Ltd",
-      "sector": "Capital Goods",
-      "close": 76.51,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "ABSLAMC": {
-      "name": "Aditya Birla Sun Life AMC Ltd",
+    "MUFIN": {
+      "name": "Mufin Green Finance Ltd",
       "sector": "Financial Services",
-      "close": 1132.1,
+      "close": 129.26,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "UNIPARTS": {
+      "name": "Uniparts India Ltd",
+      "sector": "Automobile and Auto Components",
+      "close": 678.55,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "SYRMA": {
+      "name": "Syrma SGS Technology Ltd",
+      "sector": "Capital Goods",
+      "close": 1359.1,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "STARHEALTH": {
+      "name": "Star Health & Allied Insurance Company Ltd",
+      "sector": "Financial Services",
+      "close": 582.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PARAS": {
       "name": "Paras Defence and Space Technologies Ltd",
       "sector": "Capital Goods",
-      "close": 1197,
+      "close": 1176.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "SBCL": {
-      "name": "Shivalik Bimetal Controls Ltd",
-      "sector": "Capital Goods",
-      "close": 722.4,
+    "EQUITASBNK": {
+      "name": "Equitas Small Finance Bank Ltd",
+      "sector": "Financial Services",
+      "close": 77.72,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "CONFIPET": {
+      "name": "Confidence Petroleum India Ltd",
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 73.12,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "NAM-INDIA": {
       "name": "Nippon Life India Asset Management Ltd",
       "sector": "Financial Services",
-      "close": 1151.5,
+      "close": 1186.5,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "ABCAPITAL": {
+      "name": "Aditya Birla Capital Ltd",
+      "sector": "Financial Services",
+      "close": 401.55,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "SIS": {
+      "name": "Security & Intelligence Services India",
+      "sector": "Consumer Services",
+      "close": 431.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "AUBANK": {
       "name": "AU Small Finance Bank Ltd",
       "sector": "Financial Services",
-      "close": 1035.1,
+      "close": 1030.2,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "ZENTEC": {
       "name": "Zen Technologies Limited",
       "sector": "Capital Goods",
-      "close": 1809.6,
+      "close": 1769.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "SCHNEIDER": {
-      "name": "Schneider Electric Infrastructure Limited",
-      "sector": "Capital Goods",
-      "close": 1326.8,
+    "MAYURUNIQ": {
+      "name": "Mayur Uniquoters Ltd",
+      "sector": "Consumer Durables",
+      "close": 785.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "WABAG": {
       "name": "Va Tech Wabag Limited",
       "sector": "Utilities",
-      "close": 2054.4,
+      "close": 1991.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ADFFOODS": {
       "name": "Adf Foods Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 302.4,
+      "close": 299,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "BLISSGVS": {
       "name": "Bliss Gvs Pharma Limited",
       "sector": "Healthcare",
-      "close": 504.95,
+      "close": 483.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MANAPPURAM": {
       "name": "Manappuram Finance Limited",
       "sector": "Financial Services",
-      "close": 325.1,
+      "close": 325.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "THANGAMAYL": {
       "name": "Thangamayil Jewellery Limited",
       "sector": "Consumer Durables",
-      "close": 6377,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "PARACABLES": {
-      "name": "Paramount Communications Limited",
-      "sector": "Capital Goods",
-      "close": 66.65,
+      "close": 6436,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "GMRAIRPORT": {
       "name": "GMR Airports Ltd",
       "sector": "Services",
-      "close": 111.94,
+      "close": 110.54,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KERNEX": {
       "name": "Kernex Microsystems (india) Limited",
       "sector": "Services",
-      "close": 2105,
+      "close": 2039.3,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "ICIL": {
+      "name": "Indo Count Industries Limited",
+      "sector": "Textiles",
+      "close": 389.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ASTRAMICRO": {
       "name": "Astra Microwave Products Limited",
       "sector": "Capital Goods",
-      "close": 1721.7,
+      "close": 1720.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CCL": {
       "name": "Ccl Products (india) Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 1195.9,
+      "close": 1185,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "WELSPUNLIV": {
+      "name": "Welspun Living Ltd",
+      "sector": "Textiles",
+      "close": 164.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SPARC": {
       "name": "Sun Pharma Advanced Research Company Limited",
       "sector": "Healthcare",
-      "close": 250.45,
+      "close": 235.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "VTL": {
-      "name": "Vardhman Textiles Limited",
-      "sector": "Textiles",
-      "close": 635.85,
+    "HFCL": {
+      "name": "HFCL Ltd",
+      "sector": "Telecommunication",
+      "close": 213.17,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "MARKSANS": {
+      "name": "Marksans Pharma Limited",
+      "sector": "Healthcare",
+      "close": 267.1,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "SOTL": {
+      "name": "Savita Oil Technologies Limited",
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 583,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "NRBBEARING": {
       "name": "Nrb Bearing Limited",
       "sector": "Automobile and Auto Components",
-      "close": 421.15,
+      "close": 407.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
-    },
-    "EPL": {
-      "name": "EPL Ltd",
-      "sector": "Capital Goods",
-      "close": 234.63,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
     },
     "JAYBARMARU": {
       "name": "Jay Bharat Maruti Limited",
       "sector": "Automobile and Auto Components",
-      "close": 179.77,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "IFCI": {
-      "name": "Ifci Limited",
-      "sector": "Financial Services",
-      "close": 73.55,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "STLTECH": {
-      "name": "Sterlite Technologies Limited",
-      "sector": "Telecommunication",
-      "close": 541.35,
+      "close": 170.79,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SOUTHBANK": {
       "name": "The South Indian Bank Limited",
       "sector": "Financial Services",
-      "close": 45.39,
+      "close": 44.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "BHARATFORG": {
-      "name": "Bharat Forge Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 2104.7,
+    "AUROPHARMA": {
+      "name": "Aurobindo Pharma Limited",
+      "sector": "Healthcare",
+      "close": 1533.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "FEDERALBNK": {
-      "name": "The Federal Bank  Limited",
-      "sector": "Financial Services",
-      "close": 326.6,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
+    "QPOWER": {
+      "name": "Quality Power Electrical Equipments Ltd",
+      "sector": "Capital Goods",
+      "close": 1169,
+      "flag": "Away",
+      "trend_template_score": "6/8"
     },
     "ELGIEQUIP": {
       "name": "Elgi Equipments Limited",
       "sector": "Capital Goods",
-      "close": 581.6,
+      "close": 581.8,
       "flag": "Away",
       "trend_template_score": "7/8"
     }
