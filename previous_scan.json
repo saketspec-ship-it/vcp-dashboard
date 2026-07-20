@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-20 17:39 IST",
-  "run_epoch": 1784549391.701987,
+  "run_time": "2026-07-20 21:46 IST",
+  "run_epoch": 1784564190.0336878,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -47,14 +47,14 @@
     "AVALON": {
       "name": "Avalon Technologies Ltd",
       "sector": "Capital Goods",
-      "close": 1719.7,
+      "close": 1716.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AEROENTER": {
       "name": "Aeroflex Enterprises Ltd",
       "sector": "Capital Goods",
-      "close": 120.77,
+      "close": 120.34,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -103,7 +103,7 @@
     "ATALREAL": {
       "name": "Atal Realtech Ltd",
       "sector": "Realty",
-      "close": 30.65,
+      "close": 30.38,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -299,14 +299,14 @@
     "GROWWDEFNC": {
       "name": "Groww Nifty India Defence ETF",
       "sector": null,
-      "close": 93.63,
+      "close": 93.52,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MODEFENCE": {
       "name": "Motilal Oswal Nifty India Defence ETF",
       "sector": null,
-      "close": 102.65,
+      "close": 102.62,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -460,7 +460,7 @@
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": "Capital Goods",
-      "close": 534.8,
+      "close": 533.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -488,7 +488,7 @@
     "ICIL": {
       "name": "Indo Count Industries Limited",
       "sector": "Textiles",
-      "close": 393,
+      "close": 392.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -502,7 +502,7 @@
     "CCL": {
       "name": "Ccl Products (india) Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 1202,
+      "close": 1201.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -558,7 +558,7 @@
     "PARACABLES": {
       "name": "Paramount Communications Limited",
       "sector": "Capital Goods",
-      "close": 65.11,
+      "close": 64.85,
       "flag": "Away",
       "trend_template_score": "7/8"
     },
