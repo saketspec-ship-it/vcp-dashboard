@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-21 16:52 IST",
-  "run_epoch": 1784632976.7139144,
+  "run_time": "2026-07-21 21:37 IST",
+  "run_epoch": 1784650048.3718898,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -16,17 +16,17 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ROSSTECH": {
-      "name": "Rossell Techsys Ltd",
-      "sector": "Capital Goods",
-      "close": 1006,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "GROWWDEFNC": {
       "name": "Groww Nifty India Defence ETF",
       "sector": null,
-      "close": 94.5,
+      "close": 94.32,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "MODEFENCE": {
+      "name": "Motilal Oswal Nifty India Defence ETF",
+      "sector": null,
+      "close": 103.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -100,13 +100,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "SILVERTUC": {
-      "name": "Silver Touch Technologies Ltd",
-      "sector": "Information Technology",
-      "close": 194.55,
-      "flag": "Trend",
-      "trend_template_score": "3/8"
-    },
     "ABCAPITAL": {
       "name": "Aditya Birla Capital Ltd",
       "sector": "Financial Services",
@@ -117,7 +110,7 @@
     "SIS": {
       "name": "Security & Intelligence Services India",
       "sector": "Consumer Services",
-      "close": 441.25,
+      "close": 441.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -180,7 +173,7 @@
     "ANTELOPUS": {
       "name": "Antelopus Selan Energy Ltd",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 865,
+      "close": 868.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -306,7 +299,7 @@
     "SENORES": {
       "name": "Senores Pharmaceuticals Ltd",
       "sector": "Healthcare",
-      "close": 1404.1,
+      "close": 1404,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -334,7 +327,7 @@
     "RPTECH": {
       "name": "Rashi Peripherals Ltd",
       "sector": "Information Technology",
-      "close": 744.4,
+      "close": 743.75,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -411,7 +404,7 @@
     "PNBHOUSING": {
       "name": "Pnb Housing Finance Limited",
       "sector": "Financial Services",
-      "close": 1088,
+      "close": 1094,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -460,7 +453,7 @@
     "ICIL": {
       "name": "Indo Count Industries Limited",
       "sector": "Textiles",
-      "close": 397.5,
+      "close": 396.55,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -499,10 +492,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "MODEFENCE": {
-      "name": "Motilal Oswal Nifty India Defence ETF",
-      "sector": null,
-      "close": 103.55,
+    "SILVERTUC": {
+      "name": "Silver Touch Technologies Ltd",
+      "sector": "Information Technology",
+      "close": 194.21,
       "flag": null,
       "trend_template_score": null
     }
