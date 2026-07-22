@@ -1,18 +1,18 @@
 {
-  "run_time": "2026-07-22 16:55 IST",
-  "run_epoch": 1784719509.9443254,
+  "run_time": "2026-07-22 21:37 IST",
+  "run_epoch": 1784736428.491584,
   "tickers": {
     "GROWWDEFNC": {
       "name": "Groww Nifty India Defence ETF",
       "sector": null,
-      "close": 94.6,
+      "close": 94.58,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MODEFENCE": {
       "name": "Motilal Oswal Nifty India Defence ETF",
       "sector": null,
-      "close": 103.21,
+      "close": 103.28,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -26,7 +26,7 @@
     "ENTERO": {
       "name": "Entero Healthcare Solutions Ltd",
       "sector": "Consumer Services",
-      "close": 1241,
+      "close": 1239.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -89,14 +89,14 @@
     "ATALREAL": {
       "name": "Atal Realtech Ltd",
       "sector": "Realty",
-      "close": 30.16,
+      "close": 30.28,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "IIFLCAPS": {
       "name": "IIFL Capital Services Ltd",
       "sector": "Financial Services",
-      "close": 343.1,
+      "close": 342.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -110,14 +110,14 @@
     "SIS": {
       "name": "Security & Intelligence Services India",
       "sector": "Consumer Services",
-      "close": 438,
+      "close": 437.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PRIVISCL": {
       "name": "Privi Speciality Chemicals Ltd",
       "sector": "Chemicals",
-      "close": 3672,
+      "close": 3676.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -187,7 +187,7 @@
     "SOTL": {
       "name": "Savita Oil Technologies Limited",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 593,
+      "close": 596.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -285,7 +285,7 @@
     "RPTECH": {
       "name": "Rashi Peripherals Ltd",
       "sector": "Information Technology",
-      "close": 745.15,
+      "close": 744.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -306,7 +306,7 @@
     "AEROENTER": {
       "name": "Aeroflex Enterprises Ltd",
       "sector": "Capital Goods",
-      "close": 117.5,
+      "close": 116.48,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -320,7 +320,7 @@
     "STARHEALTH": {
       "name": "Star Health & Allied Insurance Company Ltd",
       "sector": "Financial Services",
-      "close": 580.95,
+      "close": 579.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
