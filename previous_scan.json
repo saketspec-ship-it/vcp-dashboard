@@ -1,25 +1,25 @@
 {
-  "run_time": "2026-07-23 16:54 IST",
-  "run_epoch": 1784805874.9528182,
+  "run_time": "2026-07-23 21:45 IST",
+  "run_epoch": 1784823351.6455026,
   "tickers": {
     "GROWWDEFNC": {
       "name": "Groww Nifty India Defence ETF",
       "sector": null,
-      "close": 93.95,
+      "close": 94.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AKUMS": {
       "name": "Akums Drugs & Pharmaceuticals Ltd",
       "sector": "Healthcare",
-      "close": 692,
+      "close": 695.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "EMCURE": {
       "name": "Emcure Pharmaceuticals Ltd",
       "sector": "Healthcare",
-      "close": 1872.5,
+      "close": 1869.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -61,7 +61,7 @@
     "SBCL": {
       "name": "Shivalik Bimetal Controls Ltd",
       "sector": "Capital Goods",
-      "close": 746,
+      "close": 753.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -124,7 +124,7 @@
     "EICHERMOT": {
       "name": "Eicher Motors Limited",
       "sector": "Automobile and Auto Components",
-      "close": 7718,
+      "close": 7721.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -173,7 +173,7 @@
     "MODEFENCE": {
       "name": "Motilal Oswal Nifty India Defence ETF",
       "sector": null,
-      "close": 102.84,
+      "close": 102.86,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -229,7 +229,7 @@
     "ANANDRATHI": {
       "name": "Anand Rathi Wealth Ltd",
       "sector": "Financial Services",
-      "close": 2049,
+      "close": 2049.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -313,7 +313,7 @@
     "PNBHOUSING": {
       "name": "Pnb Housing Finance Limited",
       "sector": "Financial Services",
-      "close": 1067.4,
+      "close": 1066.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -348,7 +348,7 @@
     "SCHNEIDER": {
       "name": "Schneider Electric Infrastructure Limited",
       "sector": "Capital Goods",
-      "close": 1346,
+      "close": 1341.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -369,7 +369,7 @@
     "BLISSGVS": {
       "name": "Bliss Gvs Pharma Limited",
       "sector": "Healthcare",
-      "close": 462.85,
+      "close": 461.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -446,7 +446,7 @@
     "EPL": {
       "name": "EPL Ltd",
       "sector": "Capital Goods",
-      "close": 233.4,
+      "close": 233.04,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
