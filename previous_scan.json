@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-24 16:42 IST",
-  "run_epoch": 1784891550.7950728,
+  "run_time": "2026-07-24 21:23 IST",
+  "run_epoch": 1784908400.1980217,
   "tickers": {
     "AKUMS": {
       "name": "Akums Drugs & Pharmaceuticals Ltd",
@@ -19,7 +19,7 @@
     "INOXINDIA": {
       "name": "Inox India Ltd",
       "sector": "Capital Goods",
-      "close": 2009.9,
+      "close": 2004,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -117,7 +117,7 @@
     "ICIL": {
       "name": "Indo Count Industries Limited",
       "sector": "Textiles",
-      "close": 404,
+      "close": 403.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -145,7 +145,7 @@
     "UNIVCABLES": {
       "name": "Universal Cables Limited",
       "sector": "Capital Goods",
-      "close": 1237.1,
+      "close": 1234.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -215,7 +215,7 @@
     "GROWWDEFNC": {
       "name": "Groww Nifty India Defence ETF",
       "sector": null,
-      "close": 93.78,
+      "close": 93.47,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -229,7 +229,7 @@
     "DEEDEV": {
       "name": "DEE Development Engineers Ltd",
       "sector": "Capital Goods",
-      "close": 652,
+      "close": 653.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -243,7 +243,7 @@
     "RISHABH": {
       "name": "Rishabh Instruments Ltd",
       "sector": "Capital Goods",
-      "close": 623,
+      "close": 622.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -313,14 +313,14 @@
     "MAFANG": {
       "name": "Mirae Asset NYSE FANG+ ETF",
       "sector": null,
-      "close": 196,
+      "close": 196.13,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "UFBL": {
       "name": "United Foodbrands Ltd",
       "sector": "Consumer Services",
-      "close": 670,
+      "close": 674.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -334,7 +334,7 @@
     "GLAND": {
       "name": "Gland Pharma Ltd",
       "sector": "Healthcare",
-      "close": 2388,
+      "close": 2379.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -348,7 +348,7 @@
     "ASTERDM": {
       "name": "Aster DM Healthcare Ltd",
       "sector": "Healthcare",
-      "close": 789.9,
+      "close": 785.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -369,7 +369,7 @@
     "ZENTEC": {
       "name": "Zen Technologies Limited",
       "sector": "Capital Goods",
-      "close": 1768,
+      "close": 1768.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -404,14 +404,14 @@
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": "Capital Goods",
-      "close": 524.75,
+      "close": 523,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PHOENIXLTD": {
       "name": "The Phoenix Mills Limited",
       "sector": "Realty",
-      "close": 2022,
+      "close": 2010.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -425,14 +425,14 @@
     "RADICO": {
       "name": "Radico Khaitan Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 4114,
+      "close": 4091.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KIRLOSENG": {
       "name": "Kirloskar Oil Engines Limited",
       "sector": "Capital Goods",
-      "close": 2196,
+      "close": 2182.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -446,7 +446,7 @@
     "APOLLOHOSP": {
       "name": "Apollo Hospitals Enterprise Limited",
       "sector": "Healthcare",
-      "close": 8794.5,
+      "close": 8805.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
