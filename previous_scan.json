@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-07-30 17:42 IST",
-  "run_epoch": 1785413553.6461709,
+  "run_time": "2026-07-31 09:13 IST",
+  "run_epoch": 1785469432.0470405,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -89,7 +89,7 @@
     "GULPOLY": {
       "name": "Gulshan Polyols Limited",
       "sector": "Fast Moving Consumer Goods",
-      "close": 193.9,
+      "close": 194.04,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -110,7 +110,7 @@
     "ICIL": {
       "name": "Indo Count Industries Limited",
       "sector": "Textiles",
-      "close": 401.75,
+      "close": 402.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -124,7 +124,7 @@
     "MARKSANS": {
       "name": "Marksans Pharma Limited",
       "sector": "Healthcare",
-      "close": 259.6,
+      "close": 258.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -201,7 +201,7 @@
     "INOXINDIA": {
       "name": "Inox India Ltd",
       "sector": "Capital Goods",
-      "close": 1895,
+      "close": 1897.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -215,7 +215,7 @@
     "RISHABH": {
       "name": "Rishabh Instruments Ltd",
       "sector": "Capital Goods",
-      "close": 607,
+      "close": 610.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -238,12 +238,12 @@
       "sector": "Utilities",
       "close": 417.5,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "ANANDRATHI": {
       "name": "Anand Rathi Wealth Ltd",
       "sector": "Financial Services",
-      "close": 2040,
+      "close": 2039.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -278,7 +278,7 @@
     "AURUM": {
       "name": "Aurum Proptech Ltd",
       "sector": "Information Technology",
-      "close": 217,
+      "close": 216.82,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -411,7 +411,7 @@
     "SBCL": {
       "name": "Shivalik Bimetal Controls Ltd",
       "sector": "Capital Goods",
-      "close": 736,
+      "close": 735.95,
       "flag": "Away",
       "trend_template_score": "7/8"
     },
