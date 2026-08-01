@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-08-01 11:49 IST",
-  "run_epoch": 1785565186.8119276,
+  "run_time": "2026-08-01 17:11 IST",
+  "run_epoch": 1785584496.986397,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -15,6 +15,13 @@
       "close": 1260.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
+    },
+    "IKS": {
+      "name": "Inventurus Knowledge Solutions Ltd",
+      "sector": "Information Technology",
+      "close": 1848.9,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
     },
     "LLOYDSENT": {
       "name": "Lloyds Enterprises Ltd",
@@ -44,17 +51,24 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
+    "RATEGAIN": {
+      "name": "Rategain Travel Technologies Ltd",
+      "sector": "Information Technology",
+      "close": 918.4,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ANANDRATHI": {
+      "name": "Anand Rathi Wealth Ltd",
+      "sector": "Financial Services",
+      "close": 2073.7,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "STEELCAS": {
       "name": "Steelcast Ltd",
       "sector": "Capital Goods",
       "close": 309.95,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SBC": {
-      "name": "SBC Exports Ltd",
-      "sector": "Textiles",
-      "close": 42.01,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -100,6 +114,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "CLSEL": {
+      "name": "Chamanlal Setia Exports Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "close": 285.5,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "GLAND": {
       "name": "Gland Pharma Ltd",
       "sector": "Healthcare",
@@ -114,12 +135,26 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "ONEPOINT": {
+      "name": "One Point One Solutions Ltd",
+      "sector": "Services",
+      "close": 57.46,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
     "MAHLOG": {
       "name": "Mahindra Logistics Ltd",
       "sector": "Services",
       "close": 409.5,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
+    },
+    "ABCAPITAL": {
+      "name": "Aditya Birla Capital Ltd",
+      "sector": "Financial Services",
+      "close": 404.3,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
     },
     "GNA": {
       "name": "Gna Axles Limited",
@@ -149,6 +184,27 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "SCHNEIDER": {
+      "name": "Schneider Electric Infrastructure Limited",
+      "sector": "Capital Goods",
+      "close": 1355.3,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
+    "LTF": {
+      "name": "L&T Finance Ltd",
+      "sector": "Financial Services",
+      "close": 311.25,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
+    "ZYDUSWELL": {
+      "name": "Zydus Wellness Limited",
+      "sector": "Fast Moving Consumer Goods",
+      "close": 577.55,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": "Capital Goods",
@@ -156,10 +212,17 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ICIL": {
-      "name": "Indo Count Industries Limited",
+    "TALBROAUTO": {
+      "name": "Talbros Automotive Components Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 407.75,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "NITINSPIN": {
+      "name": "Nitin Spinners Limited",
       "sector": "Textiles",
-      "close": 401.25,
+      "close": 544.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -226,6 +289,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "ZYDUSLIFE": {
+      "name": "Zydus Lifesciences Ltd",
+      "sector": "Healthcare",
+      "close": 1126.8,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "AUROPHARMA": {
       "name": "Aurobindo Pharma Limited",
       "sector": "Healthcare",
@@ -238,13 +308,6 @@
       "sector": "Automobile and Auto Components",
       "close": 2199.8,
       "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "IKS": {
-      "name": "Inventurus Knowledge Solutions Ltd",
-      "sector": "Information Technology",
-      "close": 1848.9,
-      "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MODEFENCE": {
@@ -303,17 +366,10 @@
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
-    "RATEGAIN": {
-      "name": "Rategain Travel Technologies Ltd",
-      "sector": "Information Technology",
-      "close": 918.4,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "ANANDRATHI": {
-      "name": "Anand Rathi Wealth Ltd",
-      "sector": "Financial Services",
-      "close": 2073.7,
+    "SBC": {
+      "name": "SBC Exports Ltd",
+      "sector": "Textiles",
+      "close": 42.01,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -321,13 +377,6 @@
       "name": "Tirupati Forge Ltd",
       "sector": "Capital Goods",
       "close": 70,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "ABCAPITAL": {
-      "name": "Aditya Birla Capital Ltd",
-      "sector": "Financial Services",
-      "close": 404.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -352,13 +401,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "LTF": {
-      "name": "L&T Finance Ltd",
-      "sector": "Financial Services",
-      "close": 311.25,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
     "JAMNAAUTO": {
       "name": "Jamna Auto Industries Limited",
       "sector": "Automobile and Auto Components",
@@ -380,13 +422,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "ZYDUSWELL": {
-      "name": "Zydus Wellness Limited",
-      "sector": "Fast Moving Consumer Goods",
-      "close": 577.55,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "PAISALO": {
       "name": "Paisalo Digital Ltd",
       "sector": "Financial Services",
@@ -394,10 +429,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "TALBROAUTO": {
-      "name": "Talbros Automotive Components Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 407.75,
+    "ICIL": {
+      "name": "Indo Count Industries Limited",
+      "sector": "Textiles",
+      "close": 401.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -450,10 +485,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "ZYDUSLIFE": {
-      "name": "Zydus Lifesciences Ltd",
-      "sector": "Healthcare",
-      "close": 1126.8,
+    "JAYBARMARU": {
+      "name": "Jay Bharat Maruti Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 160.59,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -471,47 +506,12 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "CLSEL": {
-      "name": "Chamanlal Setia Exports Ltd",
-      "sector": "Fast Moving Consumer Goods",
-      "close": 285.5,
-      "flag": "Away",
-      "trend_template_score": "6/8"
-    },
-    "ONEPOINT": {
-      "name": "One Point One Solutions Ltd",
-      "sector": "Services",
-      "close": 57.46,
-      "flag": "Away",
-      "trend_template_score": "6/8"
-    },
-    "SCHNEIDER": {
-      "name": "Schneider Electric Infrastructure Limited",
-      "sector": "Capital Goods",
-      "close": 1355.3,
-      "flag": "Away",
-      "trend_template_score": "6/8"
-    },
     "BLISSGVS": {
       "name": "Bliss Gvs Pharma Limited",
       "sector": "Healthcare",
       "close": 465.65,
       "flag": "Away",
       "trend_template_score": "7/8"
-    },
-    "NITINSPIN": {
-      "name": "Nitin Spinners Limited",
-      "sector": "Textiles",
-      "close": 544.2,
-      "flag": "Away",
-      "trend_template_score": "7/8"
-    },
-    "JAYBARMARU": {
-      "name": "Jay Bharat Maruti Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 160.59,
-      "flag": "Away",
-      "trend_template_score": "6/8"
     }
   }
 }
