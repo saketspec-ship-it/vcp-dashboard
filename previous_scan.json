@@ -1,14 +1,7 @@
 {
-  "run_time": "2026-08-08 10:09 IST",
-  "run_epoch": 1786163967.7734153,
+  "run_time": "2026-08-08 16:30 IST",
+  "run_epoch": 1786186842.779645,
   "tickers": {
-    "BLUSPRING": {
-      "name": "Bluspring Enterprises Ltd",
-      "sector": "Services",
-      "close": 112.23,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "BELRISE": {
       "name": "Belrise Industries Ltd",
       "sector": "Automobile and Auto Components",
@@ -107,13 +100,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "FUSION": {
-      "name": "Fusion Micro Finance Ltd",
-      "sector": "Financial Services",
-      "close": 204.99,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
-    },
     "HARSHA": {
       "name": "Harsha Engineers International Ltd",
       "sector": "Capital Goods",
@@ -184,13 +170,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "QUESS": {
-      "name": "Quess Corp Limited",
-      "sector": "Services",
-      "close": 311.05,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "AURUM": {
       "name": "Aurum Proptech Ltd",
       "sector": "Information Technology",
@@ -210,7 +189,7 @@
       "sector": "Capital Goods",
       "close": 1354.8,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "TDPOWERSYS": {
       "name": "Td Power Systems Limited",
@@ -282,17 +261,17 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "MUNJALAU": {
-      "name": "Munjal Auto Industries Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 102.46,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "RADICO": {
       "name": "Radico Khaitan Limited",
       "sector": "Fast Moving Consumer Goods",
       "close": 4499,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "BHAGYANGR": {
+      "name": "Bhagyanagar India",
+      "sector": "Metals &amp; Mining",
+      "close": 393.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -359,6 +338,27 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "BLUSPRING": {
+      "name": "Bluspring Enterprises Ltd",
+      "sector": "Services",
+      "close": 112.23,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "TVSSCS": {
+      "name": "TVS Supply Chain Solutions Ltd",
+      "sector": "Services",
+      "close": 133.79,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "FUSION": {
+      "name": "Fusion Micro Finance Ltd",
+      "sector": "Financial Services",
+      "close": 204.99,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
+    },
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": "Textiles",
@@ -378,7 +378,7 @@
       "sector": "Healthcare",
       "close": 563.2,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "SILVERTUC": {
       "name": "Silver Touch Technologies Ltd",
@@ -398,6 +398,13 @@
       "name": "Tirupati Forge Ltd",
       "sector": "Capital Goods",
       "close": 72.07,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "QUESS": {
+      "name": "Quess Corp Limited",
+      "sector": "Services",
+      "close": 311.05,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -429,10 +436,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "BHAGYANGR": {
-      "name": "Bhagyanagar India",
-      "sector": "Metals &amp; Mining",
-      "close": 393.2,
+    "MUNJALAU": {
+      "name": "Munjal Auto Industries Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 102.46,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -470,13 +477,6 @@
       "close": 405.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
-    },
-    "TVSSCS": {
-      "name": "TVS Supply Chain Solutions Ltd",
-      "sector": "Services",
-      "close": 133.79,
-      "flag": "Away",
-      "trend_template_score": "7/8"
     }
   }
 }
