@@ -1,7 +1,14 @@
 {
-  "run_time": "2026-08-07 16:47 IST",
-  "run_epoch": 1786101443.4633186,
+  "run_time": "2026-08-08 10:09 IST",
+  "run_epoch": 1786163967.7734153,
   "tickers": {
+    "BLUSPRING": {
+      "name": "Bluspring Enterprises Ltd",
+      "sector": "Services",
+      "close": 112.23,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "BELRISE": {
       "name": "Belrise Industries Ltd",
       "sector": "Automobile and Auto Components",
@@ -75,7 +82,7 @@
     "GHCLTEXTIL": {
       "name": "GHCL Textiles Ltd",
       "sector": "Textiles",
-      "close": 121.71,
+      "close": 121.59,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -100,6 +107,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "FUSION": {
+      "name": "Fusion Micro Finance Ltd",
+      "sector": "Financial Services",
+      "close": 204.99,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
     "HARSHA": {
       "name": "Harsha Engineers International Ltd",
       "sector": "Capital Goods",
@@ -118,6 +132,13 @@
       "name": "Manorama Industries Ltd",
       "sector": "Fast Moving Consumer Goods",
       "close": 1636.2,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "NRL": {
+      "name": "Nupur Recyclers Ltd",
+      "sector": "Metals &amp; Mining",
+      "close": 116.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -145,7 +166,7 @@
     "MACPOWER": {
       "name": "Macpower CNC Machines Ltd",
       "sector": "Capital Goods",
-      "close": 1682,
+      "close": 1681.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -160,6 +181,13 @@
       "name": "Cupid Limited",
       "sector": "Fast Moving Consumer Goods",
       "close": 262.13,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "QUESS": {
+      "name": "Quess Corp Limited",
+      "sector": "Services",
+      "close": 311.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -182,7 +210,7 @@
       "sector": "Capital Goods",
       "close": 1354.8,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "TDPOWERSYS": {
       "name": "Td Power Systems Limited",
@@ -250,7 +278,14 @@
     "SUVEN": {
       "name": "Suven Life Sciences Limited",
       "sector": "Healthcare",
-      "close": 315,
+      "close": 318.4,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "MUNJALAU": {
+      "name": "Munjal Auto Industries Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 102.46,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -258,13 +293,6 @@
       "name": "Radico Khaitan Limited",
       "sector": "Fast Moving Consumer Goods",
       "close": 4499,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "BHAGYANGR": {
-      "name": "Bhagyanagar India",
-      "sector": "Metals &amp; Mining",
-      "close": 393.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -331,27 +359,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "BLUSPRING": {
-      "name": "Bluspring Enterprises Ltd",
-      "sector": "Services",
-      "close": 111.4,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "TVSSCS": {
-      "name": "TVS Supply Chain Solutions Ltd",
-      "sector": "Services",
-      "close": 134.05,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "FUSION": {
-      "name": "Fusion Micro Finance Ltd",
-      "sector": "Financial Services",
-      "close": 204.99,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": "Textiles",
@@ -369,9 +376,9 @@
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
       "sector": "Healthcare",
-      "close": 562.3,
+      "close": 563.2,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "SILVERTUC": {
       "name": "Silver Touch Technologies Ltd",
@@ -391,13 +398,6 @@
       "name": "Tirupati Forge Ltd",
       "sector": "Capital Goods",
       "close": 72.07,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "QUESS": {
-      "name": "Quess Corp Limited",
-      "sector": "Services",
-      "close": 309.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -429,10 +429,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "MUNJALAU": {
-      "name": "Munjal Auto Industries Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 102,
+    "BHAGYANGR": {
+      "name": "Bhagyanagar India",
+      "sector": "Metals &amp; Mining",
+      "close": 393.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -470,6 +470,13 @@
       "close": 405.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "TVSSCS": {
+      "name": "TVS Supply Chain Solutions Ltd",
+      "sector": "Services",
+      "close": 133.79,
+      "flag": "Away",
+      "trend_template_score": "7/8"
     }
   }
 }
