@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-08-08 16:30 IST",
-  "run_epoch": 1786186842.779645,
+  "run_time": "2026-08-09 00:42 IST",
+  "run_epoch": 1786216369.853327,
   "tickers": {
     "BELRISE": {
       "name": "Belrise Industries Ltd",
@@ -224,7 +224,7 @@
       "sector": "Power",
       "close": 564.4,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "DCBBANK": {
       "name": "Dcb Bank Limited",
@@ -371,14 +371,14 @@
       "sector": "Healthcare",
       "close": 1351.1,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
       "sector": "Healthcare",
       "close": 563.2,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "SILVERTUC": {
       "name": "Silver Touch Technologies Ltd",
@@ -434,7 +434,7 @@
       "sector": "Realty",
       "close": 86.45,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "MUNJALAU": {
       "name": "Munjal Auto Industries Limited",
