@@ -1,11 +1,18 @@
 {
-  "run_time": "2026-08-15 09:37 IST",
-  "run_epoch": 1786766879.5008705,
+  "run_time": "2026-08-15 16:17 IST",
+  "run_epoch": 1786790827.8870788,
   "tickers": {
     "EBGNG": {
       "name": "GNG Electronics Ltd",
       "sector": "Information Technology",
       "close": 565.2,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SAMBHV": {
+      "name": "Sambhv Steel Tubes Ltd",
+      "sector": "Capital Goods",
+      "close": 121.06,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -90,6 +97,13 @@
       "name": "Ujjivan Small Finance Bank Ltd",
       "sector": "Financial Services",
       "close": 72.47,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "CREDITACC": {
+      "name": "CreditAccess Grameen Ltd",
+      "sector": "Financial Services",
+      "close": 1549.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -191,17 +205,17 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "SAMBHV": {
-      "name": "Sambhv Steel Tubes Ltd",
-      "sector": "Capital Goods",
-      "close": 121.06,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "BLUSPRING": {
       "name": "Bluspring Enterprises Ltd",
       "sector": "Services",
       "close": 111.07,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "LLOYDSENT": {
+      "name": "Lloyds Enterprises Ltd",
+      "sector": "Metals &amp; Mining",
+      "close": 76.49,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -226,10 +240,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "CREDITACC": {
-      "name": "CreditAccess Grameen Ltd",
-      "sector": "Financial Services",
-      "close": 1549.4,
+    "SHYAMMETL": {
+      "name": "Shyam Metalics & Energy Ltd",
+      "sector": "Capital Goods",
+      "close": 999.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -309,20 +323,6 @@
       "close": 351.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
-    },
-    "LLOYDSENT": {
-      "name": "Lloyds Enterprises Ltd",
-      "sector": "Metals &amp; Mining",
-      "close": 76.49,
-      "flag": "Away",
-      "trend_template_score": "7/8"
-    },
-    "SHYAMMETL": {
-      "name": "Shyam Metalics & Energy Ltd",
-      "sector": "Capital Goods",
-      "close": 999.6,
-      "flag": "Away",
-      "trend_template_score": "7/8"
     }
   }
 }
