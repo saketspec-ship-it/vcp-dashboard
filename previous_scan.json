@@ -1,18 +1,11 @@
 {
-  "run_time": "2026-08-14 16:44 IST",
-  "run_epoch": 1786706058.6902676,
+  "run_time": "2026-08-15 09:37 IST",
+  "run_epoch": 1786766879.5008705,
   "tickers": {
     "EBGNG": {
       "name": "GNG Electronics Ltd",
       "sector": "Information Technology",
       "close": 565.2,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SAMBHV": {
-      "name": "Sambhv Steel Tubes Ltd",
-      "sector": "Capital Goods",
-      "close": 121.06,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -33,14 +26,14 @@
     "ACMESOLAR": {
       "name": "ACME Solar Holdings Ltd",
       "sector": "Power",
-      "close": 372.4,
+      "close": 374.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "INOXINDIA": {
       "name": "Inox India Ltd",
       "sector": "Capital Goods",
-      "close": 1943.4,
+      "close": 1943,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -100,13 +93,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "CREDITACC": {
-      "name": "CreditAccess Grameen Ltd",
-      "sector": "Financial Services",
-      "close": 1550,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "SILVERTUC": {
       "name": "Silver Touch Technologies Ltd",
       "sector": "Information Technology",
@@ -138,7 +124,7 @@
     "PREMIERPOL": {
       "name": "Premier Polyfilm Limited",
       "sector": "Capital Goods",
-      "close": 74.5,
+      "close": 73.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -159,14 +145,14 @@
     "GRANULES": {
       "name": "Granules India Limited",
       "sector": "Healthcare",
-      "close": 854,
+      "close": 858.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "BEPL": {
       "name": "Bhansali Engineering Polymers Limited",
       "sector": "Chemicals",
-      "close": 123.69,
+      "close": 123.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -177,19 +163,12 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ABB": {
-      "name": "Abb India Limited",
-      "sector": "Capital Goods",
-      "close": 7649,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "TIPSMUSIC": {
       "name": "Tips Music Ltd",
       "sector": "Media, Entertainment &amp; Publication",
       "close": 670.9,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "OFSS": {
       "name": "Oracle Financial Services Software Limited",
@@ -208,7 +187,14 @@
     "SGFIN": {
       "name": "SG Finserve Ltd",
       "sector": "Financial Services",
-      "close": 659.5,
+      "close": 662.05,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "SAMBHV": {
+      "name": "Sambhv Steel Tubes Ltd",
+      "sector": "Capital Goods",
+      "close": 121.06,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -216,13 +202,6 @@
       "name": "Bluspring Enterprises Ltd",
       "sector": "Services",
       "close": 111.07,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "LLOYDSENT": {
-      "name": "Lloyds Enterprises Ltd",
-      "sector": "Metals &amp; Mining",
-      "close": 76.49,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -247,17 +226,24 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "SHYAMMETL": {
-      "name": "Shyam Metalics & Energy Ltd",
-      "sector": "Capital Goods",
-      "close": 999.6,
+    "CREDITACC": {
+      "name": "CreditAccess Grameen Ltd",
+      "sector": "Financial Services",
+      "close": 1549.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TIRUPATIFL": {
       "name": "Tirupati Forge Ltd",
       "sector": "Capital Goods",
-      "close": 67.85,
+      "close": 65.84,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "SANGINITA": {
+      "name": "Sanginita Chemicals Ltd",
+      "sector": "Chemicals",
+      "close": 54,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -271,7 +257,7 @@
     "TBZ": {
       "name": "Tribhovandas Bhimji Zaveri Limited",
       "sector": "Consumer Durables",
-      "close": 252,
+      "close": 251.35,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -279,6 +265,13 @@
       "name": "Paisalo Digital Ltd",
       "sector": "Financial Services",
       "close": 68.67,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "ABB": {
+      "name": "Abb India Limited",
+      "sector": "Capital Goods",
+      "close": 7649,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -316,6 +309,20 @@
       "close": 351.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "LLOYDSENT": {
+      "name": "Lloyds Enterprises Ltd",
+      "sector": "Metals &amp; Mining",
+      "close": 76.49,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "SHYAMMETL": {
+      "name": "Shyam Metalics & Energy Ltd",
+      "sector": "Capital Goods",
+      "close": 999.6,
+      "flag": "Away",
+      "trend_template_score": "7/8"
     }
   }
 }
