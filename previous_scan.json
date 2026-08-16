@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-08-16 09:48 IST",
-  "run_epoch": 1786853906.1857054,
+  "run_time": "2026-08-16 16:17 IST",
+  "run_epoch": 1786877257.2238567,
   "tickers": {
     "EBGNG": {
       "name": "GNG Electronics Ltd",
@@ -177,13 +177,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ABB": {
-      "name": "Abb India Limited",
-      "sector": "Capital Goods",
-      "close": 7649,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "TIPSMUSIC": {
       "name": "Tips Music Ltd",
       "sector": "Media, Entertainment &amp; Publication",
@@ -286,6 +279,13 @@
       "name": "Paisalo Digital Ltd",
       "sector": "Financial Services",
       "close": 68.67,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "ABB": {
+      "name": "Abb India Limited",
+      "sector": "Capital Goods",
+      "close": 7649,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
