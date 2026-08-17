@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-08-15 02:27 IST",
-  "run_epoch": 1786741057.694169,
+  "run_time": "2026-08-17 19:07 IST",
+  "run_epoch": 1786973861.8356974,
   "tickers": {
     "GEV": {
       "name": "GE Vernova Inc.",
@@ -86,19 +86,12 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "PM": {
-      "name": "Philip Morris International Inc.",
-      "sector": "Consumer Non-Durables",
-      "close": 190.39,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
-    },
     "IBKR": {
       "name": "Interactive Brokers Group, Inc. Class A",
       "sector": "Finance",
       "close": 92.06,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "MFG": {
       "name": "Mizuho Financial Group Inc Sponsored ADR",
@@ -128,19 +121,12 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ELV": {
-      "name": "Elevance Health, Inc.",
-      "sector": "Health Services",
-      "close": 400.32,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
-    },
     "EQNR": {
       "name": "Equinor ASA Sponsored ADR",
       "sector": "Energy Minerals",
       "close": 40.77,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "MUFG": {
       "name": "Mitsubishi UFJ Financial Group, Inc. Sponsored ADR",
@@ -160,6 +146,13 @@
       "name": "UBS Group AG",
       "sector": "Finance",
       "close": 53.63,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "HSBC": {
+      "name": "HSBC Holdings PLC Sponsored ADR",
+      "sector": "Finance",
+      "close": 103.79,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -189,7 +182,7 @@
       "sector": "Electronic Technology",
       "close": 426.35,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "RYCEY": {
       "name": "Rolls-Royce Holdings PLC Sponsored ADR",
@@ -245,7 +238,7 @@
       "sector": "Energy Minerals",
       "close": 88.33,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "6/8"
     },
     "VRTX": {
       "name": "Vertex Pharmaceuticals Incorporated",
@@ -279,13 +272,6 @@
       "name": "Banco Santander S.A. Sponsored ADR",
       "sector": "Finance",
       "close": 14.76,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "BCS": {
-      "name": "Barclays PLC Sponsored ADR",
-      "sector": "Finance",
-      "close": 28.14,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -352,12 +338,12 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "TT": {
-      "name": "Trane Technologies plc",
-      "sector": "Producer Manufacturing",
-      "close": 480.2,
+    "UNP": {
+      "name": "Union Pacific Corporation",
+      "sector": "Transportation",
+      "close": 293.68,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "FDX": {
       "name": "FedEx Corporation",
@@ -398,13 +384,6 @@
       "name": "Bank of America Corp",
       "sector": "Finance",
       "close": 64.49,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "ETN": {
-      "name": "Eaton Corp. Plc",
-      "sector": "Producer Manufacturing",
-      "close": 451.51,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -464,12 +443,12 @@
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
-    "HSBC": {
-      "name": "HSBC Holdings PLC Sponsored ADR",
-      "sector": "Finance",
-      "close": 103.79,
+    "PM": {
+      "name": "Philip Morris International Inc.",
+      "sector": "Consumer Non-Durables",
+      "close": 190.39,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "AMZN": {
       "name": "Amazon.com, Inc.",
@@ -483,7 +462,7 @@
       "sector": "Non-Energy Minerals",
       "close": 66.49,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "RCL": {
       "name": "Royal Caribbean Group",
@@ -496,6 +475,13 @@
       "name": "Amphenol Corporation Class A",
       "sector": "Electronic Technology",
       "close": 167.11,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "BCS": {
+      "name": "Barclays PLC Sponsored ADR",
+      "sector": "Finance",
+      "close": 28.14,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -520,12 +506,12 @@
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
-    "UNP": {
-      "name": "Union Pacific Corporation",
-      "sector": "Transportation",
-      "close": 293.68,
+    "TT": {
+      "name": "Trane Technologies plc",
+      "sector": "Producer Manufacturing",
+      "close": 480.2,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "TRV": {
       "name": "Travelers Companies, Inc.",
@@ -538,6 +524,13 @@
       "name": "Eli Lilly and Company",
       "sector": "Health Technology",
       "close": 1180.16,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "ETN": {
+      "name": "Eaton Corp. Plc",
+      "sector": "Producer Manufacturing",
+      "close": 451.51,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -561,6 +554,13 @@
       "close": 368.38,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "ELV": {
+      "name": "Elevance Health, Inc.",
+      "sector": "Health Services",
+      "close": 400.32,
+      "flag": "Away",
+      "trend_template_score": "6/8"
     }
   }
 }
