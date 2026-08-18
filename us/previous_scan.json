@@ -1,13 +1,13 @@
 {
-  "run_time": "2026-08-18 02:26 IST",
-  "run_epoch": 1787000171.424826,
+  "run_time": "2026-08-18 19:10 IST",
+  "run_epoch": 1787060426.5569463,
   "tickers": {
     "SNDK": {
       "name": "Sandisk Corporation",
       "sector": "Electronic Technology",
       "close": 1786.85,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "GEV": {
       "name": "GE Vernova Inc.",
@@ -135,13 +135,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ASX": {
-      "name": "ASE Technology Holding Co., Ltd. Sponsored ADR",
-      "sector": "Electronic Technology",
-      "close": 39.91,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "HSBC": {
       "name": "HSBC Holdings PLC Sponsored ADR",
       "sector": "Finance",
@@ -170,10 +163,10 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "TSM": {
-      "name": "Taiwan Semiconductor Manufacturing Co., Ltd. Sponsored ADR",
-      "sector": "Electronic Technology",
-      "close": 430.97,
+    "CNI": {
+      "name": "Canadian National Railway Company",
+      "sector": "Transportation",
+      "close": 126.59,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -226,13 +219,6 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "APH": {
-      "name": "Amphenol Corporation Class A",
-      "sector": "Electronic Technology",
-      "close": 170.87,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "VRTX": {
       "name": "Vertex Pharmaceuticals Incorporated",
       "sector": "Health Technology",
@@ -245,19 +231,12 @@
       "sector": "Energy Minerals",
       "close": 146.15,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "BBVA": {
       "name": "Banco Bilbao Vizcaya Argentaria, S.A. Sponsored ADR",
       "sector": "Finance",
       "close": 28.8,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "JCI": {
-      "name": "Johnson Controls International plc",
-      "sector": "Producer Manufacturing",
-      "close": 153.92,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -272,13 +251,6 @@
       "name": "Micron Technology, Inc.",
       "sector": "Electronic Technology",
       "close": 1011.75,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "LRCX": {
-      "name": "Lam Research Corporation",
-      "sector": "Producer Manufacturing",
-      "close": 343.84,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -328,6 +300,13 @@
       "name": "Welltower Inc.",
       "sector": "Finance",
       "close": 235.3,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "BHP": {
+      "name": "BHP Group Ltd Sponsored American Depositary Receipt Repr 2 Shs",
+      "sector": "Non-Energy Minerals",
+      "close": 88.37,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -387,10 +366,10 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ETN": {
-      "name": "Eaton Corp. Plc",
-      "sector": "Producer Manufacturing",
-      "close": 455.4,
+    "LLY": {
+      "name": "Eli Lilly and Company",
+      "sector": "Health Technology",
+      "close": 1183.16,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -401,10 +380,10 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "EMR": {
-      "name": "Emerson Electric Co.",
+    "RTX": {
+      "name": "RTX Corporation",
       "sector": "Electronic Technology",
-      "close": 162.05,
+      "close": 221.64,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -457,13 +436,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "AVGO": {
-      "name": "Broadcom Inc.",
-      "sector": "Electronic Technology",
-      "close": 392.43,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
     "NWG": {
       "name": "NatWest Group Plc Sponsored ADR",
       "sector": "Finance",
@@ -485,17 +457,24 @@
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
-    "CNI": {
-      "name": "Canadian National Railway Company",
-      "sector": "Transportation",
-      "close": 126.59,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "FCX": {
       "name": "Freeport-McMoRan, Inc.",
       "sector": "Non-Energy Minerals",
       "close": 68.38,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "APH": {
+      "name": "Amphenol Corporation Class A",
+      "sector": "Electronic Technology",
+      "close": 170.87,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "JCI": {
+      "name": "Johnson Controls International plc",
+      "sector": "Producer Manufacturing",
+      "close": 153.92,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -520,20 +499,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "BHP": {
-      "name": "BHP Group Ltd Sponsored American Depositary Receipt Repr 2 Shs",
-      "sector": "Non-Energy Minerals",
-      "close": 88.37,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "TT": {
-      "name": "Trane Technologies plc",
-      "sector": "Producer Manufacturing",
-      "close": 475.32,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
     "TRV": {
       "name": "Travelers Companies, Inc.",
       "sector": "Finance",
@@ -541,17 +506,17 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "LLY": {
-      "name": "Eli Lilly and Company",
-      "sector": "Health Technology",
-      "close": 1183.16,
+    "ETN": {
+      "name": "Eaton Corp. Plc",
+      "sector": "Producer Manufacturing",
+      "close": 455.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "RTX": {
-      "name": "RTX Corporation",
+    "EMR": {
+      "name": "Emerson Electric Co.",
       "sector": "Electronic Technology",
-      "close": 221.64,
+      "close": 162.05,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -561,6 +526,41 @@
       "close": 369.43,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "AVGO": {
+      "name": "Broadcom Inc.",
+      "sector": "Electronic Technology",
+      "close": 392.43,
+      "flag": "Away",
+      "trend_template_score": "6/8"
+    },
+    "ASX": {
+      "name": "ASE Technology Holding Co., Ltd. Sponsored ADR",
+      "sector": "Electronic Technology",
+      "close": 39.91,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "TSM": {
+      "name": "Taiwan Semiconductor Manufacturing Co., Ltd. Sponsored ADR",
+      "sector": "Electronic Technology",
+      "close": 430.97,
+      "flag": "Away",
+      "trend_template_score": "6/8"
+    },
+    "LRCX": {
+      "name": "Lam Research Corporation",
+      "sector": "Producer Manufacturing",
+      "close": 343.84,
+      "flag": "Away",
+      "trend_template_score": "6/8"
+    },
+    "TT": {
+      "name": "Trane Technologies plc",
+      "sector": "Producer Manufacturing",
+      "close": 475.32,
+      "flag": "Away",
+      "trend_template_score": "6/8"
     }
   }
 }
