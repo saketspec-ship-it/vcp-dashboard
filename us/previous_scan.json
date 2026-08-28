@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-08-28 04:16 IST",
-  "run_epoch": 1787870817.0313287,
+  "run_time": "2026-08-28 09:56 IST",
+  "run_epoch": 1787891193.3195157,
   "tickers": {
     "NET": {
       "name": "Cloudflare Inc Class A",
@@ -167,13 +167,6 @@
       "name": "Rolls-Royce Holdings PLC Sponsored ADR",
       "sector": "Electronic Technology",
       "close": 20.77,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "BAYRY": {
-      "name": "Bayer AG Sponsored ADR",
-      "sector": "Health Technology",
-      "close": 14.11,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -475,6 +468,13 @@
       "name": "Canadian National Railway Company",
       "sector": "Transportation",
       "close": 126.48,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "BAYRY": {
+      "name": "Bayer AG Sponsored ADR",
+      "sector": "Health Technology",
+      "close": 14.11,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
