@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-08-29 15:56 IST",
-  "run_epoch": 1787999168.1419997,
+  "run_time": "2026-08-29 20:41 IST",
+  "run_epoch": 1788016301.7204516,
   "tickers": {
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
@@ -34,6 +34,13 @@
       "name": "JSW Infrastructure Ltd",
       "sector": "Services",
       "close": 342.95,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "NUVAMA": {
+      "name": "Nuvama Wealth Management Ltd",
+      "sector": "Financial Services",
+      "close": 1805,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -72,6 +79,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "DYCL": {
+      "name": "Dynamic Cables Ltd",
+      "sector": "Capital Goods",
+      "close": 487.6,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "AETHER": {
       "name": "Aether Industries Ltd",
       "sector": "Chemicals",
@@ -97,6 +111,13 @@
       "name": "Tirupati Forge Ltd",
       "sector": "Capital Goods",
       "close": 69.78,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "AURUM": {
+      "name": "Aurum Proptech Ltd",
+      "sector": "Information Technology",
+      "close": 232.98,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -128,6 +149,27 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "RKFORGE": {
+      "name": "Ramkrishna Forgings Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 751.25,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "APCOTEXIND": {
+      "name": "Apcotex Industries Limited",
+      "sector": "Capital Goods",
+      "close": 625.25,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "BAJAJ-AUTO": {
+      "name": "Bajaj Auto Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 11910,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "TORNTPHARM": {
       "name": "Torrent Pharmaceuticals Limited",
       "sector": "Healthcare",
@@ -135,17 +177,24 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "HEG": {
+      "name": "Heg Limited",
+      "sector": "Capital Goods",
+      "close": 737.35,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SCI": {
+      "name": "Shipping Corporation Of India Limited",
+      "sector": "Services",
+      "close": 299.05,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
     "OFSS": {
       "name": "Oracle Financial Services Software Limited",
       "sector": "Information Technology",
       "close": 12190,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "TVSMOTOR": {
-      "name": "Tvs Motor Company Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 4304.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -219,13 +268,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "DYCL": {
-      "name": "Dynamic Cables Ltd",
-      "sector": "Capital Goods",
-      "close": 487.6,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "DATAPATTNS": {
       "name": "Data Patterns (India) Ltd",
       "sector": "Capital Goods",
@@ -287,7 +329,7 @@
       "sector": "Capital Goods",
       "close": 417.75,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "NAM-INDIA": {
       "name": "Nippon Life India Asset Management Ltd",
@@ -328,13 +370,6 @@
       "name": "Thyrocare Technologies Limited",
       "sector": "Healthcare",
       "close": 584.35,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "AURUM": {
-      "name": "Aurum Proptech Ltd",
-      "sector": "Information Technology",
-      "close": 232.98,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -401,13 +436,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "RKFORGE": {
-      "name": "Ramkrishna Forgings Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 751.25,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "DREDGECORP": {
       "name": "Dredging Corporation Of India Limited",
       "sector": "Services",
@@ -419,20 +447,6 @@
       "name": "Radico Khaitan Limited",
       "sector": "Fast Moving Consumer Goods",
       "close": 4605,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "APCOTEXIND": {
-      "name": "Apcotex Industries Limited",
-      "sector": "Capital Goods",
-      "close": 625.25,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "BAJAJ-AUTO": {
-      "name": "Bajaj Auto Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 11910,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -450,24 +464,10 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "AEGISLOG": {
-      "name": "Aegis Logistics Ltd",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 1289.4,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "SHRIRAMFIN": {
       "name": "Shriram Finance Ltd",
       "sector": "Financial Services",
       "close": 1086.9,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "HEG": {
-      "name": "Heg Limited",
-      "sector": "Capital Goods",
-      "close": 737.35,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -485,6 +485,13 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "TVSMOTOR": {
+      "name": "Tvs Motor Company Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 4304.2,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
     "RAYMOND": {
       "name": "Raymond Limited",
       "sector": "Capital Goods",
@@ -496,13 +503,6 @@
       "name": "Bharat Seats Ltd",
       "sector": "Automobile and Auto Components",
       "close": 226.43,
-      "flag": "Away",
-      "trend_template_score": "7/8"
-    },
-    "NUVAMA": {
-      "name": "Nuvama Wealth Management Ltd",
-      "sector": "Financial Services",
-      "close": 1805,
       "flag": "Away",
       "trend_template_score": "7/8"
     },
@@ -520,12 +520,12 @@
       "flag": "Away",
       "trend_template_score": "7/8"
     },
-    "SCI": {
-      "name": "Shipping Corporation Of India Limited",
-      "sector": "Services",
-      "close": 299.05,
+    "AEGISLOG": {
+      "name": "Aegis Logistics Ltd",
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 1289.4,
       "flag": "Away",
-      "trend_template_score": "6/8"
+      "trend_template_score": "7/8"
     }
   }
 }
