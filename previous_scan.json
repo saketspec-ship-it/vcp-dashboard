@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-09-05 19:02 IST",
-  "run_epoch": 1788615154.6207685,
+  "run_time": "2026-09-06 13:40 IST",
+  "run_epoch": 1788682201.5766664,
   "tickers": {
     "BLUESTONE": {
       "name": "Bluestone Jewellery and Lifestyle Ltd",
@@ -30,17 +30,17 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "GROWWDEFNC": {
+      "name": "Groww Nifty India Defence ETF",
+      "sector": null,
+      "close": 97.42,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "EMCURE": {
       "name": "Emcure Pharmaceuticals Ltd",
       "sector": "Healthcare",
       "close": 1927.6,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SMALLCAP": {
-      "name": "Mirae Asset Nifty Smallcap 250 Momen.Quali. 100ETF",
-      "sector": null,
-      "close": 48.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -324,17 +324,17 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "GROWWDEFNC": {
-      "name": "Groww Nifty India Defence ETF",
-      "sector": null,
-      "close": 97.42,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "KROSS": {
       "name": "Kross Ltd",
       "sector": "Automobile and Auto Components",
       "close": 211.57,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "SMALLCAP": {
+      "name": "Mirae Asset Nifty Smallcap 250 Momen.Quali. 100ETF",
+      "sector": null,
+      "close": 48.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
