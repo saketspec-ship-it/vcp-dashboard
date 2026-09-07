@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-09-05 04:00 IST",
-  "run_epoch": 1788561022.1900833,
+  "run_time": "2026-09-07 23:36 IST",
+  "run_epoch": 1788804363.5245407,
   "tickers": {
     "NBIS": {
       "name": "Nebius Group N.V. Class A",
@@ -163,6 +163,13 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
+    "MT": {
+      "name": "ArcelorMittal SA ADR",
+      "sector": "Non-Energy Minerals",
+      "close": 78.74,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "NVS": {
       "name": "Novartis AG Sponsored ADR",
       "sector": "Health Technology",
@@ -251,13 +258,6 @@
       "name": "Shell Plc Sponsored ADR",
       "sector": "Energy Minerals",
       "close": 92.95,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "CAH": {
-      "name": "Cardinal Health, Inc.",
-      "sector": "Distribution Services",
-      "close": 247.18,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -469,7 +469,7 @@
       "sector": "Non-Energy Minerals",
       "close": 198.76,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "FCX": {
       "name": "Freeport-McMoRan, Inc.",
