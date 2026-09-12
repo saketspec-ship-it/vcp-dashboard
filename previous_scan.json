@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-09-12 13:39 IST",
-  "run_epoch": 1789200585.1091938,
+  "run_time": "2026-09-12 19:13 IST",
+  "run_epoch": 1789220628.8357103,
   "tickers": {
     "BLUESTONE": {
       "name": "Bluestone Jewellery and Lifestyle Ltd",
@@ -93,6 +93,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "AETHER": {
+      "name": "Aether Industries Ltd",
+      "sector": "Chemicals",
+      "close": 1674.7,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "PARAS": {
       "name": "Paras Defence and Space Technologies Ltd",
       "sector": "Capital Goods",
@@ -104,13 +111,6 @@
       "name": "Deep Industries Ltd",
       "sector": "Oil, Gas &amp; Consumable Fuels",
       "close": 774.4,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "GLAND": {
-      "name": "Gland Pharma Ltd",
-      "sector": "Healthcare",
-      "close": 2922.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -177,13 +177,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "PANAMAPET": {
-      "name": "Panama Petrochem Limited",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 483.15,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "DIACABS": {
       "name": "Diamond Power Infrastructure Ltd",
       "sector": "Capital Goods",
@@ -202,6 +195,13 @@
       "name": "Sigma Advanced System Ltd",
       "sector": "Capital Goods",
       "close": 832.45,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "LUMAXTECH": {
+      "name": "Lumax Auto Technologies Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 1993.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -226,13 +226,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "RKFORGE": {
-      "name": "Ramkrishna Forgings Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 711.2,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "MARKSANS": {
       "name": "Marksans Pharma Limited",
       "sector": "Healthcare",
@@ -251,13 +244,6 @@
       "name": "Torrent Pharmaceuticals Limited",
       "sector": "Healthcare",
       "close": 4965.5,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "GRASIM": {
-      "name": "Grasim Industries Limited",
-      "sector": "Construction Materials",
-      "close": 3281.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -300,13 +286,6 @@
       "name": "Samvardhana Motherson International Ltd",
       "sector": "Automobile and Auto Components",
       "close": 164.45,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "TFCILTD": {
-      "name": "Tourism Finance Corporation Of India Limited",
-      "sector": "Financial Services",
-      "close": 141.49,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -415,13 +394,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "AETHER": {
-      "name": "Aether Industries Ltd",
-      "sector": "Chemicals",
-      "close": 1674.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "SHAILY": {
       "name": "Shaily Engineering Plastics Ltd",
       "sector": "Consumer Durables",
@@ -464,6 +436,13 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "GLAND": {
+      "name": "Gland Pharma Ltd",
+      "sector": "Healthcare",
+      "close": 2922.3,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
     "MARINE": {
       "name": "Marine Electricals (India) Ltd",
       "sector": "Capital Goods",
@@ -490,7 +469,7 @@
       "sector": "Fast Moving Consumer Goods",
       "close": 226.76,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "LALPATHLAB": {
       "name": "Dr. Lal Path Labs Ltd.",
@@ -513,6 +492,13 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "PANAMAPET": {
+      "name": "Panama Petrochem Limited",
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 483.15,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
     "TI": {
       "name": "Tilaknagar Industries Limited",
       "sector": "Fast Moving Consumer Goods",
@@ -527,13 +513,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "LUMAXTECH": {
-      "name": "Lumax Auto Technologies Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 1993.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "LTFOODS": {
       "name": "L T Foods Ltd",
       "sector": "Fast Moving Consumer Goods",
@@ -545,6 +524,13 @@
       "name": "SAL Steel",
       "sector": "Metals &amp; Mining",
       "close": 74.81,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "RKFORGE": {
+      "name": "Ramkrishna Forgings Limited",
+      "sector": "Automobile and Auto Components",
+      "close": 711.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -566,6 +552,13 @@
       "name": "Bajaj Auto Limited",
       "sector": "Automobile and Auto Components",
       "close": 11678,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "GRASIM": {
+      "name": "Grasim Industries Limited",
+      "sector": "Construction Materials",
+      "close": 3281.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -608,6 +601,13 @@
       "name": "Dhampur Sugar Mills Limited",
       "sector": "Fast Moving Consumer Goods",
       "close": 163.59,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "TFCILTD": {
+      "name": "Tourism Finance Corporation Of India Limited",
+      "sector": "Financial Services",
+      "close": 141.49,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
