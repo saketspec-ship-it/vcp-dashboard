@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-09-14 14:47 IST",
-  "run_epoch": 1789377473.70431,
+  "run_time": "2026-09-14 21:59 IST",
+  "run_epoch": 1789403381.6062036,
   "tickers": {
     "BLUESTONE": {
       "name": "Bluestone Jewellery and Lifestyle Ltd",
@@ -177,6 +177,20 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "GOODLUCK": {
+      "name": "Goodluck India Limited",
+      "sector": "Capital Goods",
+      "close": 516.85,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "TDPOWERSYS": {
+      "name": "Td Power Systems Limited",
+      "sector": "Capital Goods",
+      "close": 804.9,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "DIACABS": {
       "name": "Diamond Power Infrastructure Ltd",
       "sector": "Capital Goods",
@@ -195,6 +209,13 @@
       "name": "Sigma Advanced System Ltd",
       "sector": "Capital Goods",
       "close": 832.45,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "PGIL": {
+      "name": "Pearl Global Industries Limited",
+      "sector": "Textiles",
+      "close": 1187.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -659,6 +680,13 @@
       "close": 333.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "HEG": {
+      "name": "Heg Limited",
+      "sector": "Capital Goods",
+      "close": 237.2,
+      "flag": "Away",
+      "trend_template_score": "3/8"
     }
   }
 }
