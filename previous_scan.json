@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-09-26 20:10 IST",
-  "run_epoch": 1790433616.8462207,
+  "run_time": "2026-09-27 15:03 IST",
+  "run_epoch": 1790501608.3474288,
   "tickers": {
     "URBANCO": {
       "name": "Urban Company Ltd",
@@ -48,6 +48,13 @@
       "name": "Kronox Lab Sciences Ltd",
       "sector": "Chemicals",
       "close": 206.58,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SMALLCAP": {
+      "name": "Mirae Asset Nifty Smallcap 250 Momen.Quali. 100ETF",
+      "sector": null,
+      "close": 48.69,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -442,13 +449,6 @@
       "close": 375.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
-    },
-    "SMALLCAP": {
-      "name": "Mirae Asset Nifty Smallcap 250 Momen.Quali. 100ETF",
-      "sector": null,
-      "close": 48.69,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
     },
     "GANDHAR": {
       "name": "Gandhar Oil Refinery (India) Ltd",
