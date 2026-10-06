@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-10-06 16:16 IST",
-  "run_epoch": 1791283607.3036387,
+  "run_time": "2026-10-06 22:25 IST",
+  "run_epoch": 1791305714.600964,
   "tickers": {
     "URBANCO": {
       "name": "Urban Company Ltd",
@@ -11,8 +11,8 @@
     },
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": "Financial Services",
-      "close": 692,
+      "sector": null,
+      "close": 693.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -39,7 +39,7 @@
     },
     "DIFFNKG": {
       "name": "Diffusion Engineers Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 454.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -53,8 +53,8 @@
     },
     "RBZJEWEL": {
       "name": "RBZ Jewellers Ltd",
-      "sector": "Consumer Durables",
-      "close": 196.37,
+      "sector": null,
+      "close": 196.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -68,7 +68,7 @@
     "UDS": {
       "name": "Updater Services Ltd",
       "sector": null,
-      "close": 213.7,
+      "close": 215.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -88,21 +88,21 @@
     },
     "TVSSCS": {
       "name": "TVS Supply Chain Solutions Ltd",
-      "sector": null,
+      "sector": "Services",
       "close": 130.67,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "CYIENTDLM": {
       "name": "Cyient DLM Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 939,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "INDOBORAX": {
       "name": "Indo Borax & Chemicals Ltd",
-      "sector": null,
+      "sector": "Chemicals",
       "close": 491.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -137,7 +137,7 @@
     },
     "SONAMLTD": {
       "name": "Sonam Ltd",
-      "sector": "Consumer Durables",
+      "sector": null,
       "close": 71.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -158,7 +158,7 @@
     },
     "IOLCP": {
       "name": "Iol Chemicals And Pharmaceuticals Limited",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 214.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -179,7 +179,7 @@
     },
     "MAWANASUG": {
       "name": "Mawana Sugars Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 147.89,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -200,7 +200,7 @@
     },
     "UTTAMSUGAR": {
       "name": "Uttam Sugar Mills Limited",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 302.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -208,27 +208,27 @@
     "BLKASHYAP": {
       "name": "B. L. Kashyap And Sons Limited",
       "sector": null,
-      "close": 54.8,
+      "close": 54.79,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ICIL": {
       "name": "Indo Count Industries Limited",
-      "sector": "Textiles",
+      "sector": null,
       "close": 473.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SSWL": {
       "name": "Steel Strips Wheels Limited",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 424.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DWARKESH": {
       "name": "Dwarikesh Sugar Industries Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 46.86,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -249,7 +249,7 @@
     },
     "BALRAMCHIN": {
       "name": "Balrampur Chini Mills Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 691.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -263,28 +263,28 @@
     },
     "INDSWFTLAB": {
       "name": "Ind-swift Laboratories Limited",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 400.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ORIENTHOT": {
       "name": "Oriental Hotels Limited",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 143.61,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "JAYNECOIND": {
       "name": "Jayaswal Neco Industries Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 94.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MANALIPETC": {
       "name": "Manali Petrochemicals Limited",
-      "sector": "Chemicals",
+      "sector": null,
       "close": 92.36,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -319,7 +319,7 @@
     },
     "MAXESTATES": {
       "name": "Max Estates Ltd",
-      "sector": "Realty",
+      "sector": null,
       "close": 564.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -327,27 +327,27 @@
     "GHCLTEXTIL": {
       "name": "GHCL Textiles Ltd",
       "sector": null,
-      "close": 131.68,
+      "close": 131.58,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "JTLIND": {
       "name": "JTL Industries Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 84.53,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TARSONS": {
       "name": "Tarsons Products Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 331.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SBCL": {
       "name": "Shivalik Bimetal Controls Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 1099.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -361,8 +361,8 @@
     },
     "DEEPINDS": {
       "name": "Deep Industries Ltd",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 754.35,
+      "sector": null,
+      "close": 748.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -390,7 +390,7 @@
     "GOODLUCK": {
       "name": "Goodluck India Limited",
       "sector": null,
-      "close": 491.5,
+      "close": 491.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -417,7 +417,7 @@
     },
     "BLISSGVS": {
       "name": "Bliss Gvs Pharma Limited",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 676.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -432,55 +432,55 @@
     "AVTNPL": {
       "name": "Avt Natural Products Limited",
       "sector": null,
-      "close": 90.7,
+      "close": 90.18,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "DOLPHIN": {
       "name": "Dolphin Offshore Enterprises (India) Ltd",
-      "sector": null,
-      "close": 638,
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 643.35,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ANTELOPUS": {
       "name": "Antelopus Selan Energy Ltd",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "sector": null,
       "close": 1100.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KAMDHENU": {
       "name": "Kamdhenu Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 37.31,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MANINDS": {
       "name": "Man Industries (india) Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 922.05,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "WELENT": {
       "name": "Welspun Enterprises Limited",
-      "sector": null,
+      "sector": "Construction",
       "close": 718.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PONNIERODE": {
       "name": "Ponni Sugars (erode) Limited",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 374.55,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TNPETRO": {
       "name": "Tamilnadu Petroproducts Limited",
-      "sector": "Chemicals",
+      "sector": null,
       "close": 126.03,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -488,7 +488,7 @@
     "CALSOFT": {
       "name": "California Software Company Limited",
       "sector": null,
-      "close": 33.2,
+      "close": 33.44,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -509,14 +509,14 @@
     "ASIANENE": {
       "name": "Asian Energy Services Ltd",
       "sector": null,
-      "close": 466.95,
+      "close": 463.75,
       "flag": "Away",
       "trend_template_score": "7/8"
     },
     "OMAXE": {
       "name": "Omaxe Limited",
       "sector": null,
-      "close": 107.99,
+      "close": 107.71,
       "flag": "Away",
       "trend_template_score": "7/8"
     }
