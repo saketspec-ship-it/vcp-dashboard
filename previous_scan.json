@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-10-10 15:37 IST",
-  "run_epoch": 1791626877.31807,
+  "run_time": "2026-10-10 21:27 IST",
+  "run_epoch": 1791647830.7906456,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
@@ -18,14 +18,14 @@
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 343.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CYIENTDLM": {
       "name": "Cyient DLM Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 952.35,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -67,14 +67,14 @@
     },
     "UTTAMSUGAR": {
       "name": "Uttam Sugar Mills Limited",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 298.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SSWL": {
       "name": "Steel Strips Wheels Limited",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 406.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -95,7 +95,7 @@
     },
     "WSTCSTPAPR": {
       "name": "West Coast Paper Mills Limited",
-      "sector": "Forest Materials",
+      "sector": null,
       "close": 727.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -130,7 +130,7 @@
     },
     "PRABHA": {
       "name": "Prabha Energy Ltd",
-      "sector": null,
+      "sector": "Oil, Gas &amp; Consumable Fuels",
       "close": 219.22,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -144,7 +144,7 @@
     },
     "QUADFUTURE": {
       "name": "Quadrant Future Tek Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 511.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -158,7 +158,7 @@
     },
     "DIFFNKG": {
       "name": "Diffusion Engineers Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 428.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -172,7 +172,7 @@
     },
     "CEIGALL": {
       "name": "Ceigall India Ltd",
-      "sector": "Construction",
+      "sector": null,
       "close": 369,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -235,7 +235,7 @@
     },
     "CONFIPET": {
       "name": "Confidence Petroleum India Ltd",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "sector": null,
       "close": 83.67,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -249,7 +249,7 @@
     },
     "SOLARA": {
       "name": "Solara Active Pharma Sciences Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 644.35,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -263,7 +263,7 @@
     },
     "GOODLUCK": {
       "name": "Goodluck India Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 500.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -291,14 +291,14 @@
     },
     "IOLCP": {
       "name": "Iol Chemicals And Pharmaceuticals Limited",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 201.15,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "BLISSGVS": {
       "name": "Bliss Gvs Pharma Limited",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 655.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -319,7 +319,7 @@
     },
     "REDINGTON": {
       "name": "Redington (india) Limited",
-      "sector": null,
+      "sector": "Services",
       "close": 380,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -340,21 +340,21 @@
     },
     "MANINDS": {
       "name": "Man Industries (india) Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 867.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "WELENT": {
       "name": "Welspun Enterprises Limited",
-      "sector": null,
+      "sector": "Construction",
       "close": 735.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TEXINFRA": {
       "name": "Texmaco Infrastructure & Holdings Limited",
-      "sector": null,
+      "sector": "Services",
       "close": 118.07,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -424,7 +424,7 @@
     },
     "ORIENTHOT": {
       "name": "Oriental Hotels Limited",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 140.01,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -452,7 +452,7 @@
     },
     "HINDOILEXP": {
       "name": "Hindustan Oil Exploration Company Limited",
-      "sector": null,
+      "sector": "Oil, Gas &amp; Consumable Fuels",
       "close": 169.34,
       "flag": "Watch",
       "trend_template_score": "8/8"
