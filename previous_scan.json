@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-10-18 13:50 IST",
-  "run_epoch": 1792311633.797717,
+  "run_time": "2026-10-18 19:36 IST",
+  "run_epoch": 1792332401.6179957,
   "tickers": {
     "SGMART": {
       "name": "SG Mart Ltd",
@@ -88,7 +88,7 @@
     },
     "NGIL": {
       "name": "Nakoda Group of Industries Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 39.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -102,7 +102,7 @@
     },
     "MODISONLTD": {
       "name": "Modison Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 499.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -165,7 +165,7 @@
     },
     "KAMDHENU": {
       "name": "Kamdhenu Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 38,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -249,7 +249,7 @@
     },
     "QUADFUTURE": {
       "name": "Quadrant Future Tek Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 453.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
