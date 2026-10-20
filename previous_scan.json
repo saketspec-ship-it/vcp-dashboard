@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-10-20 14:21 IST",
-  "run_epoch": 1792486315.8263845,
+  "run_time": "2026-10-20 20:46 IST",
+  "run_epoch": 1792509367.6423254,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 732.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -46,7 +46,7 @@
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 350.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -95,7 +95,7 @@
     },
     "OMAXE": {
       "name": "Omaxe Limited",
-      "sector": "Realty",
+      "sector": null,
       "close": 114.56,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -109,7 +109,7 @@
     },
     "MANINDS": {
       "name": "Man Industries (india) Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 884.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -123,14 +123,14 @@
     },
     "INDNIPPON": {
       "name": "India Nippon Electricals Limited",
-      "sector": null,
+      "sector": "Automobile and Auto Components",
       "close": 1213.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SAREGAMA": {
       "name": "Saregama India Limited",
-      "sector": "Media, Entertainment &amp; Publication",
+      "sector": null,
       "close": 510.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -186,7 +186,7 @@
     },
     "INDGN": {
       "name": "Indegene Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 588.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -207,14 +207,14 @@
     },
     "PDMJEPAPER": {
       "name": "Pudumjee Paper Products Limited",
-      "sector": null,
+      "sector": "Forest Materials",
       "close": 95.27,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "FCL": {
       "name": "Fineotex Chemical Limited",
-      "sector": null,
+      "sector": "Chemicals",
       "close": 55.81,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -242,7 +242,7 @@
     },
     "SMSPHARMA": {
       "name": "Sms Pharmaceuticals Limited",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 434.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -270,7 +270,7 @@
     },
     "INDORAMA": {
       "name": "Indo Rama Synthetics (india) Limited",
-      "sector": "Textiles",
+      "sector": null,
       "close": 92.24,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -305,21 +305,21 @@
     },
     "KTKBANK": {
       "name": "The Karnataka Bank Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 329.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 1130.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MOREPENLAB": {
       "name": "Morepen Laboratories Limited",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 121.49,
       "flag": "Watch",
       "trend_template_score": "8/8"
