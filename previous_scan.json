@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-10-19 22:34 IST",
-  "run_epoch": 1792429492.0621073,
+  "run_time": "2026-10-20 14:21 IST",
+  "run_epoch": 1792486315.8263845,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
@@ -25,7 +25,7 @@
     },
     "RBZJEWEL": {
       "name": "RBZ Jewellers Ltd",
-      "sector": "Consumer Durables",
+      "sector": null,
       "close": 209.28,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -39,21 +39,21 @@
     },
     "VALIANTLAB": {
       "name": "Valiant Laboratories Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 140.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 350.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AAREYDRUGS": {
       "name": "Aarey Drugs & Pharmaceuticals Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 113.87,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -67,7 +67,7 @@
     },
     "SHREEPUSHK": {
       "name": "Shree Pushkar Chemicals & Fertilisers Limited",
-      "sector": "Chemicals",
+      "sector": null,
       "close": 505.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -95,14 +95,14 @@
     },
     "OMAXE": {
       "name": "Omaxe Limited",
-      "sector": null,
+      "sector": "Realty",
       "close": 114.56,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DCBBANK": {
       "name": "Dcb Bank Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 210.38,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -130,7 +130,7 @@
     },
     "SAREGAMA": {
       "name": "Saregama India Limited",
-      "sector": null,
+      "sector": "Media, Entertainment &amp; Publication",
       "close": 510.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -228,14 +228,14 @@
     },
     "BODALCHEM": {
       "name": "Bodal Chemicals Limited",
-      "sector": null,
+      "sector": "Chemicals",
       "close": 163.97,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PAISALO": {
       "name": "Paisalo Digital Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 79.54,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -249,7 +249,7 @@
     },
     "ANTELOPUS": {
       "name": "Antelopus Selan Energy Ltd",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "sector": null,
       "close": 1002.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -270,7 +270,7 @@
     },
     "INDORAMA": {
       "name": "Indo Rama Synthetics (india) Limited",
-      "sector": null,
+      "sector": "Textiles",
       "close": 92.24,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -305,14 +305,14 @@
     },
     "KTKBANK": {
       "name": "The Karnataka Bank Limited",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 329.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 1130.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
