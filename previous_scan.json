@@ -1,172 +1,151 @@
 {
-  "run_time": "2026-10-22 20:56 IST",
-  "run_epoch": 1792682777.5226002,
+  "run_time": "2026-10-23 14:18 IST",
+  "run_epoch": 1792745334.3417058,
   "tickers": {
-    "INDGN": {
-      "name": "Indegene Ltd",
+    "KOLTEPATIL": {
+      "name": "Kolte - Patil Developers Limited",
       "sector": null,
-      "close": 588.1,
+      "close": 448.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "AAREYDRUGS": {
-      "name": "Aarey Drugs & Pharmaceuticals Ltd",
-      "sector": "Healthcare",
-      "close": 110.41,
+    "ANTELOPUS": {
+      "name": "Antelopus Selan Energy Ltd",
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 1132.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "TBZ": {
-      "name": "Tribhovandas Bhimji Zaveri Limited",
-      "sector": "Consumer Durables",
-      "close": 715.15,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "ADANIPORTS": {
-      "name": "Adani Ports And Special Economic Zone Limited",
-      "sector": "Services",
-      "close": 1750,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "COFORGE": {
-      "name": "Coforge (Niit Tech) Ltd",
-      "sector": "Information Technology",
-      "close": 1908.8,
-      "flag": "Trend",
+    "GCSL": {
+      "name": "Gretex Corporate Services Ltd",
+      "sector": null,
+      "close": 722,
+      "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "LOTUSDEV": {
       "name": "Sri Lotus Developers & Realty Ltd",
       "sector": "Realty",
-      "close": 237.36,
+      "close": 225.75,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
       "sector": null,
-      "close": 160.07,
+      "close": 158.64,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ROSSTECH": {
       "name": "Rossell Techsys Ltd",
       "sector": "Capital Goods",
-      "close": 1358.7,
+      "close": 1413.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CEIGALL": {
       "name": "Ceigall India Ltd",
       "sector": null,
-      "close": 376.9,
+      "close": 363.6,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "ABDL": {
+      "name": "Allied Blenders & Distillers Ltd",
+      "sector": null,
+      "close": 675.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
       "sector": null,
-      "close": 326.3,
+      "close": 329.35,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "PASUPTAC": {
+      "name": "Pasupati Acrylon Ltd",
+      "sector": "Chemicals",
+      "close": 69,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "AAREYDRUGS": {
+      "name": "Aarey Drugs & Pharmaceuticals Ltd",
+      "sector": null,
+      "close": 106,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "VALIANTORG": {
+      "name": "Valiant Organics Ltd",
+      "sector": "Chemicals",
+      "close": 415,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "UNITEDPOLY": {
       "name": "United Polyfab Gujarat Ltd",
       "sector": null,
-      "close": 49.43,
+      "close": 48.52,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "GLOBAL": {
+      "name": "Global Education Ltd",
+      "sector": null,
+      "close": 141,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "LAURUSLABS": {
       "name": "Laurus Labs Limited",
       "sector": "Healthcare",
-      "close": 2002.5,
+      "close": 1961.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "FILATEX": {
-      "name": "Filatex India Limited",
+    "BHAGERIA": {
+      "name": "Bhageria Industries Limited",
       "sector": null,
-      "close": 96.76,
+      "close": 337.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "BLISSGVS": {
-      "name": "Bliss Gvs Pharma Limited",
-      "sector": null,
-      "close": 642.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "PAISALO": {
-      "name": "Paisalo Digital Ltd",
-      "sector": null,
-      "close": 79.34,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "RGL": {
-      "name": "Renaissance Global Ltd",
-      "sector": null,
-      "close": 161.35,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "SMSPHARMA": {
-      "name": "Sms Pharmaceuticals Limited",
-      "sector": null,
-      "close": 428.65,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "ANTELOPUS": {
-      "name": "Antelopus Selan Energy Ltd",
-      "sector": null,
-      "close": 1005.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "SSWL": {
-      "name": "Steel Strips Wheels Limited",
-      "sector": "Automobile and Auto Components",
-      "close": 390.65,
+    "COFORGE": {
+      "name": "Coforge (Niit Tech) Ltd",
+      "sector": "Information Technology",
+      "close": 1894.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "WELSPUNLIV": {
       "name": "Welspun Living Ltd",
       "sector": null,
-      "close": 213.94,
+      "close": 210.37,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "WHEELS": {
       "name": "Wheels India Limited",
       "sector": "Automobile and Auto Components",
-      "close": 2108.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "CHENNPETRO": {
-      "name": "Chennai Petroleum Corporation Limited",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 1453.7,
+      "close": 2127.9,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KOPRAN": {
       "name": "Kopran Limited",
       "sector": null,
-      "close": 261.65,
+      "close": 250,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
       "sector": "Capital Goods",
-      "close": 1085.7,
+      "close": 1055.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     }
