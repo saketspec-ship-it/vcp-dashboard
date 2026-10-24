@@ -1,24 +1,24 @@
 {
-  "run_time": "2026-10-24 13:52 IST",
-  "run_epoch": 1792830156.2198503,
+  "run_time": "2026-10-24 19:34 IST",
+  "run_epoch": 1792850654.2437007,
   "tickers": {
-    "AAREYDRUGS": {
-      "name": "Aarey Drugs & Pharmaceuticals Ltd",
-      "sector": null,
-      "close": 106.73,
+    "ANTELOPUS": {
+      "name": "Antelopus Selan Energy Ltd",
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 1136.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "LOTUSDEV": {
       "name": "Sri Lotus Developers & Realty Ltd",
-      "sector": "Realty",
+      "sector": null,
       "close": 225.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 157.23,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -39,28 +39,35 @@
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 672.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 330.7,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "AAREYDRUGS": {
+      "name": "Aarey Drugs & Pharmaceuticals Ltd",
+      "sector": null,
+      "close": 106.73,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "VALIANTORG": {
       "name": "Valiant Organics Ltd",
-      "sector": "Chemicals",
+      "sector": null,
       "close": 412.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "UNITEDPOLY": {
       "name": "United Polyfab Gujarat Ltd",
-      "sector": "Textiles",
+      "sector": null,
       "close": 49.19,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -90,13 +97,6 @@
       "name": "Pearl Global Industries Limited",
       "sector": "Textiles",
       "close": 1224,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "ANTELOPUS": {
-      "name": "Antelopus Selan Energy Ltd",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 1136.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
