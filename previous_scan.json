@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-10-24 19:34 IST",
-  "run_epoch": 1792850654.2437007,
+  "run_time": "2026-10-25 14:12 IST",
+  "run_epoch": 1792917725.4996462,
   "tickers": {
     "ANTELOPUS": {
       "name": "Antelopus Selan Energy Ltd",
@@ -11,14 +11,14 @@
     },
     "LOTUSDEV": {
       "name": "Sri Lotus Developers & Realty Ltd",
-      "sector": null,
+      "sector": "Realty",
       "close": 225.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 157.23,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -39,21 +39,21 @@
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 672.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 330.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "AAREYDRUGS": {
       "name": "Aarey Drugs & Pharmaceuticals Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 106.73,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -88,7 +88,7 @@
     },
     "BHAGERIA": {
       "name": "Bhageria Industries Limited",
-      "sector": null,
+      "sector": "Chemicals",
       "close": 354.35,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -123,7 +123,7 @@
     },
     "KABRAEXTRU": {
       "name": "Kabra Extrusion Technik Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 678.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
