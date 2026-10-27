@@ -1,564 +1,564 @@
 {
-  "run_time": "2026-10-28 00:03 IST",
-  "run_epoch": 1793125993.2610056,
+  "run_time": "2026-10-28 05:26 IST",
+  "run_epoch": 1793145395.177797,
   "tickers": {
     "PLTR": {
       "name": "Palantir Technologies Inc. Class A",
       "sector": "Technology Services",
-      "close": 199.53,
+      "close": 198.73,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SNOW": {
       "name": "Snowflake, Inc.",
       "sector": "Technology Services",
-      "close": 339.1698,
+      "close": 337.42,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DDOG": {
       "name": "Datadog, Inc. Class A",
       "sector": "Technology Services",
-      "close": 280.975,
+      "close": 280.82,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NET": {
       "name": "Cloudflare Inc Class A",
       "sector": "Technology Services",
-      "close": 331.7699,
+      "close": 327.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CRWD": {
       "name": "CrowdStrike Holdings, Inc. Class A",
       "sector": "Technology Services",
-      "close": 268.65,
+      "close": 268.02,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SPOT": {
       "name": "Spotify Technology SA",
       "sector": "Technology Services",
-      "close": 558.45,
+      "close": 555.45,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "TEAM": {
       "name": "Atlassian Corp Class A",
       "sector": "Technology Services",
-      "close": 220.165,
+      "close": 219.41,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "HPE": {
       "name": "Hewlett Packard Enterprise Co.",
       "sector": "Electronic Technology",
-      "close": 60.88,
+      "close": 60.84,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NTRA": {
       "name": "Natera, Inc.",
       "sector": "Health Technology",
-      "close": 414.095,
+      "close": 410.82,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ABBV": {
       "name": "AbbVie, Inc.",
       "sector": "Health Technology",
-      "close": 286.745,
+      "close": 286.39,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "FANG": {
       "name": "Diamondback Energy, Inc.",
       "sector": "Energy Minerals",
-      "close": 203.87,
+      "close": 204.48,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "PANW": {
       "name": "Palo Alto Networks, Inc.",
       "sector": "Technology Services",
-      "close": 403.33,
+      "close": 401.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "TRGP": {
       "name": "Targa Resources Corp.",
       "sector": "Utilities",
-      "close": 302.295,
+      "close": 302.61,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "FTNT": {
       "name": "Fortinet, Inc.",
       "sector": "Technology Services",
-      "close": 185.31,
+      "close": 185,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PM": {
       "name": "Philip Morris International Inc.",
       "sector": "Consumer Non-Durables",
-      "close": 203.24,
+      "close": 202.62,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "DAL": {
       "name": "Delta Air Lines, Inc.",
       "sector": "Transportation",
-      "close": 80.815,
+      "close": 81.45,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "NDAQ": {
       "name": "Nasdaq, Inc.",
       "sector": "Finance",
-      "close": 104.14,
+      "close": 104.36,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "BNS": {
       "name": "Bank of Nova Scotia",
       "sector": "Finance",
-      "close": 94.01,
+      "close": 93.85,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "EQNR": {
       "name": "Equinor ASA Sponsored ADR",
       "sector": "Energy Minerals",
-      "close": 47.47,
+      "close": 47.06,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ASX": {
       "name": "ASE Technology Holding Co., Ltd. Sponsored ADR",
       "sector": "Electronic Technology",
-      "close": 41.765,
+      "close": 42.06,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CNQ": {
       "name": "Canadian Natural Resources Limited",
       "sector": "Energy Minerals",
-      "close": 54.16,
+      "close": 54.07,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "A": {
       "name": "Agilent Technologies, Inc.",
       "sector": "Health Technology",
-      "close": 178.28,
+      "close": 177.49,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MFC": {
       "name": "Manulife Financial Corporation",
       "sector": "Finance",
-      "close": 45.035,
+      "close": 44.98,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "CM": {
       "name": "Canadian Imperial Bank of Commerce",
       "sector": "Finance",
-      "close": 116.555,
+      "close": 116.49,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "TSM": {
       "name": "Taiwan Semiconductor Manufacturing Co., Ltd. Sponsored ADR",
       "sector": "Electronic Technology",
-      "close": 437.5736,
+      "close": 436.87,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CNI": {
       "name": "Canadian National Railway Company",
       "sector": "Transportation",
-      "close": 125.26,
+      "close": 125.53,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "TD": {
       "name": "Toronto-Dominion Bank",
       "sector": "Finance",
-      "close": 125.845,
+      "close": 125.78,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RY": {
       "name": "Royal Bank of Canada",
       "sector": "Finance",
-      "close": 203.25,
+      "close": 203.02,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "LNG": {
       "name": "Cheniere Energy, Inc.",
       "sector": "Industrial Services",
-      "close": 299.565,
+      "close": 299.74,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ALL": {
       "name": "Allstate Corporation",
       "sector": "Finance",
-      "close": 251.615,
+      "close": 251.71,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "TTE": {
       "name": "TotalEnergies SE",
       "sector": "Energy Minerals",
-      "close": 92.7599,
+      "close": 92.35,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CSCO": {
       "name": "Cisco Systems, Inc.",
       "sector": "Electronic Technology",
-      "close": 111.53,
+      "close": 111.38,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "EOG": {
       "name": "EOG Resources, Inc.",
       "sector": "Energy Minerals",
-      "close": 161.91,
+      "close": 161.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "JCI": {
       "name": "Johnson Controls International plc",
       "sector": "Producer Manufacturing",
-      "close": 153.415,
+      "close": 155.88,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "MSFT": {
+      "name": "Microsoft Corporation",
+      "sector": "Technology Services",
+      "close": 531.33,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DVN": {
       "name": "Devon Energy Corporation",
       "sector": "Energy Minerals",
-      "close": 51.04,
+      "close": 51.23,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AME": {
       "name": "AMETEK, Inc.",
       "sector": "Producer Manufacturing",
-      "close": 245.43,
+      "close": 246.22,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "AJG": {
       "name": "Arthur J. Gallagher & Co.",
       "sector": "Finance",
-      "close": 257.34,
+      "close": 259.01,
       "flag": "Trend",
       "trend_template_score": "6/8"
     },
     "CP": {
       "name": "Canadian Pacific Kansas City Limited",
       "sector": "Transportation",
-      "close": 90.97,
+      "close": 91.13,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "AMGN": {
       "name": "Amgen Inc.",
       "sector": "Health Technology",
-      "close": 446.82,
+      "close": 447.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "COP": {
       "name": "ConocoPhillips",
       "sector": "Energy Minerals",
-      "close": 148.245,
+      "close": 147.96,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SLB": {
       "name": "SLB Limited",
       "sector": "Industrial Services",
-      "close": 53.93,
+      "close": 54.08,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "OXY": {
       "name": "Occidental Petroleum Corporation",
       "sector": "Energy Minerals",
-      "close": 62.915,
+      "close": 62.73,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AAPL": {
       "name": "Apple Inc.",
       "sector": "Electronic Technology",
-      "close": 345.56,
+      "close": 347.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "CSX": {
       "name": "CSX Corporation",
       "sector": "Transportation",
-      "close": 51.965,
+      "close": 52.27,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "OKE": {
       "name": "ONEOK, Inc.",
       "sector": "Utilities",
-      "close": 95.69,
+      "close": 96.01,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AMD": {
       "name": "Advanced Micro Devices, Inc.",
       "sector": "Electronic Technology",
-      "close": 559.755,
+      "close": 560.26,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "TMO": {
       "name": "Thermo Fisher Scientific Inc.",
       "sector": "Health Technology",
-      "close": 698.3267,
+      "close": 693.02,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NUE": {
       "name": "Nucor Corporation",
       "sector": "Non-Energy Minerals",
-      "close": 272.27,
+      "close": 270.79,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "UNP": {
       "name": "Union Pacific Corporation",
       "sector": "Transportation",
-      "close": 298.87,
+      "close": 299.88,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "TRV": {
       "name": "Travelers Companies, Inc.",
       "sector": "Finance",
-      "close": 395.715,
+      "close": 397.03,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "SONY": {
       "name": "Sony Group Corporation Sponsored ADR",
       "sector": "Electronic Technology",
-      "close": 25.58,
+      "close": 25.64,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "LLY": {
       "name": "Eli Lilly and Company",
       "sector": "Health Technology",
-      "close": 1280.735,
+      "close": 1281.91,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "EMR": {
       "name": "Emerson Electric Co.",
       "sector": "Electronic Technology",
-      "close": 165.558,
+      "close": 166.27,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "XOM": {
       "name": "Exxonmobil Holdings Corporation",
       "sector": "Energy Minerals",
-      "close": 181.135,
+      "close": 179.91,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "JNJ": {
       "name": "Johnson & Johnson",
       "sector": "Health Technology",
-      "close": 268.53,
+      "close": 268.73,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "CVX": {
       "name": "Chevron Corporation",
       "sector": "Energy Minerals",
-      "close": 229.135,
+      "close": 228.23,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MRNA": {
       "name": "Moderna, Inc.",
       "sector": "Health Technology",
-      "close": 199.665,
+      "close": 207.97,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SHOP": {
       "name": "Shopify, Inc. Class A",
       "sector": "Commercial Services",
-      "close": 165.6,
+      "close": 165.81,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "VEEV": {
       "name": "Veeva Systems Inc. Class A",
       "sector": "Technology Services",
-      "close": 313.24,
+      "close": 313.46,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PSX": {
       "name": "Phillips 66",
       "sector": "Energy Minerals",
-      "close": 271.49,
+      "close": 268.53,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MPC": {
       "name": "Marathon Petroleum Corporation",
       "sector": "Energy Minerals",
-      "close": 441.36,
+      "close": 435.98,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "V": {
       "name": "Visa Inc. Class A",
       "sector": "Finance",
-      "close": 399.51,
+      "close": 401.86,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MA": {
       "name": "Mastercard Incorporated Class A",
       "sector": "Finance",
-      "close": 608.05,
+      "close": 609.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ELV": {
       "name": "Elevance Health, Inc.",
       "sector": "Health Services",
-      "close": 419.755,
+      "close": 421.49,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PBR": {
       "name": "Petroleo Brasileiro SA Sponsored ADR",
       "sector": "Energy Minerals",
-      "close": 22.315,
+      "close": 22.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MET": {
       "name": "MetLife, Inc.",
       "sector": "Finance",
-      "close": 100.265,
+      "close": 99.98,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "EBAY": {
       "name": "eBay Inc.",
       "sector": "Retail Trade",
-      "close": 117.205,
+      "close": 117.83,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
+    },
+    "CB": {
+      "name": "Chubb Limited",
+      "sector": "Finance",
+      "close": 356.25,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "FAST": {
       "name": "Fastenal Company",
       "sector": "Distribution Services",
-      "close": 51.315,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "MSFT": {
-      "name": "Microsoft Corporation",
-      "sector": "Technology Services",
-      "close": 531.31,
+      "close": 51.55,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MNST": {
       "name": "Monster Beverage Corporation",
       "sector": "Consumer Non-Durables",
-      "close": 45.485,
+      "close": 45.44,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "UNH": {
       "name": "UnitedHealth Group Incorporated",
       "sector": "Health Services",
-      "close": 409.42,
+      "close": 410.39,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "SHEL": {
       "name": "Shell Plc Sponsored ADR",
       "sector": "Energy Minerals",
-      "close": 105.055,
+      "close": 104.78,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CAH": {
       "name": "Cardinal Health, Inc.",
       "sector": "Distribution Services",
-      "close": 249.05,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "HUM": {
-      "name": "Humana Inc.",
-      "sector": "Health Services",
-      "close": 413.29,
+      "close": 246.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ADP": {
       "name": "Automatic Data Processing, Inc.",
       "sector": "Technology Services",
-      "close": 292.39,
+      "close": 293.11,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SU": {
       "name": "Suncor Energy Inc.",
       "sector": "Energy Minerals",
-      "close": 77.29,
+      "close": 76.22,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KO": {
       "name": "Coca-Cola Company",
       "sector": "Consumer Non-Durables",
-      "close": 91.7,
+      "close": 91.18,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "BP": {
       "name": "BP PLC Sponsored ADR",
       "sector": "Energy Minerals",
-      "close": 49.165,
+      "close": 48.93,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MO": {
       "name": "Altria Group, Inc.",
       "sector": "Consumer Non-Durables",
-      "close": 73.34,
+      "close": 73.49,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "PBR.A": {
       "name": "Petroleo Brasileiro SA Sponsored ADR Pfd",
       "sector": "Energy Minerals",
-      "close": 19.845,
+      "close": 19.76,
       "flag": null,
       "trend_template_score": null
     }
