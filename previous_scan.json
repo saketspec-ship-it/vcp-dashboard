@@ -1,39 +1,39 @@
 {
-  "run_time": "2026-10-30 15:55 IST",
-  "run_epoch": 1793355927.5467796,
+  "run_time": "2026-10-30 22:16 IST",
+  "run_epoch": 1793378766.5422242,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
       "sector": null,
-      "close": 770,
+      "close": 767.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARIS": {
       "name": "Arisinfra Solutions Ltd",
       "sector": "Construction Materials",
-      "close": 137.3,
+      "close": 139.17,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CEIGALL": {
       "name": "Ceigall India Ltd",
       "sector": null,
-      "close": 391.85,
+      "close": 390.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
       "sector": null,
-      "close": 359,
+      "close": 360.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "LLOYDSME": {
       "name": "Lloyds Metals & Energy Ltd",
       "sector": "Metals &amp; Mining",
-      "close": 1827.8,
+      "close": 1825.3,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
@@ -47,14 +47,14 @@
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": null,
-      "close": 66.5,
+      "close": 66.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "OPTIEMUS": {
       "name": "Optiemus Infracom Ltd",
       "sector": "Telecommunication",
-      "close": 788.7,
+      "close": 789.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -72,52 +72,59 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
+    "BEML": {
+      "name": "Beml Limited",
+      "sector": "Capital Goods",
+      "close": 1988.6,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "GESHIP": {
       "name": "The Great Eastern Shipping Company Limited",
       "sector": "Services",
-      "close": 1588,
+      "close": 1593.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CHENNPETRO": {
       "name": "Chennai Petroleum Corporation Limited",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 1505,
+      "close": 1511.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
       "sector": null,
-      "close": 1100,
+      "close": 1100.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
       "sector": null,
-      "close": 153.71,
+      "close": 152.26,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KMEW": {
       "name": "Knowledge Marine & Engineering Works Ltd",
       "sector": "Services",
-      "close": 3095,
+      "close": 3094.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KROSS": {
       "name": "Kross Ltd",
       "sector": null,
-      "close": 280.85,
+      "close": 280.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
       "sector": null,
-      "close": 700,
+      "close": 698.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -131,28 +138,28 @@
     "ONEPOINT": {
       "name": "One Point One Solutions Ltd",
       "sector": null,
-      "close": 69.38,
+      "close": 72.62,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TBZ": {
       "name": "Tribhovandas Bhimji Zaveri Limited",
       "sector": "Consumer Durables",
-      "close": 607.75,
+      "close": 607.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "DELTACORP": {
       "name": "Delta Corp Limited",
       "sector": null,
-      "close": 74.49,
+      "close": 74.18,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SUNFLAG": {
       "name": "Sunflag Iron And Steel Company Limited",
       "sector": null,
-      "close": 390,
+      "close": 391.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -162,13 +169,6 @@
       "close": 339.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
-    },
-    "SANSERA": {
-      "name": "Sansera Engineering Ltd",
-      "sector": "Automobile and Auto Components",
-      "close": 4127,
-      "flag": "Away",
-      "trend_template_score": "7/8"
     }
   }
 }
