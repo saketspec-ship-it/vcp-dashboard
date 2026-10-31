@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-10-30 22:16 IST",
-  "run_epoch": 1793378766.5422242,
+  "run_time": "2026-10-31 15:25 IST",
+  "run_epoch": 1793440556.22762,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
@@ -25,7 +25,7 @@
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 360.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -53,7 +53,7 @@
     },
     "OPTIEMUS": {
       "name": "Optiemus Infracom Ltd",
-      "sector": "Telecommunication",
+      "sector": null,
       "close": 789.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -123,7 +123,7 @@
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 698.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -144,7 +144,7 @@
     },
     "TBZ": {
       "name": "Tribhovandas Bhimji Zaveri Limited",
-      "sector": "Consumer Durables",
+      "sector": null,
       "close": 607.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -165,7 +165,7 @@
     },
     "FEDERALBNK": {
       "name": "The Federal Bank  Limited",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 339.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
