@@ -1,31 +1,31 @@
 {
-  "run_time": "2026-11-01 16:16 IST",
-  "run_epoch": 1793529980.4608524,
+  "run_time": "2026-11-01 22:23 IST",
+  "run_epoch": 1793552002.7027433,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 767.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARIS": {
       "name": "Arisinfra Solutions Ltd",
-      "sector": "Construction Materials",
+      "sector": null,
       "close": 139.17,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CEIGALL": {
       "name": "Ceigall India Ltd",
-      "sector": null,
+      "sector": "Construction",
       "close": 390.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 360.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -102,7 +102,7 @@
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 152.26,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -123,7 +123,7 @@
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 698.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
