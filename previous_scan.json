@@ -1,172 +1,193 @@
 {
-  "run_time": "2026-11-01 22:23 IST",
-  "run_epoch": 1793552002.7027433,
+  "run_time": "2026-11-02 17:08 IST",
+  "run_epoch": 1793619538.565887,
   "tickers": {
+    "RUBICON": {
+      "name": "Rubicon Research Ltd",
+      "sector": "Healthcare",
+      "close": 1667.4,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": "Financial Services",
-      "close": 767.45,
+      "sector": null,
+      "close": 773,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SAMBHV": {
+      "name": "Sambhv Steel Tubes Ltd",
+      "sector": null,
+      "close": 165.01,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARIS": {
       "name": "Arisinfra Solutions Ltd",
       "sector": null,
-      "close": 139.17,
+      "close": 140.35,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ACMESOLAR": {
+      "name": "ACME Solar Holdings Ltd",
+      "sector": null,
+      "close": 418.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CEIGALL": {
       "name": "Ceigall India Ltd",
-      "sector": "Construction",
-      "close": 390.2,
+      "sector": null,
+      "close": 392.45,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ABDL": {
+      "name": "Allied Blenders & Distillers Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "close": 708.25,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "NUVAMA": {
+      "name": "Nuvama Wealth Management Ltd",
+      "sector": "Financial Services",
+      "close": 1805,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
       "sector": null,
-      "close": 360.25,
+      "close": 379.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "LLOYDSME": {
       "name": "Lloyds Metals & Energy Ltd",
       "sector": "Metals &amp; Mining",
-      "close": 1825.3,
+      "close": 1825.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
-    },
-    "SYRMA": {
-      "name": "Syrma SGS Technology Ltd",
-      "sector": "Capital Goods",
-      "close": 1625.3,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
     },
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": null,
-      "close": 66.15,
+      "close": 65.34,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SANSERA": {
+      "name": "Sansera Engineering Ltd",
+      "sector": "Automobile and Auto Components",
+      "close": 4170,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "HAL": {
+      "name": "Hindustan Aeronautics Ltd",
+      "sector": "Capital Goods",
+      "close": 4855,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "OPTIEMUS": {
       "name": "Optiemus Infracom Ltd",
       "sector": null,
-      "close": 789.45,
+      "close": 787.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "BODALCHEM": {
       "name": "Bodal Chemicals Limited",
+      "sector": "Chemicals",
+      "close": 172.74,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "DELTACORP": {
+      "name": "Delta Corp Limited",
       "sector": null,
-      "close": 164.52,
+      "close": 74.11,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SIGMAADV": {
+      "name": "Sigma Advanced System Ltd",
+      "sector": null,
+      "close": 900,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DLF": {
       "name": "Dlf Limited",
       "sector": null,
-      "close": 691.55,
+      "close": 701,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "BEML": {
-      "name": "Beml Limited",
-      "sector": "Capital Goods",
-      "close": 1988.6,
+    "PGIL": {
+      "name": "Pearl Global Industries Limited",
+      "sector": null,
+      "close": 1254.2,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "GABRIEL": {
+      "name": "Gabriel India Limited",
+      "sector": null,
+      "close": 1441.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "GESHIP": {
       "name": "The Great Eastern Shipping Company Limited",
       "sector": "Services",
-      "close": 1593.6,
+      "close": 1600.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CHENNPETRO": {
       "name": "Chennai Petroleum Corporation Limited",
       "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 1511.5,
+      "close": 1546,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": null,
-      "close": 1100.2,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SAMBHV": {
-      "name": "Sambhv Steel Tubes Ltd",
       "sector": "Capital Goods",
-      "close": 152.26,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "KMEW": {
-      "name": "Knowledge Marine & Engineering Works Ltd",
-      "sector": "Services",
-      "close": 3094.8,
-      "flag": "Watch",
+      "close": 1125,
+      "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "KROSS": {
       "name": "Kross Ltd",
       "sector": null,
-      "close": 280.4,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "ABDL": {
-      "name": "Allied Blenders & Distillers Ltd",
-      "sector": null,
-      "close": 698.25,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "HAL": {
-      "name": "Hindustan Aeronautics Ltd",
-      "sector": "Capital Goods",
-      "close": 4853.7,
+      "close": 267.65,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ONEPOINT": {
       "name": "One Point One Solutions Ltd",
-      "sector": null,
-      "close": 72.62,
+      "sector": "Services",
+      "close": 69.78,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TBZ": {
       "name": "Tribhovandas Bhimji Zaveri Limited",
       "sector": null,
-      "close": 607.8,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "DELTACORP": {
-      "name": "Delta Corp Limited",
-      "sector": null,
-      "close": 74.18,
+      "close": 596.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SUNFLAG": {
       "name": "Sunflag Iron And Steel Company Limited",
-      "sector": null,
-      "close": 391.95,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "FEDERALBNK": {
-      "name": "The Federal Bank  Limited",
-      "sector": null,
-      "close": 339.7,
+      "sector": "Capital Goods",
+      "close": 392.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     }
