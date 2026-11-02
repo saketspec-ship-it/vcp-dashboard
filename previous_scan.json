@@ -1,25 +1,11 @@
 {
-  "run_time": "2026-11-02 17:08 IST",
-  "run_epoch": 1793619538.565887,
+  "run_time": "2026-11-03 01:57 IST",
+  "run_epoch": 1793651253.219915,
   "tickers": {
-    "RUBICON": {
-      "name": "Rubicon Research Ltd",
-      "sector": "Healthcare",
-      "close": 1667.4,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
       "sector": null,
-      "close": 773,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SAMBHV": {
-      "name": "Sambhv Steel Tubes Ltd",
-      "sector": null,
-      "close": 165.01,
+      "close": 770.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -30,13 +16,6 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ACMESOLAR": {
-      "name": "ACME Solar Holdings Ltd",
-      "sector": null,
-      "close": 418.75,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "CEIGALL": {
       "name": "Ceigall India Ltd",
       "sector": null,
@@ -44,23 +23,9 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ABDL": {
-      "name": "Allied Blenders & Distillers Ltd",
-      "sector": "Fast Moving Consumer Goods",
-      "close": 708.25,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "NUVAMA": {
-      "name": "Nuvama Wealth Management Ltd",
-      "sector": "Financial Services",
-      "close": 1805,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 379.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -79,66 +44,38 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "SANSERA": {
-      "name": "Sansera Engineering Ltd",
-      "sector": "Automobile and Auto Components",
-      "close": 4170,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "HAL": {
-      "name": "Hindustan Aeronautics Ltd",
-      "sector": "Capital Goods",
-      "close": 4855,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "OPTIEMUS": {
       "name": "Optiemus Infracom Ltd",
       "sector": null,
-      "close": 787.95,
+      "close": 780.35,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "BODALCHEM": {
       "name": "Bodal Chemicals Limited",
-      "sector": "Chemicals",
-      "close": 172.74,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "DELTACORP": {
-      "name": "Delta Corp Limited",
       "sector": null,
-      "close": 74.11,
+      "close": 172.74,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": null,
-      "close": 900,
+      "close": 901.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DLF": {
       "name": "Dlf Limited",
-      "sector": null,
+      "sector": "Realty",
       "close": 701,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "PGIL": {
-      "name": "Pearl Global Industries Limited",
-      "sector": null,
-      "close": 1254.2,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "GABRIEL": {
       "name": "Gabriel India Limited",
       "sector": null,
-      "close": 1441.1,
+      "close": 1443.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -163,6 +100,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "SAMBHV": {
+      "name": "Sambhv Steel Tubes Ltd",
+      "sector": null,
+      "close": 165.01,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
     "KROSS": {
       "name": "Kross Ltd",
       "sector": null,
@@ -170,9 +114,23 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "ABDL": {
+      "name": "Allied Blenders & Distillers Ltd",
+      "sector": null,
+      "close": 708.25,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "HAL": {
+      "name": "Hindustan Aeronautics Ltd",
+      "sector": "Capital Goods",
+      "close": 4855,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
     "ONEPOINT": {
       "name": "One Point One Solutions Ltd",
-      "sector": "Services",
+      "sector": null,
       "close": 69.78,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -180,16 +138,65 @@
     "TBZ": {
       "name": "Tribhovandas Bhimji Zaveri Limited",
       "sector": null,
-      "close": 596.5,
+      "close": 596.75,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "DELTACORP": {
+      "name": "Delta Corp Limited",
+      "sector": null,
+      "close": 74.11,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "PGIL": {
+      "name": "Pearl Global Industries Limited",
+      "sector": null,
+      "close": 1254.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SUNFLAG": {
       "name": "Sunflag Iron And Steel Company Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 392.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "RUBICON": {
+      "name": "Rubicon Research Ltd",
+      "sector": "Healthcare",
+      "close": 1667.4,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "ACMESOLAR": {
+      "name": "ACME Solar Holdings Ltd",
+      "sector": null,
+      "close": 418.75,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "NUVAMA": {
+      "name": "Nuvama Wealth Management Ltd",
+      "sector": "Financial Services",
+      "close": 1805.1,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "SANSERA": {
+      "name": "Sansera Engineering Ltd",
+      "sector": "Automobile and Auto Components",
+      "close": 4157.4,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "PAISALO": {
+      "name": "Paisalo Digital Ltd",
+      "sector": "Financial Services",
+      "close": 79.35,
+      "flag": "Away",
+      "trend_template_score": "7/8"
     }
   }
 }
