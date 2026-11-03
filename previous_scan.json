@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-03 16:47 IST",
-  "run_epoch": 1793704650.1788182,
+  "run_time": "2026-11-03 23:28 IST",
+  "run_epoch": 1793728691.317205,
   "tickers": {
     "RUBICON": {
       "name": "Rubicon Research Ltd",
@@ -12,7 +12,7 @@
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
       "sector": null,
-      "close": 773,
+      "close": 773.35,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -32,7 +32,7 @@
     },
     "ARIS": {
       "name": "Arisinfra Solutions Ltd",
-      "sector": "Construction Materials",
+      "sector": null,
       "close": 143.52,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -40,7 +40,7 @@
     "SANATHAN": {
       "name": "Sanathan Textiles Ltd",
       "sector": null,
-      "close": 520,
+      "close": 519.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -53,7 +53,7 @@
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 379.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -61,7 +61,7 @@
     "GRWRHITECH": {
       "name": "Garware Hi Tech Films Ltd",
       "sector": "Capital Goods",
-      "close": 7400,
+      "close": 7395.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -82,7 +82,7 @@
     "SANSERA": {
       "name": "Sansera Engineering Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 4228,
+      "close": 4225.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -124,7 +124,7 @@
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": null,
-      "close": 892.1,
+      "close": 894.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -158,28 +158,28 @@
     },
     "BLUSPRING": {
       "name": "Bluspring Enterprises Ltd",
-      "sector": null,
-      "close": 142.76,
+      "sector": "Services",
+      "close": 143.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KROSS": {
       "name": "Kross Ltd",
       "sector": null,
-      "close": 269.35,
+      "close": 272.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "VALIANTORG": {
       "name": "Valiant Organics Ltd",
       "sector": null,
-      "close": 422,
+      "close": 419.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "APOLLO": {
       "name": "Apollo Micro Systems Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 401.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -193,7 +193,7 @@
     },
     "PARACABLES": {
       "name": "Paramount Communications Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 61.77,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -211,13 +211,6 @@
       "close": 1536.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
-    },
-    "ACMESOLAR": {
-      "name": "ACME Solar Holdings Ltd",
-      "sector": null,
-      "close": 416.7,
-      "flag": "Away",
-      "trend_template_score": "7/8"
     }
   }
 }
