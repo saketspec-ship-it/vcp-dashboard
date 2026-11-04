@@ -1,216 +1,237 @@
 {
-  "run_time": "2026-11-03 23:28 IST",
-  "run_epoch": 1793728691.317205,
+  "run_time": "2026-11-04 17:00 IST",
+  "run_epoch": 1793791828.4867883,
   "tickers": {
-    "RUBICON": {
-      "name": "Rubicon Research Ltd",
-      "sector": "Healthcare",
-      "close": 1718,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
       "sector": null,
-      "close": 773.35,
+      "close": 785,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "SGFIN": {
-      "name": "SG Finserve Ltd",
+    "SHREEJISPG": {
+      "name": "Shreeji Shipping Global Ltd",
       "sector": null,
-      "close": 679.95,
+      "close": 871.15,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "CPPLUS": {
+      "name": "Aditya Infotech Ltd",
+      "sector": "Capital Goods",
+      "close": 3999.8,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ANTHEM": {
+      "name": "Anthem Biosciences Ltd",
+      "sector": null,
+      "close": 888.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
       "sector": null,
-      "close": 161.52,
+      "close": 166,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARIS": {
       "name": "Arisinfra Solutions Ltd",
       "sector": null,
-      "close": 143.52,
+      "close": 147.38,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "BLUSPRING": {
+      "name": "Bluspring Enterprises Ltd",
+      "sector": null,
+      "close": 155.37,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "UNIMECH": {
+      "name": "Unimech Aerospace and Manufacturing Ltd",
+      "sector": "Capital Goods",
+      "close": 1772,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SANATHAN": {
       "name": "Sanathan Textiles Ltd",
       "sector": null,
-      "close": 519.5,
+      "close": 548,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ROSSTECH": {
+      "name": "Rossell Techsys Ltd",
+      "sector": null,
+      "close": 1450,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ACMESOLAR": {
+      "name": "ACME Solar Holdings Ltd",
+      "sector": null,
+      "close": 421,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
       "sector": null,
-      "close": 694.55,
+      "close": 699.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "RATNAVEER": {
-      "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": "Capital Goods",
-      "close": 379.4,
+    "JSWINFRA": {
+      "name": "JSW Infrastructure Ltd",
+      "sector": null,
+      "close": 345.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "GRWRHITECH": {
-      "name": "Garware Hi Tech Films Ltd",
-      "sector": "Capital Goods",
-      "close": 7395.5,
+    "MANKIND": {
+      "name": "Mankind Pharma Ltd",
+      "sector": "Healthcare",
+      "close": 2537.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": null,
-      "close": 66.71,
+      "close": 67.16,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PAYTM": {
       "name": "One 97 Communications Ltd",
       "sector": "Financial Services",
-      "close": 1720,
+      "close": 1732.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SANSERA": {
       "name": "Sansera Engineering Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 4225.2,
+      "close": 4430.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "METROPOLIS": {
-      "name": "Metropolis Healthcare Ltd",
-      "sector": "Healthcare",
-      "close": 568.7,
+    "VALIANTORG": {
+      "name": "Valiant Organics Ltd",
+      "sector": null,
+      "close": 430.1,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
-    "HAL": {
-      "name": "Hindustan Aeronautics Ltd",
+    "MARINE": {
+      "name": "Marine Electricals (India) Ltd",
       "sector": "Capital Goods",
-      "close": 4958.6,
+      "close": 446.25,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "GMMPFAUDLR": {
+      "name": "GMM Pfaudler Ltd",
+      "sector": null,
+      "close": 1320.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ONEPOINT": {
       "name": "One Point One Solutions Ltd",
       "sector": null,
-      "close": 73.07,
+      "close": 72.98,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "OPTIEMUS": {
       "name": "Optiemus Infracom Ltd",
-      "sector": null,
-      "close": 800,
+      "sector": "Telecommunication",
+      "close": 805.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "PRESTIGE": {
-      "name": "Prestige Estates Projects Limited",
-      "sector": "Realty",
-      "close": 1537,
+    "CUPID": {
+      "name": "Cupid Limited",
+      "sector": "Fast Moving Consumer Goods",
+      "close": 336.5,
       "flag": "Trend",
-      "trend_template_score": "6/8"
-    },
-    "SIGMAADV": {
-      "name": "Sigma Advanced System Ltd",
-      "sector": null,
-      "close": 894.8,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "DLF": {
-      "name": "Dlf Limited",
-      "sector": "Realty",
-      "close": 709,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
-    },
-    "CHENNPETRO": {
-      "name": "Chennai Petroleum Corporation Limited",
-      "sector": "Oil, Gas &amp; Consumable Fuels",
-      "close": 1540.6,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "RAYMOND": {
-      "name": "Raymond Limited",
-      "sector": "Capital Goods",
-      "close": 1172.3,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "EBGNG": {
-      "name": "GNG Electronics Ltd",
-      "sector": null,
-      "close": 687.2,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "BLUSPRING": {
-      "name": "Bluspring Enterprises Ltd",
-      "sector": "Services",
-      "close": 143.3,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "KROSS": {
-      "name": "Kross Ltd",
-      "sector": null,
-      "close": 272.2,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "VALIANTORG": {
-      "name": "Valiant Organics Ltd",
-      "sector": null,
-      "close": 419.95,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "APOLLO": {
-      "name": "Apollo Micro Systems Ltd",
-      "sector": null,
-      "close": 401.2,
-      "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "DELTACORP": {
       "name": "Delta Corp Limited",
       "sector": null,
-      "close": 72.56,
-      "flag": "Watch",
+      "close": 75.28,
+      "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "PARACABLES": {
-      "name": "Paramount Communications Limited",
+    "SIGMAADV": {
+      "name": "Sigma Advanced System Ltd",
       "sector": null,
-      "close": 61.77,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
+      "close": 939.5,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "PGIL": {
+      "name": "Pearl Global Industries Limited",
+      "sector": "Textiles",
+      "close": 1319.9,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "PFOCUS": {
+      "name": "Prime Focus Limited",
+      "sector": null,
+      "close": 305.55,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SUNFLAG": {
+      "name": "Sunflag Iron And Steel Company Limited",
+      "sector": null,
+      "close": 391.9,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SALSTEEL": {
+      "name": "SAL Steel",
+      "sector": "Metals &amp; Mining",
+      "close": 84.51,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "GESHIP": {
+      "name": "The Great Eastern Shipping Company Limited",
+      "sector": "Services",
+      "close": 1571.8,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "CHENNPETRO": {
+      "name": "Chennai Petroleum Corporation Limited",
+      "sector": "Oil, Gas &amp; Consumable Fuels",
+      "close": 1566.9,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "RAYMOND": {
+      "name": "Raymond Limited",
+      "sector": null,
+      "close": 1150.1,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
     },
     "GABRIEL": {
       "name": "Gabriel India Limited",
       "sector": null,
-      "close": 1401.1,
+      "close": 1391.6,
       "flag": "Watch",
       "trend_template_score": "7/8"
-    },
-    "GESHIP": {
-      "name": "The Great Eastern Shipping Company Limited",
-      "sector": null,
-      "close": 1536.5,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
     }
   }
 }
