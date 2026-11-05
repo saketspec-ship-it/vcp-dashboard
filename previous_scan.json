@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-05 16:58 IST",
-  "run_epoch": 1793878102.4933262,
+  "run_time": "2026-11-05 23:40 IST",
+  "run_epoch": 1793902235.82165,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 782.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -12,7 +12,7 @@
     "PATELRMART": {
       "name": "Patel Retail Ltd",
       "sector": "Consumer Services",
-      "close": 244,
+      "close": 242.31,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -54,7 +54,7 @@
     "IKS": {
       "name": "Inventurus Knowledge Solutions Ltd",
       "sector": "Information Technology",
-      "close": 1755,
+      "close": 1757.2,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
@@ -82,20 +82,20 @@
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
       "sector": null,
-      "close": 699.9,
+      "close": 699.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "HONASA": {
       "name": "Honasa Consumer Ltd",
       "sector": null,
-      "close": 481.65,
+      "close": 481.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "JSWINFRA": {
       "name": "JSW Infrastructure Ltd",
-      "sector": "Services",
+      "sector": null,
       "close": 346.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -109,7 +109,7 @@
     },
     "AARTIPHARM": {
       "name": "Aarti Pharmalabs Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 928.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -131,14 +131,14 @@
     "SANSERA": {
       "name": "Sansera Engineering Ltd",
       "sector": "Automobile and Auto Components",
-      "close": 4450,
+      "close": 4431.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": "Financial Services",
-      "close": 91.07,
+      "sector": null,
+      "close": 89.57,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -172,7 +172,7 @@
     },
     "GNA": {
       "name": "Gna Axles Limited",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 556.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -186,15 +186,15 @@
     },
     "PROZONER": {
       "name": "Prozone Realty Ltd",
-      "sector": "Realty",
-      "close": 54.99,
+      "sector": null,
+      "close": 54.36,
       "flag": "Trend",
       "trend_template_score": "5/8"
     },
     "ONELIFECAP": {
       "name": "Onelife Capital Advisors Limited",
-      "sector": null,
-      "close": 58.44,
+      "sector": "Financial Services",
+      "close": 57.97,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -207,7 +207,7 @@
     },
     "DELTACORP": {
       "name": "Delta Corp Limited",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 76.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -215,27 +215,27 @@
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": null,
-      "close": 935.45,
+      "close": 930.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PGIL": {
       "name": "Pearl Global Industries Limited",
       "sector": null,
-      "close": 1348,
+      "close": 1338.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SALSTEEL": {
       "name": "SAL Steel",
-      "sector": null,
+      "sector": "Metals &amp; Mining",
       "close": 88.73,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 1130.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -249,14 +249,14 @@
     },
     "SUNFLAG": {
       "name": "Sunflag Iron And Steel Company Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 389.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "GABRIEL": {
       "name": "Gabriel India Limited",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 1406,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -267,13 +267,6 @@
       "close": 338.5,
       "flag": "Watch",
       "trend_template_score": "7/8"
-    },
-    "AEROENTER": {
-      "name": "Aeroflex Enterprises Ltd",
-      "sector": null,
-      "close": 130.4,
-      "flag": "Away",
-      "trend_template_score": "6/8"
     },
     "INDIAGLYCO": {
       "name": "India Glycols Limited",
