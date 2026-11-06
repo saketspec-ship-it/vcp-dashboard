@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-06 16:56 IST",
-  "run_epoch": 1793964377.1966994,
+  "run_time": "2026-11-06 23:07 IST",
+  "run_epoch": 1793986662.3952527,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 786.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -12,7 +12,7 @@
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
       "sector": null,
-      "close": 887,
+      "close": 884.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -26,7 +26,7 @@
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
       "sector": null,
-      "close": 163.9,
+      "close": 163.39,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -53,21 +53,21 @@
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 708,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ESAFSFB": {
       "name": "ESAF Small Finance Bank Ltd",
-      "sector": null,
-      "close": 42.09,
+      "sector": "Financial Services",
+      "close": 42.04,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "HONASA": {
       "name": "Honasa Consumer Ltd",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 466.4,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -89,7 +89,7 @@
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": null,
-      "close": 68.55,
+      "close": 68.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -109,21 +109,21 @@
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 92.43,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NAZARA": {
       "name": "Nazara Technologies Ltd",
-      "sector": null,
+      "sector": "Media, Entertainment &amp; Publication",
       "close": 412.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SMCGLOBAL": {
       "name": "SMC Global Securities Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 93.79,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -151,28 +151,28 @@
     },
     "ONELIFECAP": {
       "name": "Onelife Capital Advisors Limited",
-      "sector": "Financial Services",
-      "close": 60.8,
+      "sector": null,
+      "close": 60.49,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "KMSUGAR": {
       "name": "K.m.sugar Mills Limited",
       "sector": null,
-      "close": 32.11,
+      "close": 32.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DELTACORP": {
       "name": "Delta Corp Limited",
-      "sector": null,
+      "sector": "Consumer Services",
       "close": 75.14,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 909.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -215,7 +215,7 @@
     "UNITEDPOLY": {
       "name": "United Polyfab Gujarat Ltd",
       "sector": null,
-      "close": 52.8,
+      "close": 52.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
