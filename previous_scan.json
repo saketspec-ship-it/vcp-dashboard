@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-06 23:07 IST",
-  "run_epoch": 1793986662.3952527,
+  "run_time": "2026-11-07 16:09 IST",
+  "run_epoch": 1794047941.0061297,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 786.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -53,21 +53,21 @@
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 708,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ESAFSFB": {
       "name": "ESAF Small Finance Bank Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 42.04,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "HONASA": {
       "name": "Honasa Consumer Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 466.4,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -109,21 +109,21 @@
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 92.43,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NAZARA": {
       "name": "Nazara Technologies Ltd",
-      "sector": "Media, Entertainment &amp; Publication",
+      "sector": null,
       "close": 412.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SMCGLOBAL": {
       "name": "SMC Global Securities Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 93.79,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -151,7 +151,7 @@
     },
     "ONELIFECAP": {
       "name": "Onelife Capital Advisors Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 60.49,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -165,14 +165,14 @@
     },
     "DELTACORP": {
       "name": "Delta Corp Limited",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 75.14,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 909.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
