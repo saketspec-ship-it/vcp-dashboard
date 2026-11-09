@@ -1,11 +1,11 @@
 {
-  "run_time": "2026-11-09 17:33 IST",
-  "run_epoch": 1794225795.6522095,
+  "run_time": "2026-11-10 02:25 IST",
+  "run_epoch": 1794257712.5567753,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
       "sector": null,
-      "close": 783,
+      "close": 784.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -19,13 +19,13 @@
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
       "sector": null,
-      "close": 884.8,
+      "close": 881.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARFIN": {
       "name": "Arfin India Ltd",
-      "sector": null,
+      "sector": "Metals &amp; Mining",
       "close": 96.47,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -33,7 +33,7 @@
     "SMARTWORKS": {
       "name": "Smartworks Coworking Spaces Ltd",
       "sector": null,
-      "close": 507,
+      "close": 507.65,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
@@ -44,65 +44,44 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ARIS": {
-      "name": "Arisinfra Solutions Ltd",
-      "sector": null,
-      "close": 144.34,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "BLUSPRING": {
       "name": "Bluspring Enterprises Ltd",
-      "sector": null,
+      "sector": "Services",
       "close": 162.54,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "PROTEAN": {
-      "name": "Protean eGov Technologies Ltd",
-      "sector": null,
-      "close": 670.15,
-      "flag": "Trend",
-      "trend_template_score": "6/8"
-    },
     "MOBIKWIK": {
       "name": "One Mobikwik Systems Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 226.78,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "MANBA": {
       "name": "Manba Finance Ltd",
-      "sector": "Financial Services",
-      "close": 145.8,
+      "sector": null,
+      "close": 145.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 719.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ESAFSFB": {
       "name": "ESAF Small Finance Bank Ltd",
-      "sector": "Financial Services",
-      "close": 42.53,
+      "sector": null,
+      "close": 42.43,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "HONASA": {
-      "name": "Honasa Consumer Ltd",
-      "sector": "Fast Moving Consumer Goods",
-      "close": 484.05,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
-    },
     "JSWINFRA": {
       "name": "JSW Infrastructure Ltd",
-      "sector": null,
+      "sector": "Services",
       "close": 339.25,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -110,7 +89,7 @@
     "YATHARTH": {
       "name": "Yatharth Hospital & Trauma Care Services Ltd",
       "sector": "Healthcare",
-      "close": 1059.5,
+      "close": 1055.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -131,7 +110,7 @@
     "CHOICEIN": {
       "name": "Choice International Ltd",
       "sector": null,
-      "close": 748,
+      "close": 749.55,
       "flag": "Trend",
       "trend_template_score": "6/8"
     },
@@ -151,22 +130,15 @@
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": "Financial Services",
-      "close": 95.77,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "VINEETLAB": {
-      "name": "Vineet Laboratories Ltd",
       "sector": null,
-      "close": 37.36,
+      "close": 97.51,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NAZARA": {
       "name": "Nazara Technologies Ltd",
       "sector": null,
-      "close": 410,
+      "close": 407.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -180,20 +152,20 @@
     "IIFLCAPS": {
       "name": "IIFL Capital Services Ltd",
       "sector": null,
-      "close": 349.8,
+      "close": 350.35,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "ONEPOINT": {
       "name": "One Point One Solutions Ltd",
-      "sector": "Services",
+      "sector": null,
       "close": 74.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "GNA": {
       "name": "Gna Axles Limited",
-      "sector": null,
+      "sector": "Automobile and Auto Components",
       "close": 574.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -229,28 +201,21 @@
     "SIGMAADV": {
       "name": "Sigma Advanced System Ltd",
       "sector": "Capital Goods",
-      "close": 935,
+      "close": 937.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "FSL": {
       "name": "Firstsource Solutions Limited",
-      "sector": "Services",
+      "sector": null,
       "close": 298.2,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "DCBBANK": {
       "name": "Dcb Bank Limited",
-      "sector": "Financial Services",
-      "close": 210.33,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "SALSTEEL": {
-      "name": "SAL Steel",
       "sector": null,
-      "close": 90.08,
+      "close": 210.33,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -264,13 +229,13 @@
     "KOPRAN": {
       "name": "Kopran Limited",
       "sector": null,
-      "close": 259.55,
+      "close": 259.76,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "FEDERALBNK": {
       "name": "The Federal Bank  Limited",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 344.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -284,14 +249,14 @@
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 364.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "UNITEDPOLY": {
       "name": "United Polyfab Gujarat Ltd",
-      "sector": null,
+      "sector": "Textiles",
       "close": 51.79,
       "flag": "Watch",
       "trend_template_score": "8/8"
