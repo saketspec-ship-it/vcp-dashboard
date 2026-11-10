@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-10 17:12 IST",
-  "run_epoch": 1794310941.3355892,
+  "run_time": "2026-11-10 23:33 IST",
+  "run_epoch": 1794333799.4333491,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
@@ -44,6 +44,13 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "ARIS": {
+      "name": "Arisinfra Solutions Ltd",
+      "sector": null,
+      "close": 144.34,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "BLUSPRING": {
       "name": "Bluspring Enterprises Ltd",
       "sector": null,
@@ -51,12 +58,26 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "PROTEAN": {
+      "name": "Protean eGov Technologies Ltd",
+      "sector": null,
+      "close": 670.15,
+      "flag": "Trend",
+      "trend_template_score": "6/8"
+    },
     "MOBIKWIK": {
       "name": "One Mobikwik Systems Ltd",
       "sector": null,
       "close": 226.78,
       "flag": "Trend",
       "trend_template_score": "7/8"
+    },
+    "KMEW": {
+      "name": "Knowledge Marine & Engineering Works Ltd",
+      "sector": "Services",
+      "close": 663.7,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
     },
     "MANBA": {
       "name": "Manba Finance Ltd",
@@ -74,10 +95,17 @@
     },
     "ESAFSFB": {
       "name": "ESAF Small Finance Bank Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 42.43,
       "flag": "Trend",
       "trend_template_score": "8/8"
+    },
+    "HONASA": {
+      "name": "Honasa Consumer Ltd",
+      "sector": null,
+      "close": 484.05,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
     },
     "JSWINFRA": {
       "name": "JSW Infrastructure Ltd",
@@ -102,7 +130,7 @@
     },
     "DBOL": {
       "name": "Dhampur Bio Organics Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 138.12,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -116,7 +144,7 @@
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": "Textiles",
+      "sector": null,
       "close": 68.73,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -130,8 +158,15 @@
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 97.51,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "VINEETLAB": {
+      "name": "Vineet Laboratories Ltd",
+      "sector": null,
+      "close": 37.89,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -151,7 +186,7 @@
     },
     "IIFLCAPS": {
       "name": "IIFL Capital Services Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 350.35,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -193,7 +228,7 @@
     },
     "DELTACORP": {
       "name": "Delta Corp Limited",
-      "sector": null,
+      "sector": "Consumer Services",
       "close": 81.13,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -207,7 +242,7 @@
     },
     "FSL": {
       "name": "Firstsource Solutions Limited",
-      "sector": null,
+      "sector": "Services",
       "close": 298.2,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -216,6 +251,13 @@
       "name": "Dcb Bank Limited",
       "sector": null,
       "close": 210.33,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SALSTEEL": {
+      "name": "SAL Steel",
+      "sector": null,
+      "close": 90.08,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -228,14 +270,14 @@
     },
     "KOPRAN": {
       "name": "Kopran Limited",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 259.76,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "FEDERALBNK": {
       "name": "The Federal Bank  Limited",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 344.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
