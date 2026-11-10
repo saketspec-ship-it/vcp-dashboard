@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-10 02:25 IST",
-  "run_epoch": 1794257712.5567753,
+  "run_time": "2026-11-10 17:12 IST",
+  "run_epoch": 1794310941.3355892,
   "tickers": {
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
@@ -18,21 +18,21 @@
     },
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
-      "sector": null,
+      "sector": "Services",
       "close": 881.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARFIN": {
       "name": "Arfin India Ltd",
-      "sector": "Metals &amp; Mining",
+      "sector": null,
       "close": 96.47,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SMARTWORKS": {
       "name": "Smartworks Coworking Spaces Ltd",
-      "sector": null,
+      "sector": "Services",
       "close": 507.65,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -46,14 +46,14 @@
     },
     "BLUSPRING": {
       "name": "Bluspring Enterprises Ltd",
-      "sector": "Services",
+      "sector": null,
       "close": 162.54,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MOBIKWIK": {
       "name": "One Mobikwik Systems Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 226.78,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -81,7 +81,7 @@
     },
     "JSWINFRA": {
       "name": "JSW Infrastructure Ltd",
-      "sector": "Services",
+      "sector": null,
       "close": 339.25,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -116,7 +116,7 @@
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": null,
+      "sector": "Textiles",
       "close": 68.73,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -130,7 +130,7 @@
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 97.51,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -165,7 +165,7 @@
     },
     "GNA": {
       "name": "Gna Axles Limited",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 574.6,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -221,21 +221,21 @@
     },
     "GREAVESCOT": {
       "name": "Greaves Cotton Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 203.97,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "KOPRAN": {
       "name": "Kopran Limited",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 259.76,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "FEDERALBNK": {
       "name": "The Federal Bank  Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 344.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -249,21 +249,21 @@
     },
     "RATNAVEER": {
       "name": "Ratnaveer Precision Engineering Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 364.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "UNITEDPOLY": {
       "name": "United Polyfab Gujarat Ltd",
-      "sector": "Textiles",
+      "sector": null,
       "close": 51.79,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "63MOONS": {
       "name": "63 Moons Technologies Ltd",
-      "sector": "Information Technology",
+      "sector": null,
       "close": 898.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
