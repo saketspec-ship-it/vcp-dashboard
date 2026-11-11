@@ -1,32 +1,32 @@
 {
-  "run_time": "2026-11-11 16:56 IST",
-  "run_epoch": 1794396383.3933074,
+  "run_time": "2026-11-11 23:30 IST",
+  "run_epoch": 1794420016.9045804,
   "tickers": {
     "SHRINGARMS": {
       "name": "Shringar House of Mangalsutra Ltd",
       "sector": null,
-      "close": 317.85,
+      "close": 317.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": null,
-      "close": 785,
+      "sector": "Financial Services",
+      "close": 785.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "STLNETWORK": {
       "name": "STL Networks Ltd",
-      "sector": "Telecommunication",
+      "sector": null,
       "close": 44.16,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
-      "sector": null,
-      "close": 879,
+      "sector": "Services",
+      "close": 881.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -47,28 +47,28 @@
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
       "sector": null,
-      "close": 167.31,
+      "close": 167.07,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARIS": {
       "name": "Arisinfra Solutions Ltd",
-      "sector": "Construction Materials",
-      "close": 144.96,
+      "sector": null,
+      "close": 144.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "BLUSPRING": {
       "name": "Bluspring Enterprises Ltd",
       "sector": null,
-      "close": 158.94,
+      "close": 159.03,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "QPOWER": {
       "name": "Quality Power Electrical Equipments Ltd",
       "sector": "Capital Goods",
-      "close": 1491.5,
+      "close": 1491,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -95,7 +95,7 @@
     },
     "KROSS": {
       "name": "Kross Ltd",
-      "sector": null,
+      "sector": "Automobile and Auto Components",
       "close": 303.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -109,7 +109,7 @@
     },
     "ESAFSFB": {
       "name": "ESAF Small Finance Bank Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 43.43,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -123,14 +123,14 @@
     },
     "YATHARTH": {
       "name": "Yatharth Hospital & Trauma Care Services Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1042.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AARTIPHARM": {
       "name": "Aarti Pharmalabs Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 923.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -138,28 +138,28 @@
     "MEDANTA": {
       "name": "Global Health Ltd",
       "sector": "Healthcare",
-      "close": 1430,
+      "close": 1429,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "DBOL": {
       "name": "Dhampur Bio Organics Ltd",
       "sector": null,
-      "close": 138.18,
+      "close": 138.94,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NRL": {
       "name": "Nupur Recyclers Ltd",
       "sector": null,
-      "close": 171.1,
+      "close": 171.75,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "STEELCAS": {
       "name": "Steelcast Ltd",
       "sector": "Capital Goods",
-      "close": 382.5,
+      "close": 382.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -173,20 +173,20 @@
     "SAPPHIRE": {
       "name": "Sapphire Foods India Ltd",
       "sector": null,
-      "close": 220.79,
+      "close": 220.07,
       "flag": "Trend",
       "trend_template_score": "6/8"
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 94.87,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "NAZARA": {
       "name": "Nazara Technologies Ltd",
-      "sector": "Media, Entertainment &amp; Publication",
+      "sector": null,
       "close": 414,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -201,21 +201,21 @@
     "IIFLCAPS": {
       "name": "IIFL Capital Services Ltd",
       "sector": "Financial Services",
-      "close": 350.6,
+      "close": 351.25,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
-      "sector": null,
-      "close": 575,
+      "sector": "Healthcare",
+      "close": 576.15,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "ONEPOINT": {
       "name": "One Point One Solutions Ltd",
-      "sector": null,
-      "close": 73.62,
+      "sector": "Services",
+      "close": 74.48,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -229,13 +229,13 @@
     "SAKAR": {
       "name": "Sakar Healthcare Ltd",
       "sector": null,
-      "close": 1080,
+      "close": 1075.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "GNA": {
       "name": "Gna Axles Limited",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 579.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -256,14 +256,14 @@
     },
     "FILATEX": {
       "name": "Filatex India Limited",
-      "sector": "Textiles",
+      "sector": null,
       "close": 100.09,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "JAMNAAUTO": {
       "name": "Jamna Auto Industries Limited",
-      "sector": null,
+      "sector": "Automobile and Auto Components",
       "close": 137.42,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -277,7 +277,7 @@
     },
     "DELTACORP": {
       "name": "Delta Corp Limited",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 83.13,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -292,13 +292,13 @@
     "GRINDWELL": {
       "name": "Grindwell Norton Limited",
       "sector": "Capital Goods",
-      "close": 1950,
+      "close": 1949.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "LOKESHMACH": {
       "name": "Lokesh Machines Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 404,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -306,7 +306,7 @@
     "UTTAMSUGAR": {
       "name": "Uttam Sugar Mills Limited",
       "sector": null,
-      "close": 369.9,
+      "close": 367.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -333,7 +333,7 @@
     },
     "TFCILTD": {
       "name": "Tourism Finance Corporation Of India Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 166.31,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -341,7 +341,7 @@
     "VISAKAIND": {
       "name": "Visaka Industries Limited",
       "sector": null,
-      "close": 87.6,
+      "close": 87.15,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
@@ -382,7 +382,7 @@
     },
     "FSL": {
       "name": "Firstsource Solutions Limited",
-      "sector": "Services",
+      "sector": null,
       "close": 295.25,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -424,8 +424,8 @@
     },
     "VARROC": {
       "name": "Varroc Engineering Ltd",
-      "sector": "Automobile and Auto Components",
-      "close": 823.8,
+      "sector": null,
+      "close": 823.05,
       "flag": "Away",
       "trend_template_score": "6/8"
     },
