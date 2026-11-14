@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-13 23:28 IST",
-  "run_epoch": 1794592718.4988108,
+  "run_time": "2026-11-14 16:23 IST",
+  "run_epoch": 1794653627.2093463,
   "tickers": {
     "SHRINGARMS": {
       "name": "Shringar House of Mangalsutra Ltd",
@@ -11,7 +11,7 @@
     },
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 822.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -32,7 +32,7 @@
     },
     "SGFIN": {
       "name": "SG Finserve Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 698.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -81,7 +81,7 @@
     },
     "KROSS": {
       "name": "Kross Ltd",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 305.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -95,7 +95,7 @@
     },
     "UDS": {
       "name": "Updater Services Ltd",
-      "sector": "Services",
+      "sector": null,
       "close": 217.17,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -109,7 +109,7 @@
     },
     "SKYGOLD": {
       "name": "Sky Gold Ltd",
-      "sector": "Consumer Durables",
+      "sector": null,
       "close": 1022.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -130,7 +130,7 @@
     },
     "DBOL": {
       "name": "Dhampur Bio Organics Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 146.28,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -151,14 +151,14 @@
     },
     "DEVYANI": {
       "name": "Devyani International Ltd",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 129.87,
       "flag": "Trend",
       "trend_template_score": "6/8"
     },
     "ARIHANTCAP": {
       "name": "Arihant Capital Markets Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 93.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -172,7 +172,7 @@
     },
     "SMCGLOBAL": {
       "name": "SMC Global Securities Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 95.64,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -186,7 +186,7 @@
     },
     "MARINE": {
       "name": "Marine Electricals (India) Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 426.85,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -200,7 +200,7 @@
     },
     "SOLARA": {
       "name": "Solara Active Pharma Sciences Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 689.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -214,7 +214,7 @@
     },
     "AVADHSUGAR": {
       "name": "Avadh Sugar & Energy",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 866.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -256,7 +256,7 @@
     },
     "SHILPAMED": {
       "name": "Shilpa Medicare Limited",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 991.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -298,14 +298,14 @@
     },
     "DALMIASUG": {
       "name": "Dalmia Bharat Sugar And Industries Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 488.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "TFCILTD": {
       "name": "Tourism Finance Corporation Of India Limited",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 163.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -354,14 +354,14 @@
     },
     "FSL": {
       "name": "Firstsource Solutions Limited",
-      "sector": null,
+      "sector": "Services",
       "close": 291.25,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "HBLENGINE": {
       "name": "HBL Engineering Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 799.55,
       "flag": "Watch",
       "trend_template_score": "6/8"
@@ -382,7 +382,7 @@
     },
     "SAPPHIRE": {
       "name": "Sapphire Foods India Ltd",
-      "sector": null,
+      "sector": "Consumer Services",
       "close": 212.75,
       "flag": "Away",
       "trend_template_score": "4/8"
