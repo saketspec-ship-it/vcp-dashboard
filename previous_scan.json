@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-14 16:23 IST",
-  "run_epoch": 1794653627.2093463,
+  "run_time": "2026-11-14 22:11 IST",
+  "run_epoch": 1794674519.1426396,
   "tickers": {
     "SHRINGARMS": {
       "name": "Shringar House of Mangalsutra Ltd",
@@ -11,7 +11,7 @@
     },
     "GCSL": {
       "name": "Gretex Corporate Services Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 822.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -32,7 +32,7 @@
     },
     "SGFIN": {
       "name": "SG Finserve Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 698.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -46,7 +46,7 @@
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 164.47,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -67,7 +67,7 @@
     },
     "MOBIKWIK": {
       "name": "One Mobikwik Systems Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 226.82,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -88,7 +88,7 @@
     },
     "ABDL": {
       "name": "Allied Blenders & Distillers Ltd",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 757.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -109,7 +109,7 @@
     },
     "SKYGOLD": {
       "name": "Sky Gold Ltd",
-      "sector": null,
+      "sector": "Consumer Durables",
       "close": 1022.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -130,28 +130,28 @@
     },
     "DBOL": {
       "name": "Dhampur Bio Organics Ltd",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 146.28,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": null,
+      "sector": "Textiles",
       "close": 70.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "PASUPTAC": {
       "name": "Pasupati Acrylon Ltd",
-      "sector": "Chemicals",
+      "sector": null,
       "close": 72.29,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "DEVYANI": {
       "name": "Devyani International Ltd",
-      "sector": null,
+      "sector": "Consumer Services",
       "close": 129.87,
       "flag": "Trend",
       "trend_template_score": "6/8"
@@ -172,14 +172,14 @@
     },
     "SMCGLOBAL": {
       "name": "SMC Global Securities Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 95.64,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ARTEMISMED": {
       "name": "Artemis Medicare Services Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 321.8,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -193,7 +193,7 @@
     },
     "VARROC": {
       "name": "Varroc Engineering Ltd",
-      "sector": null,
+      "sector": "Automobile and Auto Components",
       "close": 838.7,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -235,7 +235,7 @@
     },
     "LLOYDSENGG": {
       "name": "Lloyds Engineering Works Ltd",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 89.25,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -256,7 +256,7 @@
     },
     "SHILPAMED": {
       "name": "Shilpa Medicare Limited",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 991.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -277,7 +277,7 @@
     },
     "SUNFLAG": {
       "name": "Sunflag Iron And Steel Company Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 400.45,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -298,7 +298,7 @@
     },
     "DALMIASUG": {
       "name": "Dalmia Bharat Sugar And Industries Limited",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 488.55,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -326,7 +326,7 @@
     },
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 564.2,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -354,7 +354,7 @@
     },
     "FSL": {
       "name": "Firstsource Solutions Limited",
-      "sector": "Services",
+      "sector": null,
       "close": 291.25,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -382,14 +382,14 @@
     },
     "SAPPHIRE": {
       "name": "Sapphire Foods India Ltd",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 212.75,
       "flag": "Away",
       "trend_template_score": "4/8"
     },
     "INDIAGLYCO": {
       "name": "India Glycols Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 311.3,
       "flag": "Away",
       "trend_template_score": "1/8"
