@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-14 22:11 IST",
-  "run_epoch": 1794674519.1426396,
+  "run_time": "2026-11-15 16:58 IST",
+  "run_epoch": 1794742080.762036,
   "tickers": {
     "SHRINGARMS": {
       "name": "Shringar House of Mangalsutra Ltd",
@@ -46,7 +46,7 @@
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 164.47,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -137,7 +137,7 @@
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": "Textiles",
+      "sector": null,
       "close": 70.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -151,7 +151,7 @@
     },
     "DEVYANI": {
       "name": "Devyani International Ltd",
-      "sector": "Consumer Services",
+      "sector": null,
       "close": 129.87,
       "flag": "Trend",
       "trend_template_score": "6/8"
@@ -242,7 +242,7 @@
     },
     "FILATEX": {
       "name": "Filatex India Limited",
-      "sector": null,
+      "sector": "Textiles",
       "close": 100.69,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -305,7 +305,7 @@
     },
     "TFCILTD": {
       "name": "Tourism Finance Corporation Of India Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 163.95,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -347,7 +347,7 @@
     },
     "KMSUGAR": {
       "name": "K.m.sugar Mills Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 31.59,
       "flag": "Watch",
       "trend_template_score": "8/8"
