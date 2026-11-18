@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-18 17:40 IST",
-  "run_epoch": 1795003852.8104398,
+  "run_time": "2026-11-19 00:27 IST",
+  "run_epoch": 1795028222.533402,
   "tickers": {
     "LOTUSDEV": {
       "name": "Sri Lotus Developers & Realty Ltd",
@@ -9,16 +9,9 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "BLUSPRING": {
-      "name": "Bluspring Enterprises Ltd",
-      "sector": null,
-      "close": 162.06,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "MOBIKWIK": {
       "name": "One Mobikwik Systems Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 226.72,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -26,7 +19,7 @@
     "UYFINCORP": {
       "name": "U. Y. Fincorp Ltd",
       "sector": null,
-      "close": 30.52,
+      "close": 30.48,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -34,6 +27,13 @@
       "name": "Yatharth Hospital & Trauma Care Services Ltd",
       "sector": null,
       "close": 1091.1,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "SKYGOLD": {
+      "name": "Sky Gold Ltd",
+      "sector": null,
+      "close": 923.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -51,10 +51,38 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
+    "SBC": {
+      "name": "SBC Exports Ltd",
+      "sector": null,
+      "close": 68.05,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "NAZARA": {
+      "name": "Nazara Technologies Ltd",
+      "sector": null,
+      "close": 415.6,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ONEPOINT": {
+      "name": "One Point One Solutions Ltd",
+      "sector": null,
+      "close": 72.98,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "UNITEDPOLY": {
       "name": "United Polyfab Gujarat Ltd",
       "sector": null,
-      "close": 53.28,
+      "close": 52.78,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "GOODLUCK": {
+      "name": "Goodluck India Limited",
+      "sector": null,
+      "close": 549,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -68,7 +96,7 @@
     "ONELIFECAP": {
       "name": "Onelife Capital Advisors Limited",
       "sector": "Financial Services",
-      "close": 67.44,
+      "close": 66.8,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -81,22 +109,22 @@
     },
     "TALBROAUTO": {
       "name": "Talbros Automotive Components Limited",
-      "sector": null,
-      "close": 407.25,
+      "sector": "Automobile and Auto Components",
+      "close": 406.95,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "63MOONS": {
-      "name": "63 Moons Technologies Ltd",
+    "UTTAMSUGAR": {
+      "name": "Uttam Sugar Mills Limited",
       "sector": null,
-      "close": 924.25,
+      "close": 355.3,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "COFORGE": {
-      "name": "Coforge (Niit Tech) Ltd",
+    "63MOONS": {
+      "name": "63 Moons Technologies Ltd",
       "sector": "Information Technology",
-      "close": 2049,
+      "close": 927,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -104,6 +132,13 @@
       "name": "Tips Music Ltd",
       "sector": null,
       "close": 811.25,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "DALMIASUG": {
+      "name": "Dalmia Bharat Sugar And Industries Limited",
+      "sector": null,
+      "close": 458.35,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -130,7 +165,7 @@
     },
     "SHRINGARMS": {
       "name": "Shringar House of Mangalsutra Ltd",
-      "sector": "Consumer Durables",
+      "sector": null,
       "close": 269.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -144,8 +179,15 @@
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 161.06,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "BLUSPRING": {
+      "name": "Bluspring Enterprises Ltd",
+      "sector": null,
+      "close": 162.06,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -156,47 +198,12 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "SKYGOLD": {
-      "name": "Sky Gold Ltd",
-      "sector": "Consumer Durables",
-      "close": 923.5,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "SBC": {
-      "name": "SBC Exports Ltd",
-      "sector": null,
-      "close": 68.05,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "NAZARA": {
-      "name": "Nazara Technologies Ltd",
-      "sector": null,
-      "close": 415.6,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
-      "sector": null,
-      "close": 564,
+      "sector": "Healthcare",
+      "close": 564.3,
       "flag": "Watch",
       "trend_template_score": "7/8"
-    },
-    "ONEPOINT": {
-      "name": "One Point One Solutions Ltd",
-      "sector": null,
-      "close": 72.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "GOODLUCK": {
-      "name": "Goodluck India Limited",
-      "sector": null,
-      "close": 549,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
     },
     "PERSISTENT": {
       "name": "Persistent Systems Limited",
@@ -212,23 +219,16 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "UTTAMSUGAR": {
-      "name": "Uttam Sugar Mills Limited",
-      "sector": null,
-      "close": 355.3,
+    "COFORGE": {
+      "name": "Coforge (Niit Tech) Ltd",
+      "sector": "Information Technology",
+      "close": 2049,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "DALMIASUG": {
-      "name": "Dalmia Bharat Sugar And Industries Limited",
-      "sector": "Fast Moving Consumer Goods",
-      "close": 458.35,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
     "CCAVENUE": {
       "name": "AvenuesAI Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 117.12,
       "flag": "Away",
       "trend_template_score": "0/8"
