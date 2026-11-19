@@ -1,60 +1,53 @@
 {
-  "run_time": "2026-11-19 17:34 IST",
-  "run_epoch": 1795089874.4083526,
+  "run_time": "2026-11-20 00:35 IST",
+  "run_epoch": 1795115111.5253968,
   "tickers": {
+    "STLNETWORK": {
+      "name": "STL Networks Ltd",
+      "sector": "Telecommunication",
+      "close": 43.13,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "LOTUSDEV": {
       "name": "Sri Lotus Developers & Realty Ltd",
-      "sector": null,
+      "sector": "Realty",
       "close": 233.92,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "BLUSPRING": {
+      "name": "Bluspring Enterprises Ltd",
+      "sector": null,
+      "close": 159.62,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "UYFINCORP": {
       "name": "U. Y. Fincorp Ltd",
       "sector": null,
-      "close": 30.25,
+      "close": 30.41,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "YATHARTH": {
       "name": "Yatharth Hospital & Trauma Care Services Ltd",
-      "sector": null,
-      "close": 1085,
+      "sector": "Healthcare",
+      "close": 1078.5,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "MEDANTA": {
       "name": "Global Health Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1478.3,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "AETHER": {
       "name": "Aether Industries Ltd",
-      "sector": null,
-      "close": 1692.4,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
-    },
-    "NAZARA": {
-      "name": "Nazara Technologies Ltd",
-      "sector": null,
-      "close": 426,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "MARINE": {
-      "name": "Marine Electricals (India) Ltd",
-      "sector": null,
-      "close": 424.5,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "PNBHOUSING": {
-      "name": "Pnb Housing Finance Limited",
-      "sector": null,
-      "close": 1154.2,
+      "sector": "Chemicals",
+      "close": 1696.5,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
@@ -72,17 +65,17 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "UTTAMSUGAR": {
-      "name": "Uttam Sugar Mills Limited",
-      "sector": null,
-      "close": 367.85,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "63MOONS": {
       "name": "63 Moons Technologies Ltd",
       "sector": null,
       "close": 952.45,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "COFORGE": {
+      "name": "Coforge (Niit Tech) Ltd",
+      "sector": "Information Technology",
+      "close": 2041,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -95,17 +88,10 @@
     },
     "GRAPHITE": {
       "name": "Graphite India Limited",
-      "sector": null,
-      "close": 784.65,
+      "sector": "Capital Goods",
+      "close": 785.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
-    },
-    "ARVIND": {
-      "name": "Arvind Limited",
-      "sector": null,
-      "close": 524.7,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
     },
     "TFCILTD": {
       "name": "Tourism Finance Corporation Of India Limited",
@@ -116,36 +102,22 @@
     },
     "ZYDUSLIFE": {
       "name": "Zydus Lifesciences Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1202.9,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 1195.3,
       "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "STLNETWORK": {
-      "name": "STL Networks Ltd",
-      "sector": null,
-      "close": 43.13,
-      "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
       "sector": null,
       "close": 161.48,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "BLUSPRING": {
-      "name": "Bluspring Enterprises Ltd",
-      "sector": null,
-      "close": 159,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -166,7 +138,7 @@
     "DCMSRIND": {
       "name": "DCM Shriram Industries Ltd",
       "sector": null,
-      "close": 57.03,
+      "close": 57.94,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
@@ -177,54 +149,75 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "NAZARA": {
+      "name": "Nazara Technologies Ltd",
+      "sector": null,
+      "close": 425.55,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
     "ONEPOINT": {
       "name": "One Point One Solutions Ltd",
       "sector": null,
-      "close": 73.07,
+      "close": 72.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "GOODLUCK": {
       "name": "Goodluck India Limited",
       "sector": null,
-      "close": 545.65,
+      "close": 544.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PERSISTENT": {
       "name": "Persistent Systems Limited",
-      "sector": null,
+      "sector": "Information Technology",
       "close": 5880,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "TECHM": {
       "name": "Tech Mahindra Limited",
-      "sector": null,
+      "sector": "Information Technology",
       "close": 1723,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "COFORGE": {
-      "name": "Coforge (Niit Tech) Ltd",
+    "UTTAMSUGAR": {
+      "name": "Uttam Sugar Mills Limited",
       "sector": null,
-      "close": 2041,
+      "close": 367.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "METROPOLIS": {
-      "name": "Metropolis Healthcare Ltd",
+    "MARINE": {
+      "name": "Marine Electricals (India) Ltd",
+      "sector": "Capital Goods",
+      "close": 425.4,
+      "flag": "Away",
+      "trend_template_score": "7/8"
+    },
+    "PNBHOUSING": {
+      "name": "Pnb Housing Finance Limited",
       "sector": null,
-      "close": 561,
+      "close": 1154.2,
       "flag": "Away",
       "trend_template_score": "6/8"
     },
     "CCAVENUE": {
       "name": "AvenuesAI Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 117.08,
       "flag": "Away",
       "trend_template_score": "0/8"
+    },
+    "ARVIND": {
+      "name": "Arvind Limited",
+      "sector": null,
+      "close": 524.7,
+      "flag": "Away",
+      "trend_template_score": "6/8"
     }
   }
 }
