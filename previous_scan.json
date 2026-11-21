@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-21 17:12 IST",
-  "run_epoch": 1795261333.217813,
+  "run_time": "2026-11-21 23:12 IST",
+  "run_epoch": 1795282953.984718,
   "tickers": {
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
@@ -11,7 +11,7 @@
     },
     "LOTUSDEV": {
       "name": "Sri Lotus Developers & Realty Ltd",
-      "sector": "Realty",
+      "sector": null,
       "close": 235.48,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -67,14 +67,14 @@
     },
     "CUPID": {
       "name": "Cupid Limited",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 365.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RBLBANK": {
       "name": "Rbl Bank Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 398.3,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -186,7 +186,7 @@
     },
     "KROSS": {
       "name": "Kross Ltd",
-      "sector": null,
+      "sector": "Automobile and Auto Components",
       "close": 278.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -207,7 +207,7 @@
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": "Textiles",
+      "sector": null,
       "close": 68.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -263,7 +263,7 @@
     },
     "CCAVENUE": {
       "name": "AvenuesAI Ltd",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 114.82,
       "flag": "Away",
       "trend_template_score": "0/8"
