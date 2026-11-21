@@ -1,564 +1,564 @@
 {
-  "run_time": "2026-11-21 02:25 IST",
-  "run_epoch": 1795208125.260813,
+  "run_time": "2026-11-21 07:10 IST",
+  "run_epoch": 1795225233.4738812,
   "tickers": {
     "NTSK": {
       "name": "Netskope, Inc. Class A",
       "sector": "Technology Services",
-      "close": 23.75,
+      "close": 23.93,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SAIL": {
       "name": "SailPoint, Inc.",
       "sector": "Technology Services",
-      "close": 21.5,
+      "close": 21.32,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "RYAN": {
-      "name": "Ryan Specialty Holdings, Inc. Class A",
-      "sector": "Finance",
-      "close": 47.33,
+    "FROG": {
+      "name": "JFrog Ltd.",
+      "sector": "Technology Services",
+      "close": 100.965,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "WMG": {
       "name": "Warner Music Group Corp. Class A",
       "sector": "Commercial Services",
-      "close": 32.68,
+      "close": 32.72,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "GPN": {
-      "name": "Global Payments Inc.",
-      "sector": "Finance",
-      "close": 92,
+    "AMRX": {
+      "name": "Amneal Pharmaceuticals, Inc. Class A",
+      "sector": "Health Technology",
+      "close": 21.12,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "CDW": {
+      "name": "CDW Corporation",
+      "sector": "Technology Services",
+      "close": 161.78,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "TGTX": {
+      "name": "TG Therapeutics, Inc.",
+      "sector": "Health Technology",
+      "close": 63.34,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "LYV": {
+      "name": "Live Nation Entertainment, Inc.",
+      "sector": "Consumer Services",
+      "close": 174.96,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "IBN": {
       "name": "ICICI Bank Limited Sponsored ADR",
       "sector": "Finance",
-      "close": 35.58,
+      "close": 35.47,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "SJM": {
-      "name": "J.M. Smucker Company",
-      "sector": "Consumer Non-Durables",
-      "close": 134.33,
+    "DGX": {
+      "name": "Quest Diagnostics Incorporated",
+      "sector": "Health Services",
+      "close": 258.28,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "DRI": {
+      "name": "Darden Restaurants, Inc.",
+      "sector": "Consumer Services",
+      "close": 225.74,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "DLTR": {
+      "name": "Dollar Tree, Inc.",
+      "sector": "Retail Trade",
+      "close": 137.96,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "ALL": {
       "name": "Allstate Corporation",
       "sector": "Finance",
-      "close": 267.94,
+      "close": 267.16,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "GEN": {
+      "name": "Gen Digital Inc.",
+      "sector": "Technology Services",
+      "close": 29.19,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "SONY": {
       "name": "Sony Group Corporation Sponsored ADR",
       "sector": "Electronic Technology",
-      "close": 27.36,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "MRSH": {
-      "name": "Marsh & McLennan Companies, Inc.",
-      "sector": "Finance",
-      "close": 206.99,
+      "close": 27.29,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "TGT": {
       "name": "Target Corporation",
       "sector": "Retail Trade",
-      "close": 166.43,
+      "close": 165.83,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "CBC": {
       "name": "Central Bancompany, Inc.",
       "sector": "Finance",
-      "close": 36.855,
+      "close": 36.69,
       "flag": "Watch",
       "trend_template_score": "6/6"
     },
     "CHYM": {
       "name": "Chime Financial, Inc. Class A",
       "sector": "Technology Services",
-      "close": 30.255,
+      "close": 30.34,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "BTSG": {
+      "name": "BrightSpring Health Services, Inc.",
+      "sector": "Health Services",
+      "close": 62.84,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "VLTO": {
       "name": "Veralto Corporation",
       "sector": "Producer Manufacturing",
-      "close": 117.235,
+      "close": 116.63,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CART": {
       "name": "Maplebear Inc.",
       "sector": "Transportation",
-      "close": 57.54,
+      "close": 57.31,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SN": {
       "name": "SharkNinja, Inc.",
       "sector": "Consumer Durables",
-      "close": 213.02,
+      "close": 212.64,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "LTH": {
       "name": "Life Time Group Holdings, Inc.",
       "sector": "Consumer Services",
-      "close": 46.28,
+      "close": 46.33,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "RYAN": {
+      "name": "Ryan Specialty Holdings, Inc. Class A",
+      "sector": "Finance",
+      "close": 47.09,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
     },
     "VSXY": {
       "name": "Victoria's Secret & Company",
       "sector": "Retail Trade",
-      "close": 94.05,
+      "close": 94.57,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ABNB": {
       "name": "Airbnb, Inc. Class A",
       "sector": "Consumer Services",
-      "close": 171,
+      "close": 170.36,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "ROIV": {
       "name": "Roivant Sciences Ltd.",
       "sector": "Health Technology",
-      "close": 38.78,
+      "close": 38.655,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "U": {
       "name": "Unity Software, Inc.",
       "sector": "Technology Services",
-      "close": 44.865,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "FROG": {
-      "name": "JFrog Ltd.",
-      "sector": "Technology Services",
-      "close": 101.6,
+      "close": 44.75,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RPRX": {
       "name": "Royalty Pharma Plc Class A",
       "sector": "Health Technology",
-      "close": 68.445,
+      "close": 68.45,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SPOT": {
       "name": "Spotify Technology SA",
       "sector": "Technology Services",
-      "close": 579.715,
+      "close": 577.03,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "LW": {
+      "name": "Lamb Weston Holdings, Inc.",
+      "sector": "Consumer Non-Durables",
+      "close": 51.7,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "USFD": {
       "name": "US Foods Holding Corp.",
       "sector": "Distribution Services",
-      "close": 107.685,
+      "close": 107.35,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SYRE": {
       "name": "Spyre Therapeutics, Inc",
       "sector": "Health Technology",
-      "close": 93.9425,
+      "close": 93.47,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "GKOS": {
       "name": "Glaukos Corp",
       "sector": "Health Technology",
-      "close": 236.6,
+      "close": 237.31,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "HLT": {
       "name": "Hilton Worldwide Holdings Inc.",
       "sector": "Consumer Services",
-      "close": 356.73,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "CDW": {
-      "name": "CDW Corporation",
-      "sector": "Technology Services",
-      "close": 162.075,
+      "close": 356.25,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ABBV": {
       "name": "AbbVie, Inc.",
       "sector": "Health Technology",
-      "close": 287.07,
+      "close": 286.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CBOE": {
       "name": "Cboe Global Markets Inc",
       "sector": "Finance",
-      "close": 357.13,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "TGTX": {
-      "name": "TG Therapeutics, Inc.",
-      "sector": "Health Technology",
-      "close": 63.44,
+      "close": 357.71,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "GMAB": {
       "name": "Genmab A/S Sponsored ADR",
       "sector": "Health Technology",
-      "close": 50.37,
+      "close": 50.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KDP": {
       "name": "Keurig Dr Pepper Inc.",
       "sector": "Consumer Non-Durables",
-      "close": 34.915,
+      "close": 34.84,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "V": {
       "name": "Visa Inc. Class A",
       "sector": "Finance",
-      "close": 403.965,
+      "close": 402.425,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MA": {
       "name": "Mastercard Incorporated Class A",
       "sector": "Finance",
-      "close": 627.64,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "LYV": {
-      "name": "Live Nation Entertainment, Inc.",
-      "sector": "Consumer Services",
-      "close": 174.675,
+      "close": 626.135,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "NDAQ": {
       "name": "Nasdaq, Inc.",
       "sector": "Finance",
-      "close": 103.41,
+      "close": 102.92,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "EXEL": {
       "name": "Exelixis, Inc.",
       "sector": "Health Technology",
-      "close": 64.68,
+      "close": 64.63,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "EW": {
       "name": "Edwards Lifesciences Corporation",
       "sector": "Health Technology",
-      "close": 102.18,
+      "close": 101.85,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "EBAY": {
       "name": "eBay Inc.",
       "sector": "Retail Trade",
-      "close": 116.72,
+      "close": 115.59,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MAR": {
       "name": "Marriott International, Inc. Class A",
       "sector": "Consumer Services",
-      "close": 407.57,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "DGX": {
-      "name": "Quest Diagnostics Incorporated",
-      "sector": "Health Services",
-      "close": 259.31,
+      "close": 406.64,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CNI": {
       "name": "Canadian National Railway Company",
       "sector": "Transportation",
-      "close": 122.6,
+      "close": 122.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "DRI": {
-      "name": "Darden Restaurants, Inc.",
-      "sector": "Consumer Services",
-      "close": 226.285,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "DLTR": {
-      "name": "Dollar Tree, Inc.",
-      "sector": "Retail Trade",
-      "close": 138.24,
+    "SJM": {
+      "name": "J.M. Smucker Company",
+      "sector": "Consumer Non-Durables",
+      "close": 133.68,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "RELX": {
       "name": "RELX PLC Sponsored ADR",
       "sector": "Commercial Services",
-      "close": 38.585,
+      "close": 38.54,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "LNG": {
       "name": "Cheniere Energy, Inc.",
       "sector": "Industrial Services",
-      "close": 295.63,
+      "close": 294.84,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "URBN": {
+      "name": "Urban Outfitters, Inc.",
+      "sector": "Retail Trade",
+      "close": 84.58,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MHK": {
       "name": "Mohawk Industries, Inc.",
       "sector": "Producer Manufacturing",
-      "close": 140.925,
+      "close": 140.86,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "BIIB": {
       "name": "Biogen Inc.",
       "sector": "Health Technology",
-      "close": 249.15,
+      "close": 249.59,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "DEO": {
       "name": "Diageo plc Sponsored ADR",
       "sector": "Consumer Non-Durables",
-      "close": 97.307,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "GEN": {
-      "name": "Gen Digital Inc.",
-      "sector": "Technology Services",
-      "close": 29.335,
+      "close": 97.07,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TECH": {
       "name": "Bio-Techne Corporation",
       "sector": "Health Technology",
-      "close": 72.705,
+      "close": 72.67,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CCEP": {
       "name": "Coca-Cola Europacific Partners plc",
       "sector": "Consumer Non-Durables",
-      "close": 115.42,
+      "close": 115.53,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "BBY": {
       "name": "Best Buy Co., Inc.",
       "sector": "Retail Trade",
-      "close": 98.125,
+      "close": 97.95,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "AJG": {
       "name": "Arthur J. Gallagher & Co.",
       "sector": "Finance",
-      "close": 280,
+      "close": 279.26,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "PAYX": {
       "name": "Paychex, Inc.",
       "sector": "Technology Services",
-      "close": 113.615,
+      "close": 112.63,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "CTAS": {
       "name": "Cintas Corporation",
       "sector": "Commercial Services",
-      "close": 221.955,
+      "close": 220.01,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CAH": {
       "name": "Cardinal Health, Inc.",
       "sector": "Distribution Services",
-      "close": 273.83,
+      "close": 272.93,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "AMGN": {
       "name": "Amgen Inc.",
       "sector": "Health Technology",
-      "close": 436.84,
+      "close": 435.64,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "BAX": {
       "name": "Baxter International Inc.",
       "sector": "Health Technology",
-      "close": 25.355,
+      "close": 25.39,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "AAPL": {
       "name": "Apple Inc.",
       "sector": "Electronic Technology",
-      "close": 342.74,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "CSX": {
-      "name": "CSX Corporation",
-      "sector": "Transportation",
-      "close": 49.385,
+      "close": 342.56,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "WELL": {
       "name": "Welltower Inc.",
       "sector": "Finance",
-      "close": 242.105,
+      "close": 240.34,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ADP": {
       "name": "Automatic Data Processing, Inc.",
       "sector": "Technology Services",
-      "close": 302.93,
+      "close": 301.71,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CHD": {
       "name": "Church & Dwight Co., Inc.",
       "sector": "Consumer Non-Durables",
-      "close": 110.97,
+      "close": 110.84,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "VTRS": {
       "name": "Viatris, Inc.",
       "sector": "Health Technology",
-      "close": 19.58,
+      "close": 19.63,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "HST": {
       "name": "Host Hotels & Resorts, Inc.",
       "sector": "Finance",
-      "close": 24.205,
+      "close": 24.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MAS": {
       "name": "Masco Corporation",
       "sector": "Producer Manufacturing",
-      "close": 82.71,
+      "close": 82.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SWK": {
       "name": "Stanley Black & Decker, Inc.",
       "sector": "Consumer Durables",
-      "close": 106.265,
+      "close": 106.62,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "TRV": {
       "name": "Travelers Companies, Inc.",
       "sector": "Finance",
-      "close": 394.96,
+      "close": 393.43,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "MRSH": {
+      "name": "Marsh & McLennan Companies, Inc.",
+      "sector": "Finance",
+      "close": 206.22,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "BDX": {
       "name": "Becton, Dickinson and Company",
       "sector": "Health Technology",
-      "close": 212.465,
+      "close": 212.78,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "LLY": {
       "name": "Eli Lilly and Company",
       "sector": "Health Technology",
-      "close": 1346.65,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "JNJ": {
-      "name": "Johnson & Johnson",
-      "sector": "Health Technology",
-      "close": 270.5,
+      "close": 1347.11,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "KO": {
       "name": "Coca-Cola Company",
       "sector": "Consumer Non-Durables",
-      "close": 97.115,
+      "close": 96.99,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "MO": {
       "name": "Altria Group, Inc.",
       "sector": "Consumer Non-Durables",
-      "close": 74.965,
+      "close": 74.87,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "JHX": {
-      "name": "James Hardie Industries PLC",
-      "sector": "Non-Energy Minerals",
-      "close": 26.565,
+    "GPN": {
+      "name": "Global Payments Inc.",
+      "sector": "Finance",
+      "close": 91.83,
       "flag": "Away",
       "trend_template_score": "6/8"
     },
-    "EXPD": {
-      "name": "Expeditors International of Washington, Inc.",
-      "sector": "Transportation",
-      "close": 193.26,
-      "flag": "Away",
-      "trend_template_score": "7/8"
-    },
-    "UNP": {
-      "name": "Union Pacific Corporation",
-      "sector": "Transportation",
-      "close": 288.24,
+    "JNJ": {
+      "name": "Johnson & Johnson",
+      "sector": "Health Technology",
+      "close": 270.47,
       "flag": "Away",
       "trend_template_score": "7/8"
     },
     "BF.B": {
       "name": "Brown-Forman Corporation Class B",
       "sector": "Consumer Non-Durables",
-      "close": 29.9,
+      "close": 29.92,
       "flag": null,
       "trend_template_score": null
     }
