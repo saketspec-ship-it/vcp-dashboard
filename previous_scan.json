@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-21 00:12 IST",
-  "run_epoch": 1795200134.6530766,
+  "run_time": "2026-11-21 17:12 IST",
+  "run_epoch": 1795261333.217813,
   "tickers": {
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
@@ -11,7 +11,7 @@
     },
     "LOTUSDEV": {
       "name": "Sri Lotus Developers & Realty Ltd",
-      "sector": null,
+      "sector": "Realty",
       "close": 235.48,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -30,16 +30,16 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ASKAUTOLTD": {
-      "name": "ASK Automotive Ltd",
+    "JSWINFRA": {
+      "name": "JSW Infrastructure Ltd",
       "sector": null,
-      "close": 630.85,
+      "close": 341.25,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "YATHARTH": {
       "name": "Yatharth Hospital & Trauma Care Services Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 1093.25,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -58,13 +58,6 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "NAZARA": {
-      "name": "Nazara Technologies Ltd",
-      "sector": "Media, Entertainment &amp; Publication",
-      "close": 414.55,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "PNBHOUSING": {
       "name": "Pnb Housing Finance Limited",
       "sector": null,
@@ -74,38 +67,59 @@
     },
     "CUPID": {
       "name": "Cupid Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 365.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "RBLBANK": {
+      "name": "Rbl Bank Limited",
+      "sector": null,
+      "close": 398.3,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
+    "LALPATHLAB": {
+      "name": "Dr. Lal Path Labs Ltd.",
+      "sector": "Healthcare",
+      "close": 2006,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
+    "PERSISTENT": {
+      "name": "Persistent Systems Limited",
+      "sector": "Information Technology",
+      "close": 6124,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
     "KMSUGAR": {
       "name": "K.m.sugar Mills Limited",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 32.64,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
-    "KAMDHENU": {
-      "name": "Kamdhenu Limited",
+    "CYIENT": {
+      "name": "Cyient Limited",
       "sector": null,
-      "close": 37.52,
+      "close": 1155.5,
       "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "UTTAMSUGAR": {
-      "name": "Uttam Sugar Mills Limited",
-      "sector": null,
-      "close": 355.8,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "63MOONS": {
       "name": "63 Moons Technologies Ltd",
-      "sector": null,
+      "sector": "Information Technology",
       "close": 925.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
+    },
+    "SUDARSCHEM": {
+      "name": "Sudarshan Chemical Industries Limited",
+      "sector": null,
+      "close": 1160.4,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
     },
     "BBOX": {
       "name": "Black Box Ltd",
@@ -116,7 +130,7 @@
     },
     "TIPSMUSIC": {
       "name": "Tips Music Ltd",
-      "sector": "Media, Entertainment &amp; Publication",
+      "sector": null,
       "close": 808.05,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -135,16 +149,9 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ZYDUSLIFE": {
-      "name": "Zydus Lifesciences Ltd",
-      "sector": "Healthcare",
-      "close": 1200,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 1198.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -165,7 +172,7 @@
     },
     "SAMBHV": {
       "name": "Sambhv Steel Tubes Ltd",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 158.06,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -184,6 +191,13 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
+    "ASKAUTOLTD": {
+      "name": "ASK Automotive Ltd",
+      "sector": null,
+      "close": 630.85,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
+    },
     "NUVAMA": {
       "name": "Nuvama Wealth Management Ltd",
       "sector": "Financial Services",
@@ -193,31 +207,38 @@
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": null,
+      "sector": "Textiles",
       "close": 68.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "NAZARA": {
+      "name": "Nazara Technologies Ltd",
+      "sector": null,
+      "close": 414.55,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "METROPOLIS": {
+      "name": "Metropolis Healthcare Ltd",
+      "sector": "Healthcare",
+      "close": 566,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
     },
     "LTTS": {
       "name": "L&t Technology Services Limited",
       "sector": "Information Technology",
       "close": 4082.5,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
-    "LALPATHLAB": {
-      "name": "Dr. Lal Path Labs Ltd.",
-      "sector": "Healthcare",
-      "close": 2006,
+    "FSL": {
+      "name": "Firstsource Solutions Limited",
+      "sector": null,
+      "close": 281.45,
       "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
-    "PERSISTENT": {
-      "name": "Persistent Systems Limited",
-      "sector": "Information Technology",
-      "close": 6124,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "6/8"
     },
     "TECHM": {
       "name": "Tech Mahindra Limited",
@@ -226,26 +247,19 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "JSWINFRA": {
-      "name": "JSW Infrastructure Ltd",
-      "sector": "Services",
-      "close": 341.25,
-      "flag": "Away",
-      "trend_template_score": "6/8"
-    },
-    "METROPOLIS": {
-      "name": "Metropolis Healthcare Ltd",
+    "UTTAMSUGAR": {
+      "name": "Uttam Sugar Mills Limited",
       "sector": null,
-      "close": 566,
-      "flag": "Away",
-      "trend_template_score": "6/8"
+      "close": 355.8,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
     },
-    "RBLBANK": {
-      "name": "Rbl Bank Limited",
+    "ZYDUSLIFE": {
+      "name": "Zydus Lifesciences Ltd",
       "sector": null,
-      "close": 398.3,
-      "flag": "Away",
-      "trend_template_score": "6/8"
+      "close": 1200,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
     },
     "CCAVENUE": {
       "name": "AvenuesAI Ltd",
@@ -254,26 +268,12 @@
       "flag": "Away",
       "trend_template_score": "0/8"
     },
-    "FSL": {
-      "name": "Firstsource Solutions Limited",
+    "KAMDHENU": {
+      "name": "Kamdhenu Limited",
       "sector": null,
-      "close": 281.45,
+      "close": 37.52,
       "flag": "Away",
-      "trend_template_score": "4/8"
-    },
-    "CYIENT": {
-      "name": "Cyient Limited",
-      "sector": null,
-      "close": 1155.5,
-      "flag": "Away",
-      "trend_template_score": "6/8"
-    },
-    "SUDARSCHEM": {
-      "name": "Sudarshan Chemical Industries Limited",
-      "sector": null,
-      "close": 1160.4,
-      "flag": "Away",
-      "trend_template_score": "6/8"
+      "trend_template_score": "7/8"
     }
   }
 }
