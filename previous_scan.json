@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-21 23:12 IST",
-  "run_epoch": 1795282953.984718,
+  "run_time": "2026-11-22 17:26 IST",
+  "run_epoch": 1795348600.920839,
   "tickers": {
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
@@ -74,7 +74,7 @@
     },
     "RBLBANK": {
       "name": "Rbl Bank Limited",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 398.3,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -102,14 +102,14 @@
     },
     "CYIENT": {
       "name": "Cyient Limited",
-      "sector": null,
+      "sector": "Information Technology",
       "close": 1155.5,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
     "63MOONS": {
       "name": "63 Moons Technologies Ltd",
-      "sector": "Information Technology",
+      "sector": null,
       "close": 925.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -123,7 +123,7 @@
     },
     "BBOX": {
       "name": "Black Box Ltd",
-      "sector": null,
+      "sector": "Information Technology",
       "close": 896.4,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -144,21 +144,21 @@
     },
     "TFCILTD": {
       "name": "Tourism Finance Corporation Of India Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 171.85,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 1198.7,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "BHEL": {
       "name": "Bharat Heavy Electricals Limited",
-      "sector": null,
+      "sector": "Capital Goods",
       "close": 433.65,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -186,7 +186,7 @@
     },
     "KROSS": {
       "name": "Kross Ltd",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 278.3,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -207,7 +207,7 @@
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": null,
+      "sector": "Textiles",
       "close": 68.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -221,7 +221,7 @@
     },
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 566,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -249,21 +249,21 @@
     },
     "UTTAMSUGAR": {
       "name": "Uttam Sugar Mills Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 355.8,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ZYDUSLIFE": {
       "name": "Zydus Lifesciences Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1200,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CCAVENUE": {
       "name": "AvenuesAI Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 114.82,
       "flag": "Away",
       "trend_template_score": "0/8"
