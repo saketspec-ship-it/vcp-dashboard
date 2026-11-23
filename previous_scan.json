@@ -1,7 +1,14 @@
 {
-  "run_time": "2026-11-23 19:05 IST",
-  "run_epoch": 1795440921.4374726,
+  "run_time": "2026-11-24 03:38 IST",
+  "run_epoch": 1795471712.221563,
   "tickers": {
+    "RUBICON": {
+      "name": "Rubicon Research Ltd",
+      "sector": "Healthcare",
+      "close": 1675.7,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
     "ROSSTECH": {
       "name": "Rossell Techsys Ltd",
       "sector": null,
@@ -11,14 +18,21 @@
     },
     "UYFINCORP": {
       "name": "U. Y. Fincorp Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 30.82,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "MANKIND": {
+      "name": "Mankind Pharma Ltd",
+      "sector": "Healthcare",
+      "close": 2615.1,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
     "AARTIPHARM": {
       "name": "Aarti Pharmalabs Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1020.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -27,6 +41,13 @@
       "name": "Global Health Ltd",
       "sector": null,
       "close": 1500.2,
+      "flag": "Trend",
+      "trend_template_score": "7/8"
+    },
+    "NYKAA": {
+      "name": "FSN E-Commerce Ventures Ltd",
+      "sector": null,
+      "close": 357,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -37,10 +58,10 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "LTTS": {
-      "name": "L&t Technology Services Limited",
-      "sector": "Information Technology",
-      "close": 4222.6,
+    "CUPID": {
+      "name": "Cupid Limited",
+      "sector": null,
+      "close": 362.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -56,18 +77,18 @@
       "sector": "Healthcare",
       "close": 2040.5,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "VSSL": {
       "name": "Vardhman Special Steels Limited",
       "sector": null,
       "close": 380.15,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "KMSUGAR": {
       "name": "K.m.sugar Mills Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 32.72,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -79,31 +100,17 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "ACE": {
-      "name": "Action Construction Equipment Limited",
-      "sector": null,
-      "close": 1187.45,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
-    },
-    "TECHM": {
-      "name": "Tech Mahindra Limited",
-      "sector": "Information Technology",
-      "close": 1777.5,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "CYIENT": {
       "name": "Cyient Limited",
-      "sector": "Information Technology",
+      "sector": null,
       "close": 1160.5,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "TEXRAIL": {
-      "name": "Texmaco Rail & Engineering Limited",
-      "sector": null,
-      "close": 112.19,
+    "BEML": {
+      "name": "Beml Limited",
+      "sector": "Capital Goods",
+      "close": 2008.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
@@ -114,16 +121,9 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
-    "GRAPHITE": {
-      "name": "Graphite India Limited",
-      "sector": null,
-      "close": 789.9,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
     "ARVIND": {
       "name": "Arvind Limited",
-      "sector": "Textiles",
+      "sector": null,
       "close": 537.7,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -137,17 +137,10 @@
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 1205.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
-    },
-    "RUBICON": {
-      "name": "Rubicon Research Ltd",
-      "sector": "Healthcare",
-      "close": 1675.7,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
     },
     "CPPLUS": {
       "name": "Aditya Infotech Ltd",
@@ -158,7 +151,7 @@
     },
     "BLUSPRING": {
       "name": "Bluspring Enterprises Ltd",
-      "sector": null,
+      "sector": "Services",
       "close": 153.15,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -184,13 +177,6 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "MANKIND": {
-      "name": "Mankind Pharma Ltd",
-      "sector": "Healthcare",
-      "close": 2615.1,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "SBC": {
       "name": "SBC Exports Ltd",
       "sector": null,
@@ -198,16 +184,9 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "NYKAA": {
-      "name": "FSN E-Commerce Ventures Ltd",
-      "sector": null,
-      "close": 357,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "SONACOMS": {
       "name": "Sona BLW Precision Forgings Ltd",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 886,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -221,24 +200,38 @@
     },
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 562.8,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
-    "CUPID": {
-      "name": "Cupid Limited",
+    "LTTS": {
+      "name": "L&t Technology Services Limited",
+      "sector": "Information Technology",
+      "close": 4222.6,
+      "flag": "Watch",
+      "trend_template_score": "8/8"
+    },
+    "ACE": {
+      "name": "Action Construction Equipment Limited",
       "sector": null,
-      "close": 362.15,
+      "close": 1187.45,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
+    },
+    "TECHM": {
+      "name": "Tech Mahindra Limited",
+      "sector": "Information Technology",
+      "close": 1777.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "UTTAMSUGAR": {
       "name": "Uttam Sugar Mills Limited",
-      "sector": "Fast Moving Consumer Goods",
+      "sector": null,
       "close": 348.5,
       "flag": "Watch",
-      "trend_template_score": "7/8"
+      "trend_template_score": "8/8"
     },
     "SSWL": {
       "name": "Steel Strips Wheels Limited",
@@ -247,30 +240,16 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "BEML": {
-      "name": "Beml Limited",
-      "sector": "Capital Goods",
-      "close": 2008.1,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
-    "KOPRAN": {
-      "name": "Kopran Limited",
-      "sector": null,
-      "close": 265.35,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "HIKAL": {
       "name": "Hikal Limited",
-      "sector": "Healthcare",
+      "sector": null,
       "close": 219.74,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
     "ZYDUSLIFE": {
       "name": "Zydus Lifesciences Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1199.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -284,17 +263,38 @@
     },
     "ENGINERSIN": {
       "name": "Engineers India Limited",
-      "sector": null,
+      "sector": "Construction",
       "close": 298.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "CCAVENUE": {
       "name": "AvenuesAI Ltd",
-      "sector": "Financial Services",
+      "sector": null,
       "close": 111.43,
       "flag": "Away",
       "trend_template_score": "0/8"
+    },
+    "TEXRAIL": {
+      "name": "Texmaco Rail & Engineering Limited",
+      "sector": null,
+      "close": 112.19,
+      "flag": "Away",
+      "trend_template_score": "6/8"
+    },
+    "GRAPHITE": {
+      "name": "Graphite India Limited",
+      "sector": null,
+      "close": 789.9,
+      "flag": "Away",
+      "trend_template_score": "6/8"
+    },
+    "KOPRAN": {
+      "name": "Kopran Limited",
+      "sector": null,
+      "close": 265.35,
+      "flag": "Away",
+      "trend_template_score": "7/8"
     }
   }
 }
