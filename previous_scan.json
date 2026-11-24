@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-11-24 19:43 IST",
-  "run_epoch": 1795529597.4196706,
+  "run_time": "2026-11-25 02:15 IST",
+  "run_epoch": 1795553103.9025962,
   "tickers": {
     "ROSSTECH": {
       "name": "Rossell Techsys Ltd",
@@ -18,7 +18,7 @@
     },
     "AARTIPHARM": {
       "name": "Aarti Pharmalabs Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1020.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -46,7 +46,7 @@
     },
     "RBLBANK": {
       "name": "Rbl Bank Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 393.5,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -60,7 +60,7 @@
     },
     "VSSL": {
       "name": "Vardhman Special Steels Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 380.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -95,7 +95,7 @@
     },
     "CYIENT": {
       "name": "Cyient Limited",
-      "sector": "Information Technology",
+      "sector": null,
       "close": 1160.5,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -123,7 +123,7 @@
     },
     "ARVIND": {
       "name": "Arvind Limited",
-      "sector": "Textiles",
+      "sector": null,
       "close": 537.7,
       "flag": "Trend",
       "trend_template_score": "7/8"
@@ -137,7 +137,7 @@
     },
     "RAYMOND": {
       "name": "Raymond Limited",
-      "sector": "Capital Goods",
+      "sector": null,
       "close": 1205.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
@@ -193,7 +193,7 @@
     },
     "SBC": {
       "name": "SBC Exports Ltd",
-      "sector": "Textiles",
+      "sector": null,
       "close": 68.07,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -207,7 +207,7 @@
     },
     "SONACOMS": {
       "name": "Sona BLW Precision Forgings Ltd",
-      "sector": "Automobile and Auto Components",
+      "sector": null,
       "close": 886,
       "flag": "Watch",
       "trend_template_score": "8/8"
@@ -221,7 +221,7 @@
     },
     "METROPOLIS": {
       "name": "Metropolis Healthcare Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 562.8,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -235,7 +235,7 @@
     },
     "UTTAMSUGAR": {
       "name": "Uttam Sugar Mills Limited",
-      "sector": null,
+      "sector": "Fast Moving Consumer Goods",
       "close": 348.5,
       "flag": "Watch",
       "trend_template_score": "7/8"
@@ -270,21 +270,21 @@
     },
     "ZYDUSLIFE": {
       "name": "Zydus Lifesciences Ltd",
-      "sector": null,
+      "sector": "Healthcare",
       "close": 1199.5,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SOUTHBANK": {
       "name": "The South Indian Bank Limited",
-      "sector": null,
+      "sector": "Financial Services",
       "close": 58.87,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "ENGINERSIN": {
       "name": "Engineers India Limited",
-      "sector": "Construction",
+      "sector": null,
       "close": 298.4,
       "flag": "Watch",
       "trend_template_score": "8/8"
