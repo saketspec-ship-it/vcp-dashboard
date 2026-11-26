@@ -1,11 +1,11 @@
 {
-  "run_time": "2026-11-26 18:35 IST",
-  "run_epoch": 1795698310.7610044,
+  "run_time": "2026-11-27 01:15 IST",
+  "run_epoch": 1795722310.0236127,
   "tickers": {
     "SHREEJISPG": {
       "name": "Shreeji Shipping Global Ltd",
       "sector": null,
-      "close": 910.3,
+      "close": 910.65,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -19,30 +19,16 @@
     "ARFIN": {
       "name": "Arfin India Ltd",
       "sector": null,
-      "close": 95.01,
+      "close": 95.34,
       "flag": "Trend",
       "trend_template_score": "8/8"
-    },
-    "RAYMONDREL": {
-      "name": "Raymond Realty Ltd",
-      "sector": null,
-      "close": 619.05,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
     },
     "THELEELA": {
       "name": "Leela Palaces Hotels & Resorts Ltd",
       "sector": null,
-      "close": 683,
+      "close": 685.85,
       "flag": "Trend",
       "trend_template_score": "8/8"
-    },
-    "NUVAMA": {
-      "name": "Nuvama Wealth Management Ltd",
-      "sector": null,
-      "close": 1854.8,
-      "flag": "Trend",
-      "trend_template_score": "7/8"
     },
     "MANKIND": {
       "name": "Mankind Pharma Ltd",
@@ -54,14 +40,7 @@
     "AARTIPHARM": {
       "name": "Aarti Pharmalabs Ltd",
       "sector": null,
-      "close": 1020,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "DBOL": {
-      "name": "Dhampur Bio Organics Ltd",
-      "sector": null,
-      "close": 145.49,
+      "close": 1022.15,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -86,12 +65,33 @@
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
+    "AAREYDRUGS": {
+      "name": "Aarey Drugs & Pharmaceuticals Ltd",
+      "sector": null,
+      "close": 111.1,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
     "HAL": {
       "name": "Hindustan Aeronautics Ltd",
       "sector": null,
       "close": 4909.6,
       "flag": "Trend",
       "trend_template_score": "7/8"
+    },
+    "UNITEDPOLY": {
+      "name": "United Polyfab Gujarat Ltd",
+      "sector": null,
+      "close": 52.75,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "KRISHANA": {
+      "name": "Krishana Phoschem Ltd",
+      "sector": null,
+      "close": 243.04,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
     },
     "PNBHOUSING": {
       "name": "Pnb Housing Finance Limited",
@@ -100,19 +100,12 @@
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "LTTS": {
-      "name": "L&t Technology Services Limited",
+    "RBLBANK": {
+      "name": "Rbl Bank Limited",
       "sector": null,
-      "close": 4245.2,
+      "close": 389.25,
       "flag": "Trend",
-      "trend_template_score": "8/8"
-    },
-    "CUPID": {
-      "name": "Cupid Limited",
-      "sector": null,
-      "close": 371.1,
-      "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "NAUKRI": {
       "name": "Info Edge (india) Limited",
@@ -131,14 +124,14 @@
     "CYIENT": {
       "name": "Cyient Limited",
       "sector": null,
-      "close": 1149.3,
+      "close": 1149.1,
       "flag": "Trend",
       "trend_template_score": "7/8"
     },
-    "INDOCO": {
-      "name": "Indoco Remedies Limited",
+    "PVRINOX": {
+      "name": "PVR Inox Ltd",
       "sector": null,
-      "close": 235.62,
+      "close": 1638.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -147,7 +140,14 @@
       "sector": null,
       "close": 2779.8,
       "flag": "Trend",
-      "trend_template_score": "7/8"
+      "trend_template_score": "6/8"
+    },
+    "INDHOTEL": {
+      "name": "The Indian Hotels Company Limited",
+      "sector": null,
+      "close": 886.7,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
     },
     "GRAPHITE": {
       "name": "Graphite India Limited",
@@ -161,12 +161,12 @@
       "sector": null,
       "close": 228.33,
       "flag": "Trend",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
     },
     "ORIENTHOT": {
       "name": "Oriental Hotels Limited",
       "sector": null,
-      "close": 177,
+      "close": 177.85,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -174,6 +174,20 @@
       "name": "Tourism Finance Corporation Of India Limited",
       "sector": null,
       "close": 174.94,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "ZYDUSLIFE": {
+      "name": "Zydus Lifesciences Ltd",
+      "sector": null,
+      "close": 1194.2,
+      "flag": "Trend",
+      "trend_template_score": "8/8"
+    },
+    "RAYMOND": {
+      "name": "Raymond Limited",
+      "sector": null,
+      "close": 1183.2,
       "flag": "Trend",
       "trend_template_score": "8/8"
     },
@@ -189,7 +203,14 @@
       "sector": null,
       "close": 1050.35,
       "flag": "Watch",
-      "trend_template_score": "8/8"
+      "trend_template_score": "7/8"
+    },
+    "NUVAMA": {
+      "name": "Nuvama Wealth Management Ltd",
+      "sector": null,
+      "close": 1854.8,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
     },
     "PPLPHARMA": {
       "name": "Piramal Pharma Ltd",
@@ -197,6 +218,13 @@
       "close": 235.6,
       "flag": "Watch",
       "trend_template_score": "8/8"
+    },
+    "DBOL": {
+      "name": "Dhampur Bio Organics Ltd",
+      "sector": null,
+      "close": 145.49,
+      "flag": "Watch",
+      "trend_template_score": "7/8"
     },
     "SBC": {
       "name": "SBC Exports Ltd",
@@ -210,13 +238,6 @@
       "sector": null,
       "close": 353,
       "flag": "Watch",
-      "trend_template_score": "7/8"
-    },
-    "AAREYDRUGS": {
-      "name": "Aarey Drugs & Pharmaceuticals Ltd",
-      "sector": null,
-      "close": 108.36,
-      "flag": "Watch",
       "trend_template_score": "8/8"
     },
     "SONACOMS": {
@@ -226,31 +247,24 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "UNITEDPOLY": {
-      "name": "United Polyfab Gujarat Ltd",
+    "LTTS": {
+      "name": "L&t Technology Services Limited",
       "sector": null,
-      "close": 53,
+      "close": 4245.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "KRISHANA": {
-      "name": "Krishana Phoschem Ltd",
+    "CUPID": {
+      "name": "Cupid Limited",
       "sector": null,
-      "close": 243.04,
+      "close": 371.1,
       "flag": "Watch",
       "trend_template_score": "8/8"
-    },
-    "RBLBANK": {
-      "name": "Rbl Bank Limited",
-      "sector": null,
-      "close": 389.25,
-      "flag": "Watch",
-      "trend_template_score": "7/8"
     },
     "KMSUGAR": {
       "name": "K.m.sugar Mills Limited",
       "sector": null,
-      "close": 32.02,
+      "close": 32.3,
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
@@ -264,7 +278,7 @@
     "AVTNPL": {
       "name": "Avt Natural Products Limited",
       "sector": null,
-      "close": 96.83,
+      "close": 96.59,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -272,13 +286,6 @@
       "name": "Tanla Solutions Limited",
       "sector": null,
       "close": 624.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
-    "PVRINOX": {
-      "name": "PVR Inox Ltd",
-      "sector": null,
-      "close": 1638.2,
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
@@ -296,13 +303,6 @@
       "flag": "Watch",
       "trend_template_score": "7/8"
     },
-    "INDHOTEL": {
-      "name": "The Indian Hotels Company Limited",
-      "sector": null,
-      "close": 886.7,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
-    },
     "TIPSMUSIC": {
       "name": "Tips Music Ltd",
       "sector": null,
@@ -316,13 +316,6 @@
       "close": 451.15,
       "flag": "Watch",
       "trend_template_score": "7/8"
-    },
-    "ZYDUSLIFE": {
-      "name": "Zydus Lifesciences Ltd",
-      "sector": null,
-      "close": 1194.2,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
     },
     "SOUTHBANK": {
       "name": "The South Indian Bank Limited",
@@ -338,12 +331,12 @@
       "flag": "Watch",
       "trend_template_score": "8/8"
     },
-    "RAYMOND": {
-      "name": "Raymond Limited",
+    "RAYMONDREL": {
+      "name": "Raymond Realty Ltd",
       "sector": null,
-      "close": 1183.2,
-      "flag": "Watch",
-      "trend_template_score": "8/8"
+      "close": 619.05,
+      "flag": "Away",
+      "trend_template_score": "6/8"
     },
     "CCAVENUE": {
       "name": "AvenuesAI Ltd",
@@ -351,6 +344,13 @@
       "close": 115.03,
       "flag": "Away",
       "trend_template_score": "0/8"
+    },
+    "INDOCO": {
+      "name": "Indoco Remedies Limited",
+      "sector": null,
+      "close": 235.62,
+      "flag": "Away",
+      "trend_template_score": "6/8"
     }
   }
 }
